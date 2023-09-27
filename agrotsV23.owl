@@ -1,0 +1,2683 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/agrots"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/agrots"
+     versionIRI="http://www.semanticweb.org/agrots/1.0.0">
+    <Prefix name="" IRI="http://www.semanticweb.org/agrots"/>
+    <Prefix name="om" IRI="http://www.ontology-of-units-of-measure.org/resource/om-2/"/>
+    <Prefix name="dbo" IRI="https://dbpedia.org/ontology/"/>
+    <Prefix name="efo" IRI="http://www.ebi.ac.uk/efo"/>
+    <Prefix name="obo" IRI="http://purl.obolibrary.org/obo"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="bspo" IRI="http://purl.obolibrary.org/obo/bspo.owl"/>
+    <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
+    <Prefix name="oboe" IRI="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="sosa" IRI="http://www.w3.org/ns/sosa/"/>
+    <Prefix name="time" IRI="https://www.w3.org/TR/owl-time/"/>
+    <Prefix name="agrontology" IRI="http://aims.fao.org/aos/agrontology#"/>
+    <Declaration>
+        <Class IRI="dbr:Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="dbr:Observer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="efo:EFO_0000469"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="efo:EFO_0003765"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="foaf:Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://semanticscience.org/resource/SIO_001212"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://semanticscience.org/resource/SIO_001213"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://semanticscience.org/resource/SIO_001214"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://semanticscience.org/resource/SIO_001215"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://semanticscience.org/resource/SIO_001216"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://semanticscience.org/resource/SIO_001217"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://semanticscience.org/resource/SIO_001218"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/AirHumidity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/AirPressure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/AirTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/AllDevelopmentStages"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/AllDevelopmentStagesExceptFruitDevelopmentStage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/AllIntensities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ApicalSuperiorRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/BasalToCentralRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/BlueColorBrightness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Chalky"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/CropObservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/CropObservationCollection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Damp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/DampAndWrinkled"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/DarkRedBrown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/DegreeOfAssociation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/DevelopmentCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/DiseaseDevelopmentCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/DryAndRough"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/EarlyBlight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/EarlyGrowthStage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/EnvironmentalFactorObservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/EnvironmentalFactorObservationCollection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/FlowerAndFruitDevelopmentStage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/GrayMold"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/GreenBrown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/GreenColorBrightness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/GreenGrey"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/LateBlight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/LeafMold"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/OptimalDevelopmentCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/OrangeColorBrightness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Point"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PolygonalArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PowderyMildew"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PurpleBrown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/RedColorBrightness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SeedGerminationAndEarlyGrowthStage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SevereToFatal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SoilHumidity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SoilTemperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/StrongToFatal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/VioletColorBrightness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/WeakToModerate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Wilted"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/YellowColorBrightness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/YellowWhite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:AGRO_00000325"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:BSPO_0000022"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:BSPO_0000025"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:BSPO_0000070"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:BSPO_0000073"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:BSPO_0000074"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:BSPO_0000075"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:INO_0000013"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:NCBITaxon_40559"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:NCBITaxon_4081"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:NCBITaxon_4787"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:NCBITaxon_5499"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:NCBITaxon_5599"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:NCBITaxon_62718"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:NCIT_C14258"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:NCIT_C25244"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:NCIT_C79611"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0000014"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0000016"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0000019"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0000052"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0000146"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0000150"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0000317"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0000320"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0000323"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0000324"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0000329"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0000331"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0000333"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0000337"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0000411"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0000700"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0000701"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0000947"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0000950"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0000952"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0001018"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0001025"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0001245"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0001250"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0001251"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0001252"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0001287"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0001533"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0001606"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0001810"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0001824"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0001928"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0001941"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0001942"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0001946"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0002224"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0002274"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0002411"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0002539"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0005020"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0015009"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PATO_0040014"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PDO_0000001"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PDO_0000004"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PDO_0000015"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PDO_0000026"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PDO_0000067"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PDO_0000068"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PDO_0000069"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PO_0000003"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PO_0001002"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PO_0007057"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PO_0007134"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PO_0007615"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PO_0009001"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PO_0009005"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PO_0009008"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PO_0009012"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PO_0009046"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PO_0009047"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PO_0025034"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PO_0025501"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:PO_0025502"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="obo:TO_0000387"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="oboe:ObservationCollection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="om:Unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="sosa:FeatureOfInterest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="sosa:ObservableProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="sosa:Observation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="sosa:Sensor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="dbo:locatedInArea"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/affectsPlant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/appearsDuringDevelopmentStage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/environmentalFactorIsObservedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasBorderPoint"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasCausalAgent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasCropLocationArea"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasDegreeOfAssociationToDisease"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasDegreeOfAssociationToSymptom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasDevelopmentCondition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasDiseaseDevelopmentCondition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasIntensity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasLocationPoint"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasNodeLocationPoint"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasPlantDevelopmentStage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasPlantType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasSensor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasSymptom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isAffectedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isCausalAgentFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isCharacterizedByAffectedPartAnatomicalRegion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isCharacterizedByAffectedPartColor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isCharacterizedByAffectedPartColorPattern"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isCharacterizedByAffectedPartColorPatternBorderColor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isCharacterizedByAffectedPartShape"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isCharacterizedByAffectedPartTexture"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isDegreeOfAssociationForDisease"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isDegreeOfAssociationForSymptom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isDevelopmentConditionAssociatedToEnvironmentalFactor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isDiseaseDevelopmentConditionFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isEnvironmentalFactorAssociatedToDevelopmentCondition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isObservationMadeBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isPartOfNode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isPropertyOfObservation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isSymptomAssociatedToDisease"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/manifestsAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/observesEnvironmentalFactor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="obo:BFO_0000050"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="obo:BFO_0000051"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="obo:RO_0000052"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="obo:RO_0000053"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="obo:RO_0001025"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="obo:RO_0002350"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="obo:RO_0002351"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="om:hasUnit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="sosa:hasFeatureOfInterest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="sosa:isFeatureOfInterestOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="sosa:isObservedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="sosa:madeObservation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="sosa:observedProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="sosa:observes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="agrontology:hasScientificName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="agrontology:hasSynonym"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/hasDevelopmentConditionMaximumExtremeValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/hasDevelopmentConditionMaximumExtremeValueDuringDay"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/hasDevelopmentConditionMaximumExtremeValueDuringNight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/hasDevelopmentConditionMaximumOptimalValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/hasDevelopmentConditionMaximumOptimalValueDuringDay"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/hasDevelopmentConditionMaximumOptimalValueDuringNight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/hasDevelopmentConditionMinimumExtremeValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/hasDevelopmentConditionMinimumExtremeValueDuringDay"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/hasDevelopmentConditionMinimumExtremeValueDuringNight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/hasDevelopmentConditionMinimumOptimalValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/hasDevelopmentConditionMinimumOptimalValueDuringDay"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/hasDevelopmentConditionMinimumOptimalValueDuringNight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/hasDevelopmentConditionValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/hasEnvironmentalFactorObservationValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/hasNumericalValueType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/hasPercentageOfAssociation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="obo:GEO_000000787"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="obo:OBI_0001620"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="obo:OBI_0001621"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="om:hasNumericalValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="sosa:resultTime"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="/AllDevelopmentStages"/>
+        <ObjectUnionOf>
+            <Class IRI="/EarlyGrowthStage"/>
+            <Class IRI="obo:PO_0001002"/>
+            <Class IRI="obo:PO_0007057"/>
+            <Class IRI="obo:PO_0007134"/>
+            <Class IRI="obo:PO_0007615"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/AllDevelopmentStagesExceptFruitDevelopmentStage"/>
+        <ObjectUnionOf>
+            <Class IRI="/EarlyGrowthStage"/>
+            <Class IRI="obo:PO_0007057"/>
+            <Class IRI="obo:PO_0007134"/>
+            <Class IRI="obo:PO_0007615"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/AllIntensities"/>
+        <ObjectUnionOf>
+            <Class IRI="http://semanticscience.org/resource/SIO_001213"/>
+            <Class IRI="http://semanticscience.org/resource/SIO_001214"/>
+            <Class IRI="http://semanticscience.org/resource/SIO_001215"/>
+            <Class IRI="http://semanticscience.org/resource/SIO_001216"/>
+            <Class IRI="http://semanticscience.org/resource/SIO_001217"/>
+            <Class IRI="http://semanticscience.org/resource/SIO_001218"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/ApicalSuperiorRegion"/>
+        <ObjectIntersectionOf>
+            <Class IRI="obo:BSPO_0000022"/>
+            <Class IRI="obo:BSPO_0000073"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/BasalToCentralRegion"/>
+        <ObjectUnionOf>
+            <Class IRI="obo:BSPO_0000074"/>
+            <Class IRI="obo:BSPO_0000075"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/DampAndWrinkled"/>
+        <ObjectIntersectionOf>
+            <Class IRI="/Damp"/>
+            <Class IRI="obo:PATO_0001810"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/DryAndRough"/>
+        <ObjectIntersectionOf>
+            <Class IRI="obo:PATO_0000700"/>
+            <Class IRI="obo:PATO_0001824"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/FlowerAndFruitDevelopmentStage"/>
+        <ObjectUnionOf>
+            <Class IRI="obo:PO_0001002"/>
+            <Class IRI="obo:PO_0007615"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/SeedGerminationAndEarlyGrowthStage"/>
+        <ObjectUnionOf>
+            <Class IRI="/EarlyGrowthStage"/>
+            <Class IRI="obo:PO_0007057"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/SevereToFatal"/>
+        <ObjectUnionOf>
+            <Class IRI="http://semanticscience.org/resource/SIO_001215"/>
+            <Class IRI="http://semanticscience.org/resource/SIO_001216"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/StrongToFatal"/>
+        <ObjectUnionOf>
+            <Class IRI="http://semanticscience.org/resource/SIO_001215"/>
+            <Class IRI="http://semanticscience.org/resource/SIO_001216"/>
+            <Class IRI="http://semanticscience.org/resource/SIO_001217"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/WeakToModerate"/>
+        <ObjectUnionOf>
+            <Class IRI="http://semanticscience.org/resource/SIO_001213"/>
+            <Class IRI="http://semanticscience.org/resource/SIO_001214"/>
+            <Class IRI="http://semanticscience.org/resource/SIO_001218"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="efo:EFO_0000469"/>
+        <Class IRI="sosa:ObservableProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="efo:EFO_0003765"/>
+        <Class IRI="obo:TO_0000387"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="foaf:Person"/>
+        <Class IRI="dbr:Observer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_001213"/>
+        <Class IRI="http://semanticscience.org/resource/SIO_001212"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_001214"/>
+        <Class IRI="http://semanticscience.org/resource/SIO_001212"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_001215"/>
+        <Class IRI="http://semanticscience.org/resource/SIO_001212"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_001216"/>
+        <Class IRI="http://semanticscience.org/resource/SIO_001212"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_001217"/>
+        <Class IRI="http://semanticscience.org/resource/SIO_001212"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://semanticscience.org/resource/SIO_001218"/>
+        <Class IRI="http://semanticscience.org/resource/SIO_001212"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AirHumidity"/>
+        <Class IRI="obo:PATO_0015009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AirPressure"/>
+        <Class IRI="obo:PATO_0001025"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AirTemperature"/>
+        <Class IRI="obo:PATO_0000146"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AllDevelopmentStages"/>
+        <Class IRI="obo:PO_0009012"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AllDevelopmentStagesExceptFruitDevelopmentStage"/>
+        <Class IRI="obo:PO_0009012"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AllIntensities"/>
+        <Class IRI="http://semanticscience.org/resource/SIO_001212"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ApicalSuperiorRegion"/>
+        <Class IRI="obo:BSPO_0000070"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/BasalToCentralRegion"/>
+        <Class IRI="obo:BSPO_0000070"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/BlueColorBrightness"/>
+        <Class IRI="obo:PATO_0000016"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Chalky"/>
+        <Class IRI="obo:PATO_0000150"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/CropObservation"/>
+        <Class IRI="sosa:Observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/CropObservation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="sosa:observedProperty"/>
+            <Class IRI="obo:TO_0000387"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/CropObservation"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="sosa:observedProperty"/>
+            <Class IRI="obo:TO_0000387"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/CropObservationCollection"/>
+        <Class IRI="oboe:ObservationCollection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/CropObservationCollection"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="obo:RO_0002351"/>
+            <Class IRI="/CropObservation"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/CropObservationCollection"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="sosa:hasFeatureOfInterest"/>
+            <Class IRI="obo:AGRO_00000325"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Damp"/>
+        <Class IRI="obo:PATO_0000150"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/DampAndWrinkled"/>
+        <Class IRI="obo:PATO_0000150"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/DarkRedBrown"/>
+        <Class IRI="obo:PATO_0001287"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/DiseaseDevelopmentCondition"/>
+        <Class IRI="/DevelopmentCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/DryAndRough"/>
+        <Class IRI="obo:PATO_0000150"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/EarlyBlight"/>
+        <Class IRI="obo:PDO_0000004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/EarlyGrowthStage"/>
+        <Class IRI="obo:PO_0009012"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/EnvironmentalFactorObservation"/>
+        <Class IRI="sosa:Observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/EnvironmentalFactorObservation"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="sosa:observedProperty"/>
+            <Class IRI="efo:EFO_0000469"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/EnvironmentalFactorObservation"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="sosa:observedProperty"/>
+            <Class IRI="efo:EFO_0000469"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/EnvironmentalFactorObservationCollection"/>
+        <Class IRI="oboe:ObservationCollection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/EnvironmentalFactorObservationCollection"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="obo:RO_0002351"/>
+            <Class IRI="/EnvironmentalFactorObservation"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/FlowerAndFruitDevelopmentStage"/>
+        <Class IRI="obo:PO_0009012"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/GrayMold"/>
+        <Class IRI="obo:PDO_0000004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/GreenBrown"/>
+        <Class IRI="obo:PATO_0000952"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/GreenColorBrightness"/>
+        <Class IRI="obo:PATO_0000016"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/GreenGrey"/>
+        <Class IRI="obo:PATO_0000950"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/LateBlight"/>
+        <Class IRI="obo:PDO_0000004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/LeafMold"/>
+        <Class IRI="obo:PDO_0000004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/OptimalDevelopmentCondition"/>
+        <Class IRI="/DevelopmentCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/OrangeColorBrightness"/>
+        <Class IRI="obo:PATO_0000016"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Point"/>
+        <Class IRI="dbr:Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PolygonalArea"/>
+        <Class IRI="obo:NCIT_C25244"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PowderyMildew"/>
+        <Class IRI="obo:PDO_0000004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PurpleBrown"/>
+        <Class IRI="obo:PATO_0000952"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/RedColorBrightness"/>
+        <Class IRI="obo:PATO_0000016"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SeedGerminationAndEarlyGrowthStage"/>
+        <Class IRI="obo:PO_0009012"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SevereToFatal"/>
+        <Class IRI="http://semanticscience.org/resource/SIO_001212"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SoilHumidity"/>
+        <Class IRI="obo:PATO_0015009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SoilTemperature"/>
+        <Class IRI="obo:PATO_0000146"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/StrongToFatal"/>
+        <Class IRI="http://semanticscience.org/resource/SIO_001212"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/VioletColorBrightness"/>
+        <Class IRI="obo:PATO_0000016"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/WeakToModerate"/>
+        <Class IRI="http://semanticscience.org/resource/SIO_001212"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Wilted"/>
+        <Class IRI="obo:PATO_0000150"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/YellowColorBrightness"/>
+        <Class IRI="obo:PATO_0000016"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/YellowWhite"/>
+        <Class IRI="obo:PATO_0000323"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:AGRO_00000325"/>
+        <Class IRI="sosa:FeatureOfInterest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:BSPO_0000022"/>
+        <Class IRI="obo:BSPO_0000070"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:BSPO_0000025"/>
+        <Class IRI="obo:BSPO_0000070"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:BSPO_0000070"/>
+        <Class IRI="obo:PATO_0001018"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:BSPO_0000073"/>
+        <Class IRI="obo:BSPO_0000070"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:BSPO_0000074"/>
+        <Class IRI="obo:BSPO_0000070"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:BSPO_0000075"/>
+        <Class IRI="obo:BSPO_0000070"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:NCBITaxon_40559"/>
+        <Class IRI="obo:PDO_0000069"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:NCBITaxon_4081"/>
+        <Class IRI="obo:NCIT_C14258"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:NCBITaxon_4787"/>
+        <Class IRI="obo:PDO_0000069"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:NCBITaxon_5499"/>
+        <Class IRI="obo:PDO_0000069"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:NCBITaxon_5599"/>
+        <Class IRI="obo:PDO_0000069"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:NCBITaxon_62718"/>
+        <Class IRI="obo:PDO_0000069"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:NCIT_C25244"/>
+        <Class IRI="dbr:Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0000014"/>
+        <Class IRI="obo:PATO_0001018"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0000016"/>
+        <Class IRI="efo:EFO_0000469"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0000019"/>
+        <Class IRI="obo:PATO_0001018"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0000052"/>
+        <Class IRI="obo:PATO_0001018"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0000146"/>
+        <Class IRI="efo:EFO_0000469"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0000150"/>
+        <Class IRI="obo:PATO_0001018"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0000317"/>
+        <Class IRI="obo:PATO_0000014"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0000320"/>
+        <Class IRI="obo:PATO_0000014"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0000323"/>
+        <Class IRI="obo:PATO_0000014"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0000324"/>
+        <Class IRI="obo:PATO_0000014"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0000329"/>
+        <Class IRI="obo:PATO_0001533"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0000331"/>
+        <Class IRI="obo:PATO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0000333"/>
+        <Class IRI="obo:PATO_0001533"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0000337"/>
+        <Class IRI="obo:PATO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0000411"/>
+        <Class IRI="obo:PATO_0000947"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0000700"/>
+        <Class IRI="obo:PATO_0000150"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0000701"/>
+        <Class IRI="obo:PATO_0000150"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0000947"/>
+        <Class IRI="obo:PATO_0000052"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0000950"/>
+        <Class IRI="obo:PATO_0000014"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0000952"/>
+        <Class IRI="obo:PATO_0000014"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0001025"/>
+        <Class IRI="efo:EFO_0000469"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0001245"/>
+        <Class IRI="obo:PATO_0000952"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0001250"/>
+        <Class IRI="obo:PATO_0000320"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0001251"/>
+        <Class IRI="obo:PATO_0000950"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0001252"/>
+        <Class IRI="obo:PATO_0000950"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0001287"/>
+        <Class IRI="obo:PATO_0000952"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0001533"/>
+        <Class IRI="obo:PATO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0001606"/>
+        <Class IRI="obo:PATO_0000150"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0001810"/>
+        <Class IRI="obo:PATO_0000150"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0001824"/>
+        <Class IRI="obo:PATO_0000150"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0001928"/>
+        <Class IRI="obo:PATO_0000150"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0001941"/>
+        <Class IRI="obo:PATO_0000320"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0001942"/>
+        <Class IRI="obo:PATO_0000320"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0001946"/>
+        <Class IRI="obo:PATO_0001533"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0002224"/>
+        <Class IRI="obo:PATO_0000052"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0002274"/>
+        <Class IRI="obo:PATO_0001533"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0002411"/>
+        <Class IRI="obo:PATO_0000952"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0002539"/>
+        <Class IRI="obo:PATO_0000947"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0005020"/>
+        <Class IRI="obo:PATO_0000052"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0015009"/>
+        <Class IRI="efo:EFO_0000469"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PATO_0040014"/>
+        <Class IRI="obo:PATO_0000052"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PDO_0000004"/>
+        <Class IRI="obo:PDO_0000001"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PDO_0000026"/>
+        <Class IRI="obo:PDO_0000067"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PDO_0000067"/>
+        <Class IRI="obo:PDO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PDO_0000068"/>
+        <Class IRI="obo:PDO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PDO_0000069"/>
+        <Class IRI="obo:PDO_0000026"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PO_0000003"/>
+        <Class IRI="obo:NCIT_C79611"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PO_0001002"/>
+        <Class IRI="obo:PO_0009012"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PO_0007057"/>
+        <Class IRI="obo:PO_0009012"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PO_0007134"/>
+        <Class IRI="obo:PO_0009012"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PO_0007615"/>
+        <Class IRI="obo:PO_0009012"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PO_0009001"/>
+        <Class IRI="obo:PO_0009008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PO_0009005"/>
+        <Class IRI="obo:PO_0009008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PO_0009008"/>
+        <Class IRI="obo:NCIT_C79611"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PO_0009046"/>
+        <Class IRI="obo:PO_0009008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PO_0009047"/>
+        <Class IRI="obo:PO_0009008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PO_0025034"/>
+        <Class IRI="obo:PO_0009008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PO_0025501"/>
+        <Class IRI="obo:PO_0001002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:PO_0025502"/>
+        <Class IRI="obo:PO_0001002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="obo:TO_0000387"/>
+        <Class IRI="sosa:ObservableProperty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="sosa:Sensor"/>
+        <Class IRI="dbr:Observer"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="dbr:Location"/>
+        <Class IRI="dbr:Observer"/>
+        <Class IRI="http://semanticscience.org/resource/SIO_001212"/>
+        <Class IRI="/DegreeOfAssociation"/>
+        <Class IRI="/DevelopmentCondition"/>
+        <Class IRI="obo:INO_0000013"/>
+        <Class IRI="obo:NCIT_C14258"/>
+        <Class IRI="obo:NCIT_C79611"/>
+        <Class IRI="obo:PATO_0001018"/>
+        <Class IRI="obo:PDO_0000001"/>
+        <Class IRI="obo:PDO_0000015"/>
+        <Class IRI="obo:PO_0009012"/>
+        <Class IRI="oboe:ObservationCollection"/>
+        <Class IRI="om:Unit"/>
+        <Class IRI="sosa:FeatureOfInterest"/>
+        <Class IRI="sosa:ObservableProperty"/>
+        <Class IRI="sosa:Observation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="efo:EFO_0000469"/>
+        <Class IRI="obo:TO_0000387"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="foaf:Person"/>
+        <Class IRI="sosa:Sensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://semanticscience.org/resource/SIO_001213"/>
+        <Class IRI="http://semanticscience.org/resource/SIO_001214"/>
+        <Class IRI="http://semanticscience.org/resource/SIO_001215"/>
+        <Class IRI="http://semanticscience.org/resource/SIO_001216"/>
+        <Class IRI="http://semanticscience.org/resource/SIO_001217"/>
+        <Class IRI="http://semanticscience.org/resource/SIO_001218"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/AirHumidity"/>
+        <Class IRI="/SoilHumidity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/AirTemperature"/>
+        <Class IRI="/SoilTemperature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/BlueColorBrightness"/>
+        <Class IRI="/GreenColorBrightness"/>
+        <Class IRI="/OrangeColorBrightness"/>
+        <Class IRI="/RedColorBrightness"/>
+        <Class IRI="/VioletColorBrightness"/>
+        <Class IRI="/YellowColorBrightness"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/CropObservation"/>
+        <Class IRI="/EnvironmentalFactorObservation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/CropObservationCollection"/>
+        <Class IRI="/EnvironmentalFactorObservationCollection"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/EarlyBlight"/>
+        <Class IRI="/GrayMold"/>
+        <Class IRI="/LateBlight"/>
+        <Class IRI="/LeafMold"/>
+        <Class IRI="/PowderyMildew"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/EarlyGrowthStage"/>
+        <Class IRI="obo:PO_0001002"/>
+        <Class IRI="obo:PO_0007057"/>
+        <Class IRI="obo:PO_0007134"/>
+        <Class IRI="obo:PO_0007615"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/GreenBrown"/>
+        <Class IRI="/PurpleBrown"/>
+        <Class IRI="obo:PATO_0001245"/>
+        <Class IRI="obo:PATO_0001287"/>
+        <Class IRI="obo:PATO_0002411"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/GreenGrey"/>
+        <Class IRI="obo:PATO_0001251"/>
+        <Class IRI="obo:PATO_0001252"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Point"/>
+        <Class IRI="obo:NCIT_C25244"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="obo:BSPO_0000022"/>
+        <Class IRI="obo:BSPO_0000025"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="obo:BSPO_0000073"/>
+        <Class IRI="obo:BSPO_0000074"/>
+        <Class IRI="obo:BSPO_0000075"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="obo:NCBITaxon_40559"/>
+        <Class IRI="obo:NCBITaxon_4787"/>
+        <Class IRI="obo:NCBITaxon_5499"/>
+        <Class IRI="obo:NCBITaxon_5599"/>
+        <Class IRI="obo:NCBITaxon_62718"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="obo:PATO_0000014"/>
+        <Class IRI="obo:PATO_0000019"/>
+        <Class IRI="obo:PATO_0000052"/>
+        <Class IRI="obo:PATO_0000150"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="obo:PATO_0000016"/>
+        <Class IRI="obo:PATO_0000146"/>
+        <Class IRI="obo:PATO_0015009"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="obo:PATO_0000317"/>
+        <Class IRI="obo:PATO_0000320"/>
+        <Class IRI="obo:PATO_0000323"/>
+        <Class IRI="obo:PATO_0000324"/>
+        <Class IRI="obo:PATO_0000950"/>
+        <Class IRI="obo:PATO_0000952"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="obo:PATO_0000329"/>
+        <Class IRI="obo:PATO_0000333"/>
+        <Class IRI="obo:PATO_0001946"/>
+        <Class IRI="obo:PATO_0002274"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="obo:PATO_0000331"/>
+        <Class IRI="obo:PATO_0000337"/>
+        <Class IRI="obo:PATO_0001533"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="obo:PATO_0000411"/>
+        <Class IRI="obo:PATO_0002539"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="obo:PATO_0000947"/>
+        <Class IRI="obo:PATO_0005020"/>
+        <Class IRI="obo:PATO_0040014"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="obo:PATO_0001250"/>
+        <Class IRI="obo:PATO_0001941"/>
+        <Class IRI="obo:PATO_0001942"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="obo:PDO_0000067"/>
+        <Class IRI="obo:PDO_0000068"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="obo:PO_0000003"/>
+        <Class IRI="obo:PO_0009008"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="obo:PO_0009001"/>
+        <Class IRI="obo:PO_0009005"/>
+        <Class IRI="obo:PO_0009046"/>
+        <Class IRI="obo:PO_0009047"/>
+        <Class IRI="obo:PO_0025034"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="obo:PO_0025501"/>
+        <Class IRI="obo:PO_0025502"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="dbo:locatedInArea"/>
+        <ObjectProperty IRI="obo:RO_0001025"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/environmentalFactorIsObservedBy"/>
+        <ObjectProperty IRI="sosa:isObservedBy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasBorderPoint"/>
+        <ObjectProperty IRI="obo:BFO_0000051"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasCropLocationArea"/>
+        <ObjectProperty IRI="dbo:locatedInArea"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasLocationPoint"/>
+        <ObjectProperty IRI="obo:RO_0001025"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasNodeLocationPoint"/>
+        <ObjectProperty IRI="/hasLocationPoint"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasSensor"/>
+        <ObjectProperty IRI="obo:BFO_0000051"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isCharacterizedByAffectedPartAnatomicalRegion"/>
+        <ObjectProperty IRI="obo:RO_0000053"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isCharacterizedByAffectedPartColor"/>
+        <ObjectProperty IRI="obo:RO_0000053"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isCharacterizedByAffectedPartColorPattern"/>
+        <ObjectProperty IRI="obo:RO_0000053"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isCharacterizedByAffectedPartColorPatternBorderColor"/>
+        <ObjectProperty IRI="obo:RO_0000053"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isCharacterizedByAffectedPartShape"/>
+        <ObjectProperty IRI="obo:RO_0000053"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isCharacterizedByAffectedPartTexture"/>
+        <ObjectProperty IRI="obo:RO_0000053"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isPartOfNode"/>
+        <ObjectProperty IRI="obo:BFO_0000050"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/observesEnvironmentalFactor"/>
+        <ObjectProperty IRI="sosa:observes"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/affectsPlant"/>
+        <ObjectProperty IRI="/hasDevelopmentCondition"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/environmentalFactorIsObservedBy"/>
+        <ObjectProperty IRI="/observesEnvironmentalFactor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasCausalAgent"/>
+        <ObjectProperty IRI="/isCausalAgentFor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasDegreeOfAssociationToDisease"/>
+        <ObjectProperty IRI="/isDegreeOfAssociationForSymptom"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasDegreeOfAssociationToSymptom"/>
+        <ObjectProperty IRI="/isDegreeOfAssociationForDisease"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasDiseaseDevelopmentCondition"/>
+        <ObjectProperty IRI="/isDiseaseDevelopmentConditionFor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasSensor"/>
+        <ObjectProperty IRI="/isPartOfNode"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasSymptom"/>
+        <ObjectProperty IRI="/isSymptomAssociatedToDisease"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/isAffectedBy"/>
+        <ObjectProperty IRI="/manifestsAt"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/isDevelopmentConditionAssociatedToEnvironmentalFactor"/>
+        <ObjectProperty IRI="/isEnvironmentalFactorAssociatedToDevelopmentCondition"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/isObservationMadeBy"/>
+        <ObjectProperty IRI="sosa:madeObservation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/isPropertyOfObservation"/>
+        <ObjectProperty IRI="sosa:observedProperty"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="obo:BFO_0000050"/>
+        <ObjectProperty IRI="obo:BFO_0000051"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="obo:RO_0000052"/>
+        <ObjectProperty IRI="obo:RO_0000053"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="obo:RO_0002350"/>
+        <ObjectProperty IRI="obo:RO_0002351"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="sosa:hasFeatureOfInterest"/>
+        <ObjectProperty IRI="sosa:isFeatureOfInterestOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="sosa:isObservedBy"/>
+        <ObjectProperty IRI="sosa:observes"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/affectsPlant"/>
+        <Class IRI="/DevelopmentCondition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/appearsDuringDevelopmentStage"/>
+        <Class IRI="/DevelopmentCondition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasBorderPoint"/>
+        <Class IRI="/PolygonalArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasCausalAgent"/>
+        <Class IRI="obo:PDO_0000001"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasCropLocationArea"/>
+        <Class IRI="obo:AGRO_00000325"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasDegreeOfAssociationToDisease"/>
+        <Class IRI="efo:EFO_0003765"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasDegreeOfAssociationToSymptom"/>
+        <Class IRI="obo:PDO_0000001"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasDevelopmentCondition"/>
+        <Class IRI="obo:NCIT_C14258"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasDiseaseDevelopmentCondition"/>
+        <Class IRI="obo:PDO_0000001"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasIntensity"/>
+        <Class IRI="efo:EFO_0003765"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasNodeLocationPoint"/>
+        <Class IRI="obo:INO_0000013"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasPlantDevelopmentStage"/>
+        <Class IRI="obo:AGRO_00000325"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasPlantType"/>
+        <Class IRI="obo:AGRO_00000325"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasSensor"/>
+        <Class IRI="obo:INO_0000013"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasSymptom"/>
+        <Class IRI="obo:PDO_0000001"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isAffectedBy"/>
+        <Class IRI="obo:NCIT_C79611"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isCharacterizedByAffectedPartAnatomicalRegion"/>
+        <Class IRI="efo:EFO_0003765"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isCharacterizedByAffectedPartColor"/>
+        <Class IRI="efo:EFO_0003765"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isCharacterizedByAffectedPartColorPattern"/>
+        <Class IRI="efo:EFO_0003765"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isCharacterizedByAffectedPartShape"/>
+        <Class IRI="efo:EFO_0003765"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isCharacterizedByAffectedPartTexture"/>
+        <Class IRI="efo:EFO_0003765"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isDevelopmentConditionAssociatedToEnvironmentalFactor"/>
+        <Class IRI="/DevelopmentCondition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isEnvironmentalFactorAssociatedToDevelopmentCondition"/>
+        <Class IRI="efo:EFO_0000469"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/manifestsAt"/>
+        <Class IRI="efo:EFO_0003765"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/observesEnvironmentalFactor"/>
+        <Class IRI="sosa:Sensor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="obo:RO_0000053"/>
+        <Class IRI="efo:EFO_0003765"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="obo:RO_0002351"/>
+        <Class IRI="oboe:ObservationCollection"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="om:hasUnit"/>
+        <ObjectUnionOf>
+            <Class IRI="/DevelopmentCondition"/>
+            <Class IRI="/EnvironmentalFactorObservationCollection"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="sosa:hasFeatureOfInterest"/>
+        <Class IRI="oboe:ObservationCollection"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="sosa:madeObservation"/>
+        <Class IRI="dbr:Observer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="sosa:observedProperty"/>
+        <Class IRI="sosa:Observation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="sosa:observes"/>
+        <Class IRI="dbr:Observer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="dbo:locatedInArea"/>
+        <Class IRI="obo:NCIT_C25244"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/affectsPlant"/>
+        <Class IRI="obo:NCIT_C14258"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/appearsDuringDevelopmentStage"/>
+        <Class IRI="obo:PO_0009012"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasBorderPoint"/>
+        <Class IRI="/Point"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasCausalAgent"/>
+        <Class IRI="obo:PDO_0000015"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasCropLocationArea"/>
+        <Class IRI="obo:NCIT_C25244"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasDegreeOfAssociationToDisease"/>
+        <Class IRI="/DegreeOfAssociation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasDegreeOfAssociationToSymptom"/>
+        <Class IRI="/DegreeOfAssociation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasDevelopmentCondition"/>
+        <Class IRI="/DevelopmentCondition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasIntensity"/>
+        <Class IRI="http://semanticscience.org/resource/SIO_001212"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasLocationPoint"/>
+        <Class IRI="/Point"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasNodeLocationPoint"/>
+        <Class IRI="/Point"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasPlantDevelopmentStage"/>
+        <Class IRI="obo:PO_0009012"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasPlantType"/>
+        <Class IRI="obo:NCIT_C14258"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasSensor"/>
+        <Class IRI="sosa:Sensor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasSymptom"/>
+        <Class IRI="efo:EFO_0003765"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/isAffectedBy"/>
+        <Class IRI="efo:EFO_0003765"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/isCharacterizedByAffectedPartAnatomicalRegion"/>
+        <Class IRI="obo:BSPO_0000070"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/isCharacterizedByAffectedPartColor"/>
+        <Class IRI="obo:PATO_0000014"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/isCharacterizedByAffectedPartColorPattern"/>
+        <Class IRI="obo:PATO_0000019"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/isCharacterizedByAffectedPartShape"/>
+        <Class IRI="obo:PATO_0000052"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/isCharacterizedByAffectedPartTexture"/>
+        <Class IRI="obo:PATO_0000150"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/isDevelopmentConditionAssociatedToEnvironmentalFactor"/>
+        <Class IRI="efo:EFO_0000469"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/isDiseaseDevelopmentConditionFor"/>
+        <Class IRI="obo:PDO_0000001"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/isEnvironmentalFactorAssociatedToDevelopmentCondition"/>
+        <Class IRI="/DevelopmentCondition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/manifestsAt"/>
+        <Class IRI="obo:NCIT_C79611"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/observesEnvironmentalFactor"/>
+        <Class IRI="efo:EFO_0000469"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="obo:RO_0000053"/>
+        <Class IRI="obo:PATO_0001018"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="obo:RO_0001025"/>
+        <Class IRI="dbr:Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="obo:RO_0002351"/>
+        <Class IRI="sosa:Observation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="om:hasUnit"/>
+        <Class IRI="om:Unit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="sosa:hasFeatureOfInterest"/>
+        <Class IRI="sosa:FeatureOfInterest"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="sosa:madeObservation"/>
+        <Class IRI="sosa:Observation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="sosa:observedProperty"/>
+        <Class IRI="sosa:ObservableProperty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="sosa:observes"/>
+        <Class IRI="sosa:ObservableProperty"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/hasDevelopmentConditionMaximumExtremeValue"/>
+        <DataProperty IRI="/hasDevelopmentConditionValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/hasDevelopmentConditionMaximumExtremeValueDuringDay"/>
+        <DataProperty IRI="/hasDevelopmentConditionMaximumExtremeValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/hasDevelopmentConditionMaximumExtremeValueDuringNight"/>
+        <DataProperty IRI="/hasDevelopmentConditionMaximumExtremeValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/hasDevelopmentConditionMaximumOptimalValue"/>
+        <DataProperty IRI="/hasDevelopmentConditionValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/hasDevelopmentConditionMaximumOptimalValueDuringDay"/>
+        <DataProperty IRI="/hasDevelopmentConditionMaximumOptimalValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/hasDevelopmentConditionMaximumOptimalValueDuringNight"/>
+        <DataProperty IRI="/hasDevelopmentConditionMaximumOptimalValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/hasDevelopmentConditionMinimumExtremeValue"/>
+        <DataProperty IRI="/hasDevelopmentConditionValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/hasDevelopmentConditionMinimumExtremeValueDuringDay"/>
+        <DataProperty IRI="/hasDevelopmentConditionMinimumExtremeValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/hasDevelopmentConditionMinimumExtremeValueDuringNight"/>
+        <DataProperty IRI="/hasDevelopmentConditionMinimumExtremeValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/hasDevelopmentConditionMinimumOptimalValue"/>
+        <DataProperty IRI="/hasDevelopmentConditionValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/hasDevelopmentConditionMinimumOptimalValueDuringDay"/>
+        <DataProperty IRI="/hasDevelopmentConditionMinimumOptimalValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/hasDevelopmentConditionMinimumOptimalValueDuringNight"/>
+        <DataProperty IRI="/hasDevelopmentConditionMinimumOptimalValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/hasDevelopmentConditionValue"/>
+        <DataProperty IRI="om:hasNumericalValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/hasEnvironmentalFactorObservationValue"/>
+        <DataProperty IRI="om:hasNumericalValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/hasNumericalValueType"/>
+        <DataProperty IRI="om:hasNumericalValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/hasPercentageOfAssociation"/>
+        <DataProperty IRI="om:hasNumericalValue"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="obo:OBI_0001620"/>
+        <DataProperty IRI="obo:GEO_000000787"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="obo:OBI_0001621"/>
+        <DataProperty IRI="obo:GEO_000000787"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="agrontology:hasScientificName"/>
+        <Class IRI="obo:NCIT_C14258"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="agrontology:hasSynonym"/>
+        <Class IRI="obo:NCIT_C14258"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/hasDevelopmentConditionValue"/>
+        <Class IRI="/DevelopmentCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/hasEnvironmentalFactorObservationValue"/>
+        <Class IRI="/EnvironmentalFactorObservation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/hasNumericalValueType"/>
+        <ObjectUnionOf>
+            <Class IRI="/DevelopmentCondition"/>
+            <Class IRI="/EnvironmentalFactorObservationCollection"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/hasPercentageOfAssociation"/>
+        <Class IRI="/DegreeOfAssociation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="obo:GEO_000000787"/>
+        <Class IRI="/Point"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="sosa:resultTime"/>
+        <Class IRI="sosa:Observation"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="agrontology:hasScientificName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="agrontology:hasSynonym"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/hasDevelopmentConditionValue"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/hasEnvironmentalFactorObservationValue"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/hasPercentageOfAssociation"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="obo:GEO_000000787"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="sosa:resultTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>agrontology:hasScientificName</IRI>
+        <Literal>hasScientificName</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>agrontology:hasSynonym</IRI>
+        <Literal>hasSynonym</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>dbo:locatedInArea</IRI>
+        <Literal>hasLocationArea</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>dbr:Location</IRI>
+        <Literal>Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>dbr:Observer</IRI>
+        <Literal>Observer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>efo:EFO_0000469</IRI>
+        <Literal>EnvironmentalFactor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>efo:EFO_0003765</IRI>
+        <Literal>Symptom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>foaf:Person</IRI>
+        <Literal>Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://semanticscience.org/resource/SIO_001212</IRI>
+        <Literal>Intensity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://semanticscience.org/resource/SIO_001213</IRI>
+        <Literal>Mild</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://semanticscience.org/resource/SIO_001214</IRI>
+        <Literal>Moderate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://semanticscience.org/resource/SIO_001215</IRI>
+        <Literal>Severe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://semanticscience.org/resource/SIO_001216</IRI>
+        <Literal>Fatal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://semanticscience.org/resource/SIO_001217</IRI>
+        <Literal>Strong</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://semanticscience.org/resource/SIO_001218</IRI>
+        <Literal>Weak</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/EarlyBlight</IRI>
+        <Literal>EarlyBlight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/GrayMold</IRI>
+        <Literal>GrayMold</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/LateBlight</IRI>
+        <Literal>LateBlight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/LeafMold</IRI>
+        <Literal>LeafMold</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/PowderyMildew</IRI>
+        <Literal>PowderyMildew</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:AGRO_00000325</IRI>
+        <Literal>Crop</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:BFO_0000050</IRI>
+        <Literal>isPartOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:BFO_0000051</IRI>
+        <Literal>hasPart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:BSPO_0000022</IRI>
+        <Literal>SuperiorSide</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:BSPO_0000025</IRI>
+        <Literal>InferiorSide</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:BSPO_0000070</IRI>
+        <Literal>AnatomicalRegion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:BSPO_0000073</IRI>
+        <Literal>ApicalRegion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:BSPO_0000074</IRI>
+        <Literal>BasalRegion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:BSPO_0000075</IRI>
+        <Literal>CentralRegion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:GEO_000000787</IRI>
+        <Literal>hasGeodeticCoordinate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:INO_0000013</IRI>
+        <Literal>Node</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:NCBITaxon_40559</IRI>
+        <Literal>BotrytisCinerea</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:NCBITaxon_4081</IRI>
+        <Literal>Tomato</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:NCBITaxon_4787</IRI>
+        <Literal>PhytophthoraInfestans</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:NCBITaxon_5499</IRI>
+        <Literal>FulviaFulva</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:NCBITaxon_5599</IRI>
+        <Literal>AlternariaAlternata</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:NCBITaxon_62718</IRI>
+        <Literal>LeveillulaTaurica</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:NCIT_C14258</IRI>
+        <Literal>Plant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:NCIT_C25244</IRI>
+        <Literal>Area</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:NCIT_C79611</IRI>
+        <Literal>PlantPart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:OBI_0001620</IRI>
+        <Literal>hasLatitudeCoordinate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:OBI_0001621</IRI>
+        <Literal>hasLongitudeCoordinate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0000014</IRI>
+        <Literal>Color</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0000016</IRI>
+        <Literal>ColorBrightness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0000019</IRI>
+        <Literal>ColorPattern</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0000052</IRI>
+        <Literal>Shape</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0000146</IRI>
+        <Literal>Temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0000150</IRI>
+        <Literal>Texture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0000317</IRI>
+        <Literal>Black</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0000320</IRI>
+        <Literal>Green</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0000323</IRI>
+        <Literal>White</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0000324</IRI>
+        <Literal>Yellow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0000329</IRI>
+        <Literal>Blotchy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0000331</IRI>
+        <Literal>Discolored</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0000333</IRI>
+        <Literal>Spotted</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0000337</IRI>
+        <Literal>Colorless</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0000411</IRI>
+        <Literal>Circular</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0000700</IRI>
+        <Literal>Rough</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0000701</IRI>
+        <Literal>Smooth</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0000947</IRI>
+        <Literal>Elliptic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0000950</IRI>
+        <Literal>Grey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0000952</IRI>
+        <Literal>Brown</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0001018</IRI>
+        <Literal>PhysicalQuality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0001025</IRI>
+        <Literal>Pressure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0001245</IRI>
+        <Literal>DarkBrown</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0001250</IRI>
+        <Literal>LightGreen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0001251</IRI>
+        <Literal>DarkGrey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0001252</IRI>
+        <Literal>LightGrey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0001287</IRI>
+        <Literal>RedBrown</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0001533</IRI>
+        <Literal>MultiColored</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0001606</IRI>
+        <Literal>Greasy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0001810</IRI>
+        <Literal>Wrinkled</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0001824</IRI>
+        <Literal>Dry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0001928</IRI>
+        <Literal>Blistered</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0001941</IRI>
+        <Literal>YellowGreen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0001942</IRI>
+        <Literal>BrownGreen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0001946</IRI>
+        <Literal>Banded</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0002224</IRI>
+        <Literal>VShape</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0002274</IRI>
+        <Literal>Mottled</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0002411</IRI>
+        <Literal>YellowBrown</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0002539</IRI>
+        <Literal>RingShape</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0005020</IRI>
+        <Literal>Irregular</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0015009</IRI>
+        <Literal>Humidity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PATO_0040014</IRI>
+        <Literal>Band</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PDO_0000001</IRI>
+        <Literal>PlantDisease</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PDO_0000004</IRI>
+        <Literal>PlantFungalDisease</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PDO_0000015</IRI>
+        <Literal>CausalAgent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PDO_0000026</IRI>
+        <Literal>FungalBioticCausalAgent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PDO_0000067</IRI>
+        <Literal>BioticCausalAgent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PDO_0000068</IRI>
+        <Literal>AbioticCausalAgent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PDO_0000069</IRI>
+        <Literal>FungalSpecies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PO_0000003</IRI>
+        <Literal>WholePlant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PO_0001002</IRI>
+        <Literal>FruitDevelopmentStage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PO_0007057</IRI>
+        <Literal>SeedGerminationStage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PO_0007134</IRI>
+        <Literal>VegetativeStage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PO_0007615</IRI>
+        <Literal>FlowerDevelopmentStage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PO_0009001</IRI>
+        <Literal>Fruit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PO_0009005</IRI>
+        <Literal>Root</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PO_0009008</IRI>
+        <Literal>PlantOrgan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PO_0009012</IRI>
+        <Literal>PlantDevelopmentStage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PO_0009046</IRI>
+        <Literal>Flower</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PO_0009047</IRI>
+        <Literal>Stem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PO_0025034</IRI>
+        <Literal>Leaf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PO_0025501</IRI>
+        <Literal>FruitFormationStage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:PO_0025502</IRI>
+        <Literal>FruitRipeningStage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:RO_0000052</IRI>
+        <Literal>characteristicOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:RO_0000053</IRI>
+        <Literal>isCharacterizedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:RO_0001025</IRI>
+        <Literal>hasLocation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:RO_0002350</IRI>
+        <Literal>memberOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:RO_0002351</IRI>
+        <Literal>hasMember</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>obo:TO_0000387</IRI>
+        <Literal>PlantTrait</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>oboe:ObservationCollection</IRI>
+        <Literal>ObservationCollection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>om:Unit</IRI>
+        <Literal>Unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>om:hasNumericalValue</IRI>
+        <Literal>hasNumericalValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>om:hasUnit</IRI>
+        <Literal>hasUnit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>sosa:FeatureOfInterest</IRI>
+        <Literal>FeatureOfInterest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>sosa:ObservableProperty</IRI>
+        <Literal>ObservableProperty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>sosa:Observation</IRI>
+        <Literal>Observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>sosa:Sensor</IRI>
+        <Literal>Sensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>sosa:hasFeatureOfInterest</IRI>
+        <Literal>hasFeatureOfInterest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>sosa:isFeatureOfInterestOf</IRI>
+        <Literal>isFeatureOfInterestOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>sosa:isObservedBy</IRI>
+        <Literal>isObservedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>sosa:madeObservation</IRI>
+        <Literal>makesObservation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>sosa:observedProperty</IRI>
+        <Literal>hasObservableProperty</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>sosa:observes</IRI>
+        <Literal>observes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>sosa:resultTime</IRI>
+        <Literal>hasSamplingTime</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
