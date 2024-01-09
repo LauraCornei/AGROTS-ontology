@@ -23,6 +23,22 @@
     <Prefix name="sosa" IRI="http://www.w3.org/ns/sosa/"/>
     <Prefix name="time" IRI="https://www.w3.org/TR/owl-time/"/>
     <Prefix name="agrontology" IRI="http://aims.fao.org/aos/agrontology#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://schema.org/author"/>
+        <Literal xml:lang="en">Cornei Doru</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://schema.org/author"/>
+        <Literal xml:lang="en">Cornei Laura</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://schema.org/author"/>
+        <Literal xml:lang="en">Fosalau Cristian</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">An ontology useful for representing agricultural temporal and spatial data, as well as related information, valuable for evaluating and forecasting crop health and disease risk.</Literal>
+    </Annotation>
     <Declaration>
         <Class IRI="dbr:Location"/>
     </Declaration>
@@ -682,6 +698,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="sosa:resultTime"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://schema.org/author"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="/AllDevelopmentStages"/>
