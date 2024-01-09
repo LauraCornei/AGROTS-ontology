@@ -1,0 +1,1610 @@
+@prefix : <http://www.semanticweb.org/agrots> .
+@prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix dbo: <https://dbpedia.org/ontology/> .
+@prefix efo: <http://www.ebi.ac.uk/efo> .
+@prefix obo: <http://purl.obolibrary.org/obo> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bspo: <http://purl.obolibrary.org/obo/bspo.owl> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix oboe: <http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix time: <https://www.w3.org/TR/owl-time/> .
+@prefix agrontology: <http://aims.fao.org/aos/agrontology#> .
+@base <http://www.semanticweb.org/agrots> .
+
+<http://www.semanticweb.org/agrots> rdf:type owl:Ontology ;
+                                     owl:versionIRI <http://www.semanticweb.org/agrots/1.0.0> ;
+                                     <http://schema.org/author> "Cornei Doru"@en ,
+                                                                "Cornei Laura"@en ,
+                                                                "Fosalau Cristian"@en ;
+                                     rdfs:comment "An ontology useful for representing agricultural temporal and spatial data, as well as related information, valuable for evaluating and forecasting crop health and disease risk."@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://schema.org/author
+<http://schema.org/author> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  dbo:locatedInArea
+<dbo:locatedInArea> rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf <obo:RO_0001025> ;
+                    rdfs:range <obo:NCIT_C25244> ;
+                    rdfs:label "hasLocationArea" .
+
+
+###  http://www.semanticweb.org/agrots/affectsPlant
+<http://www.semanticweb.org/agrots/affectsPlant> rdf:type owl:ObjectProperty ;
+                                                 owl:inverseOf <http://www.semanticweb.org/agrots/hasDevelopmentCondition> ;
+                                                 rdfs:domain <http://www.semanticweb.org/agrots/DevelopmentCondition> ;
+                                                 rdfs:range <obo:NCIT_C14258> .
+
+
+###  http://www.semanticweb.org/agrots/appearsDuringDevelopmentStage
+<http://www.semanticweb.org/agrots/appearsDuringDevelopmentStage> rdf:type owl:ObjectProperty ;
+                                                                  rdfs:domain <http://www.semanticweb.org/agrots/DevelopmentCondition> ;
+                                                                  rdfs:range <obo:PO_0009012> .
+
+
+###  http://www.semanticweb.org/agrots/environmentalFactorIsObservedBy
+<http://www.semanticweb.org/agrots/environmentalFactorIsObservedBy> rdf:type owl:ObjectProperty ;
+                                                                    rdfs:subPropertyOf <sosa:isObservedBy> ;
+                                                                    owl:inverseOf <http://www.semanticweb.org/agrots/observesEnvironmentalFactor> .
+
+
+###  http://www.semanticweb.org/agrots/hasBorderPoint
+<http://www.semanticweb.org/agrots/hasBorderPoint> rdf:type owl:ObjectProperty ;
+                                                   rdfs:subPropertyOf <obo:BFO_0000051> ;
+                                                   rdfs:domain <http://www.semanticweb.org/agrots/PolygonalArea> ;
+                                                   rdfs:range <http://www.semanticweb.org/agrots/Point> .
+
+
+###  http://www.semanticweb.org/agrots/hasCausalAgent
+<http://www.semanticweb.org/agrots/hasCausalAgent> rdf:type owl:ObjectProperty ;
+                                                   owl:inverseOf <http://www.semanticweb.org/agrots/isCausalAgentFor> ;
+                                                   rdfs:domain <obo:PDO_0000001> ;
+                                                   rdfs:range <obo:PDO_0000015> .
+
+
+###  http://www.semanticweb.org/agrots/hasCropLocationArea
+<http://www.semanticweb.org/agrots/hasCropLocationArea> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf <dbo:locatedInArea> ;
+                                                        rdfs:domain <obo:AGRO_00000325> ;
+                                                        rdfs:range <obo:NCIT_C25244> .
+
+
+###  http://www.semanticweb.org/agrots/hasDegreeOfAssociationToDisease
+<http://www.semanticweb.org/agrots/hasDegreeOfAssociationToDisease> rdf:type owl:ObjectProperty ;
+                                                                    owl:inverseOf <http://www.semanticweb.org/agrots/isDegreeOfAssociationForSymptom> ;
+                                                                    rdfs:domain <efo:EFO_0003765> ;
+                                                                    rdfs:range <http://www.semanticweb.org/agrots/DegreeOfAssociation> .
+
+
+###  http://www.semanticweb.org/agrots/hasDegreeOfAssociationToSymptom
+<http://www.semanticweb.org/agrots/hasDegreeOfAssociationToSymptom> rdf:type owl:ObjectProperty ;
+                                                                    owl:inverseOf <http://www.semanticweb.org/agrots/isDegreeOfAssociationForDisease> ;
+                                                                    rdfs:domain <obo:PDO_0000001> ;
+                                                                    rdfs:range <http://www.semanticweb.org/agrots/DegreeOfAssociation> .
+
+
+###  http://www.semanticweb.org/agrots/hasDevelopmentCondition
+<http://www.semanticweb.org/agrots/hasDevelopmentCondition> rdf:type owl:ObjectProperty ;
+                                                            rdfs:domain <obo:NCIT_C14258> ;
+                                                            rdfs:range <http://www.semanticweb.org/agrots/DevelopmentCondition> .
+
+
+###  http://www.semanticweb.org/agrots/hasDiseaseDevelopmentCondition
+<http://www.semanticweb.org/agrots/hasDiseaseDevelopmentCondition> rdf:type owl:ObjectProperty ;
+                                                                   owl:inverseOf <http://www.semanticweb.org/agrots/isDiseaseDevelopmentConditionFor> ;
+                                                                   rdfs:domain <obo:PDO_0000001> .
+
+
+###  http://www.semanticweb.org/agrots/hasIntensity
+<http://www.semanticweb.org/agrots/hasIntensity> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <efo:EFO_0003765> ;
+                                                 rdfs:range <http://semanticscience.org/resource/SIO_001212> .
+
+
+###  http://www.semanticweb.org/agrots/hasLocationPoint
+<http://www.semanticweb.org/agrots/hasLocationPoint> rdf:type owl:ObjectProperty ;
+                                                     rdfs:subPropertyOf <obo:RO_0001025> ;
+                                                     rdfs:range <http://www.semanticweb.org/agrots/Point> .
+
+
+###  http://www.semanticweb.org/agrots/hasNodeLocationPoint
+<http://www.semanticweb.org/agrots/hasNodeLocationPoint> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf <http://www.semanticweb.org/agrots/hasLocationPoint> ;
+                                                         rdfs:domain <obo:INO_0000013> ;
+                                                         rdfs:range <http://www.semanticweb.org/agrots/Point> .
+
+
+###  http://www.semanticweb.org/agrots/hasPlantDevelopmentStage
+<http://www.semanticweb.org/agrots/hasPlantDevelopmentStage> rdf:type owl:ObjectProperty ;
+                                                             rdfs:domain <obo:AGRO_00000325> ;
+                                                             rdfs:range <obo:PO_0009012> .
+
+
+###  http://www.semanticweb.org/agrots/hasPlantType
+<http://www.semanticweb.org/agrots/hasPlantType> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain <obo:AGRO_00000325> ;
+                                                 rdfs:range <obo:NCIT_C14258> .
+
+
+###  http://www.semanticweb.org/agrots/hasSensor
+<http://www.semanticweb.org/agrots/hasSensor> rdf:type owl:ObjectProperty ;
+                                              rdfs:subPropertyOf <obo:BFO_0000051> ;
+                                              owl:inverseOf <http://www.semanticweb.org/agrots/isPartOfNode> ;
+                                              rdfs:domain <obo:INO_0000013> ;
+                                              rdfs:range <sosa:Sensor> .
+
+
+###  http://www.semanticweb.org/agrots/hasSymptom
+<http://www.semanticweb.org/agrots/hasSymptom> rdf:type owl:ObjectProperty ;
+                                               owl:inverseOf <http://www.semanticweb.org/agrots/isSymptomAssociatedToDisease> ;
+                                               rdfs:domain <obo:PDO_0000001> ;
+                                               rdfs:range <efo:EFO_0003765> .
+
+
+###  http://www.semanticweb.org/agrots/isAffectedBy
+<http://www.semanticweb.org/agrots/isAffectedBy> rdf:type owl:ObjectProperty ;
+                                                 owl:inverseOf <http://www.semanticweb.org/agrots/manifestsAt> ;
+                                                 rdfs:domain <obo:NCIT_C79611> ;
+                                                 rdfs:range <efo:EFO_0003765> .
+
+
+###  http://www.semanticweb.org/agrots/isCausalAgentFor
+<http://www.semanticweb.org/agrots/isCausalAgentFor> rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/agrots/isCharacterizedByAffectedPartAnatomicalRegion
+<http://www.semanticweb.org/agrots/isCharacterizedByAffectedPartAnatomicalRegion> rdf:type owl:ObjectProperty ;
+                                                                                  rdfs:subPropertyOf <obo:RO_0000053> ;
+                                                                                  rdfs:domain <efo:EFO_0003765> ;
+                                                                                  rdfs:range <obo:BSPO_0000070> .
+
+
+###  http://www.semanticweb.org/agrots/isCharacterizedByAffectedPartColor
+<http://www.semanticweb.org/agrots/isCharacterizedByAffectedPartColor> rdf:type owl:ObjectProperty ;
+                                                                       rdfs:subPropertyOf <obo:RO_0000053> ;
+                                                                       rdfs:domain <efo:EFO_0003765> ;
+                                                                       rdfs:range <obo:PATO_0000014> .
+
+
+###  http://www.semanticweb.org/agrots/isCharacterizedByAffectedPartColorPattern
+<http://www.semanticweb.org/agrots/isCharacterizedByAffectedPartColorPattern> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:subPropertyOf <obo:RO_0000053> ;
+                                                                              rdfs:domain <efo:EFO_0003765> ;
+                                                                              rdfs:range <obo:PATO_0000019> .
+
+
+###  http://www.semanticweb.org/agrots/isCharacterizedByAffectedPartColorPatternBorderColor
+<http://www.semanticweb.org/agrots/isCharacterizedByAffectedPartColorPatternBorderColor> rdf:type owl:ObjectProperty ;
+                                                                                         rdfs:subPropertyOf <obo:RO_0000053> .
+
+
+###  http://www.semanticweb.org/agrots/isCharacterizedByAffectedPartShape
+<http://www.semanticweb.org/agrots/isCharacterizedByAffectedPartShape> rdf:type owl:ObjectProperty ;
+                                                                       rdfs:subPropertyOf <obo:RO_0000053> ;
+                                                                       rdfs:domain <efo:EFO_0003765> ;
+                                                                       rdfs:range <obo:PATO_0000052> .
+
+
+###  http://www.semanticweb.org/agrots/isCharacterizedByAffectedPartTexture
+<http://www.semanticweb.org/agrots/isCharacterizedByAffectedPartTexture> rdf:type owl:ObjectProperty ;
+                                                                         rdfs:subPropertyOf <obo:RO_0000053> ;
+                                                                         rdfs:domain <efo:EFO_0003765> ;
+                                                                         rdfs:range <obo:PATO_0000150> .
+
+
+###  http://www.semanticweb.org/agrots/isDegreeOfAssociationForDisease
+<http://www.semanticweb.org/agrots/isDegreeOfAssociationForDisease> rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/agrots/isDegreeOfAssociationForSymptom
+<http://www.semanticweb.org/agrots/isDegreeOfAssociationForSymptom> rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/agrots/isDevelopmentConditionAssociatedToEnvironmentalFactor
+<http://www.semanticweb.org/agrots/isDevelopmentConditionAssociatedToEnvironmentalFactor> rdf:type owl:ObjectProperty ;
+                                                                                          owl:inverseOf <http://www.semanticweb.org/agrots/isEnvironmentalFactorAssociatedToDevelopmentCondition> ;
+                                                                                          rdfs:domain <http://www.semanticweb.org/agrots/DevelopmentCondition> ;
+                                                                                          rdfs:range <efo:EFO_0000469> .
+
+
+###  http://www.semanticweb.org/agrots/isDiseaseDevelopmentConditionFor
+<http://www.semanticweb.org/agrots/isDiseaseDevelopmentConditionFor> rdf:type owl:ObjectProperty ;
+                                                                     rdfs:range <obo:PDO_0000001> .
+
+
+###  http://www.semanticweb.org/agrots/isEnvironmentalFactorAssociatedToDevelopmentCondition
+<http://www.semanticweb.org/agrots/isEnvironmentalFactorAssociatedToDevelopmentCondition> rdf:type owl:ObjectProperty ;
+                                                                                          rdfs:domain <efo:EFO_0000469> ;
+                                                                                          rdfs:range <http://www.semanticweb.org/agrots/DevelopmentCondition> .
+
+
+###  http://www.semanticweb.org/agrots/isObservationMadeBy
+<http://www.semanticweb.org/agrots/isObservationMadeBy> rdf:type owl:ObjectProperty ;
+                                                        owl:inverseOf <sosa:madeObservation> .
+
+
+###  http://www.semanticweb.org/agrots/isPartOfNode
+<http://www.semanticweb.org/agrots/isPartOfNode> rdf:type owl:ObjectProperty ;
+                                                 rdfs:subPropertyOf <obo:BFO_0000050> .
+
+
+###  http://www.semanticweb.org/agrots/isPropertyOfObservation
+<http://www.semanticweb.org/agrots/isPropertyOfObservation> rdf:type owl:ObjectProperty ;
+                                                            owl:inverseOf <sosa:observedProperty> .
+
+
+###  http://www.semanticweb.org/agrots/isSymptomAssociatedToDisease
+<http://www.semanticweb.org/agrots/isSymptomAssociatedToDisease> rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/agrots/manifestsAt
+<http://www.semanticweb.org/agrots/manifestsAt> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <efo:EFO_0003765> ;
+                                                rdfs:range <obo:NCIT_C79611> .
+
+
+###  http://www.semanticweb.org/agrots/observesEnvironmentalFactor
+<http://www.semanticweb.org/agrots/observesEnvironmentalFactor> rdf:type owl:ObjectProperty ;
+                                                                rdfs:subPropertyOf <sosa:observes> ;
+                                                                rdfs:domain <sosa:Sensor> ;
+                                                                rdfs:range <efo:EFO_0000469> .
+
+
+###  obo:BFO_0000050
+<obo:BFO_0000050> rdf:type owl:ObjectProperty ;
+                  owl:inverseOf <obo:BFO_0000051> ;
+                  rdfs:label "isPartOf" .
+
+
+###  obo:BFO_0000051
+<obo:BFO_0000051> rdf:type owl:ObjectProperty ;
+                  rdfs:label "hasPart" .
+
+
+###  obo:RO_0000052
+<obo:RO_0000052> rdf:type owl:ObjectProperty ;
+                 owl:inverseOf <obo:RO_0000053> ;
+                 rdfs:label "characteristicOf" .
+
+
+###  obo:RO_0000053
+<obo:RO_0000053> rdf:type owl:ObjectProperty ;
+                 rdfs:domain <efo:EFO_0003765> ;
+                 rdfs:range <obo:PATO_0001018> ;
+                 rdfs:label "isCharacterizedBy" .
+
+
+###  obo:RO_0001025
+<obo:RO_0001025> rdf:type owl:ObjectProperty ;
+                 rdfs:range <dbr:Location> ;
+                 rdfs:label "hasLocation" .
+
+
+###  obo:RO_0002350
+<obo:RO_0002350> rdf:type owl:ObjectProperty ;
+                 owl:inverseOf <obo:RO_0002351> ;
+                 rdfs:label "memberOf" .
+
+
+###  obo:RO_0002351
+<obo:RO_0002351> rdf:type owl:ObjectProperty ;
+                 rdfs:domain <oboe:ObservationCollection> ;
+                 rdfs:range <sosa:Observation> ;
+                 rdfs:label "hasMember" .
+
+
+###  om:hasUnit
+<om:hasUnit> rdf:type owl:ObjectProperty ;
+             rdfs:domain [ rdf:type owl:Class ;
+                           owl:unionOf ( <http://www.semanticweb.org/agrots/DevelopmentCondition>
+                                         <http://www.semanticweb.org/agrots/EnvironmentalFactorObservationCollection>
+                                       )
+                         ] ;
+             rdfs:range <om:Unit> ;
+             rdfs:label "hasUnit" .
+
+
+###  sosa:hasFeatureOfInterest
+<sosa:hasFeatureOfInterest> rdf:type owl:ObjectProperty ;
+                            owl:inverseOf <sosa:isFeatureOfInterestOf> ;
+                            rdfs:domain <oboe:ObservationCollection> ;
+                            rdfs:range <sosa:FeatureOfInterest> ;
+                            rdfs:label "hasFeatureOfInterest" .
+
+
+###  sosa:isFeatureOfInterestOf
+<sosa:isFeatureOfInterestOf> rdf:type owl:ObjectProperty ;
+                             rdfs:label "isFeatureOfInterestOf" .
+
+
+###  sosa:isObservedBy
+<sosa:isObservedBy> rdf:type owl:ObjectProperty ;
+                    owl:inverseOf <sosa:observes> ;
+                    rdfs:label "isObservedBy" .
+
+
+###  sosa:madeObservation
+<sosa:madeObservation> rdf:type owl:ObjectProperty ;
+                       rdfs:domain <dbr:Observer> ;
+                       rdfs:range <sosa:Observation> ;
+                       rdfs:label "makesObservation" .
+
+
+###  sosa:observedProperty
+<sosa:observedProperty> rdf:type owl:ObjectProperty ;
+                        rdfs:domain <sosa:Observation> ;
+                        rdfs:range <sosa:ObservableProperty> ;
+                        rdfs:label "hasObservableProperty" .
+
+
+###  sosa:observes
+<sosa:observes> rdf:type owl:ObjectProperty ;
+                rdfs:domain <dbr:Observer> ;
+                rdfs:range <sosa:ObservableProperty> ;
+                rdfs:label "observes" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  agrontology:hasScientificName
+<agrontology:hasScientificName> rdf:type owl:DatatypeProperty ;
+                                rdfs:domain <obo:NCIT_C14258> ;
+                                rdfs:range xsd:string ;
+                                rdfs:label "hasScientificName" .
+
+
+###  agrontology:hasSynonym
+<agrontology:hasSynonym> rdf:type owl:DatatypeProperty ;
+                         rdfs:domain <obo:NCIT_C14258> ;
+                         rdfs:range xsd:string ;
+                         rdfs:label "hasSynonym" .
+
+
+###  http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumExtremeValue
+<http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumExtremeValue> rdf:type owl:DatatypeProperty ;
+                                                                               rdfs:subPropertyOf <http://www.semanticweb.org/agrots/hasDevelopmentConditionValue> .
+
+
+###  http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumExtremeValueDuringDay
+<http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumExtremeValueDuringDay> rdf:type owl:DatatypeProperty ;
+                                                                                        rdfs:subPropertyOf <http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumExtremeValue> .
+
+
+###  http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumExtremeValueDuringNight
+<http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumExtremeValueDuringNight> rdf:type owl:DatatypeProperty ;
+                                                                                          rdfs:subPropertyOf <http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumExtremeValue> .
+
+
+###  http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumOptimalValue
+<http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumOptimalValue> rdf:type owl:DatatypeProperty ;
+                                                                               rdfs:subPropertyOf <http://www.semanticweb.org/agrots/hasDevelopmentConditionValue> .
+
+
+###  http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumOptimalValueDuringDay
+<http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumOptimalValueDuringDay> rdf:type owl:DatatypeProperty ;
+                                                                                        rdfs:subPropertyOf <http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumOptimalValue> .
+
+
+###  http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumOptimalValueDuringNight
+<http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumOptimalValueDuringNight> rdf:type owl:DatatypeProperty ;
+                                                                                          rdfs:subPropertyOf <http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumOptimalValue> .
+
+
+###  http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumExtremeValue
+<http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumExtremeValue> rdf:type owl:DatatypeProperty ;
+                                                                               rdfs:subPropertyOf <http://www.semanticweb.org/agrots/hasDevelopmentConditionValue> .
+
+
+###  http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumExtremeValueDuringDay
+<http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumExtremeValueDuringDay> rdf:type owl:DatatypeProperty ;
+                                                                                        rdfs:subPropertyOf <http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumExtremeValue> .
+
+
+###  http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumExtremeValueDuringNight
+<http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumExtremeValueDuringNight> rdf:type owl:DatatypeProperty ;
+                                                                                          rdfs:subPropertyOf <http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumExtremeValue> .
+
+
+###  http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumOptimalValue
+<http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumOptimalValue> rdf:type owl:DatatypeProperty ;
+                                                                               rdfs:subPropertyOf <http://www.semanticweb.org/agrots/hasDevelopmentConditionValue> .
+
+
+###  http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumOptimalValueDuringDay
+<http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumOptimalValueDuringDay> rdf:type owl:DatatypeProperty ;
+                                                                                        rdfs:subPropertyOf <http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumOptimalValue> .
+
+
+###  http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumOptimalValueDuringNight
+<http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumOptimalValueDuringNight> rdf:type owl:DatatypeProperty ;
+                                                                                          rdfs:subPropertyOf <http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumOptimalValue> .
+
+
+###  http://www.semanticweb.org/agrots/hasDevelopmentConditionValue
+<http://www.semanticweb.org/agrots/hasDevelopmentConditionValue> rdf:type owl:DatatypeProperty ;
+                                                                 rdfs:subPropertyOf <om:hasNumericalValue> ;
+                                                                 rdfs:domain <http://www.semanticweb.org/agrots/DevelopmentCondition> ;
+                                                                 rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/agrots/hasEnvironmentalFactorObservationValue
+<http://www.semanticweb.org/agrots/hasEnvironmentalFactorObservationValue> rdf:type owl:DatatypeProperty ;
+                                                                           rdfs:subPropertyOf <om:hasNumericalValue> ;
+                                                                           rdfs:domain <http://www.semanticweb.org/agrots/EnvironmentalFactorObservation> ;
+                                                                           rdfs:range xsd:double .
+
+
+###  http://www.semanticweb.org/agrots/hasNumericalValueType
+<http://www.semanticweb.org/agrots/hasNumericalValueType> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:subPropertyOf <om:hasNumericalValue> ;
+                                                          rdfs:domain [ rdf:type owl:Class ;
+                                                                        owl:unionOf ( <http://www.semanticweb.org/agrots/DevelopmentCondition>
+                                                                                      <http://www.semanticweb.org/agrots/EnvironmentalFactorObservationCollection>
+                                                                                    )
+                                                                      ] .
+
+
+###  http://www.semanticweb.org/agrots/hasPercentageOfAssociation
+<http://www.semanticweb.org/agrots/hasPercentageOfAssociation> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:subPropertyOf <om:hasNumericalValue> ;
+                                                               rdfs:domain <http://www.semanticweb.org/agrots/DegreeOfAssociation> ;
+                                                               rdfs:range xsd:double .
+
+
+###  obo:GEO_000000787
+<obo:GEO_000000787> rdf:type owl:DatatypeProperty ;
+                    rdfs:domain <http://www.semanticweb.org/agrots/Point> ;
+                    rdfs:range xsd:double ;
+                    rdfs:label "hasGeodeticCoordinate" .
+
+
+###  obo:OBI_0001620
+<obo:OBI_0001620> rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf <obo:GEO_000000787> ;
+                  rdfs:label "hasLatitudeCoordinate" .
+
+
+###  obo:OBI_0001621
+<obo:OBI_0001621> rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf <obo:GEO_000000787> ;
+                  rdfs:label "hasLongitudeCoordinate" .
+
+
+###  om:hasNumericalValue
+<om:hasNumericalValue> rdf:type owl:DatatypeProperty ;
+                       rdfs:label "hasNumericalValue" .
+
+
+###  sosa:resultTime
+<sosa:resultTime> rdf:type owl:DatatypeProperty ;
+                  rdfs:domain <sosa:Observation> ;
+                  rdfs:range xsd:dateTime ;
+                  rdfs:label "hasSamplingTime" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  dbr:Location
+<dbr:Location> rdf:type owl:Class ;
+               rdfs:label "Location" .
+
+
+###  dbr:Observer
+<dbr:Observer> rdf:type owl:Class ;
+               rdfs:label "Observer" .
+
+
+###  efo:EFO_0000469
+<efo:EFO_0000469> rdf:type owl:Class ;
+                  rdfs:subClassOf <sosa:ObservableProperty> ;
+                  owl:disjointWith <obo:TO_0000387> ;
+                  rdfs:label "EnvironmentalFactor" .
+
+
+###  efo:EFO_0003765
+<efo:EFO_0003765> rdf:type owl:Class ;
+                  rdfs:subClassOf <obo:TO_0000387> ;
+                  rdfs:label "Symptom" .
+
+
+###  foaf:Person
+<foaf:Person> rdf:type owl:Class ;
+              rdfs:subClassOf <dbr:Observer> ;
+              owl:disjointWith <sosa:Sensor> ;
+              rdfs:label "Person" .
+
+
+###  http://semanticscience.org/resource/SIO_001212
+<http://semanticscience.org/resource/SIO_001212> rdf:type owl:Class ;
+                                                 rdfs:label "Intensity" .
+
+
+###  http://semanticscience.org/resource/SIO_001213
+<http://semanticscience.org/resource/SIO_001213> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://semanticscience.org/resource/SIO_001212> ;
+                                                 rdfs:label "Mild" .
+
+
+###  http://semanticscience.org/resource/SIO_001214
+<http://semanticscience.org/resource/SIO_001214> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://semanticscience.org/resource/SIO_001212> ;
+                                                 rdfs:label "Moderate" .
+
+
+###  http://semanticscience.org/resource/SIO_001215
+<http://semanticscience.org/resource/SIO_001215> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://semanticscience.org/resource/SIO_001212> ;
+                                                 rdfs:label "Severe" .
+
+
+###  http://semanticscience.org/resource/SIO_001216
+<http://semanticscience.org/resource/SIO_001216> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://semanticscience.org/resource/SIO_001212> ;
+                                                 rdfs:label "Fatal" .
+
+
+###  http://semanticscience.org/resource/SIO_001217
+<http://semanticscience.org/resource/SIO_001217> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://semanticscience.org/resource/SIO_001212> ;
+                                                 rdfs:label "Strong" .
+
+
+###  http://semanticscience.org/resource/SIO_001218
+<http://semanticscience.org/resource/SIO_001218> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://semanticscience.org/resource/SIO_001212> ;
+                                                 rdfs:label "Weak" .
+
+
+###  http://www.semanticweb.org/agrots/AirHumidity
+<http://www.semanticweb.org/agrots/AirHumidity> rdf:type owl:Class ;
+                                                rdfs:subClassOf <obo:PATO_0015009> ;
+                                                owl:disjointWith <http://www.semanticweb.org/agrots/SoilHumidity> .
+
+
+###  http://www.semanticweb.org/agrots/AirPressure
+<http://www.semanticweb.org/agrots/AirPressure> rdf:type owl:Class ;
+                                                rdfs:subClassOf <obo:PATO_0001025> .
+
+
+###  http://www.semanticweb.org/agrots/AirTemperature
+<http://www.semanticweb.org/agrots/AirTemperature> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <obo:PATO_0000146> ;
+                                                   owl:disjointWith <http://www.semanticweb.org/agrots/SoilTemperature> .
+
+
+###  http://www.semanticweb.org/agrots/AllDevelopmentStages
+<http://www.semanticweb.org/agrots/AllDevelopmentStages> rdf:type owl:Class ;
+                                                         owl:equivalentClass [ rdf:type owl:Class ;
+                                                                               owl:unionOf ( <http://www.semanticweb.org/agrots/EarlyGrowthStage>
+                                                                                             <obo:PO_0001002>
+                                                                                             <obo:PO_0007057>
+                                                                                             <obo:PO_0007134>
+                                                                                             <obo:PO_0007615>
+                                                                                           )
+                                                                             ] ;
+                                                         rdfs:subClassOf <obo:PO_0009012> .
+
+
+###  http://www.semanticweb.org/agrots/AllDevelopmentStagesExceptFruitDevelopmentStage
+<http://www.semanticweb.org/agrots/AllDevelopmentStagesExceptFruitDevelopmentStage> rdf:type owl:Class ;
+                                                                                    owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                                          owl:unionOf ( <http://www.semanticweb.org/agrots/EarlyGrowthStage>
+                                                                                                                        <obo:PO_0007057>
+                                                                                                                        <obo:PO_0007134>
+                                                                                                                        <obo:PO_0007615>
+                                                                                                                      )
+                                                                                                        ] ;
+                                                                                    rdfs:subClassOf <obo:PO_0009012> .
+
+
+###  http://www.semanticweb.org/agrots/AllIntensities
+<http://www.semanticweb.org/agrots/AllIntensities> rdf:type owl:Class ;
+                                                   owl:equivalentClass [ rdf:type owl:Class ;
+                                                                         owl:unionOf ( <http://semanticscience.org/resource/SIO_001213>
+                                                                                       <http://semanticscience.org/resource/SIO_001214>
+                                                                                       <http://semanticscience.org/resource/SIO_001215>
+                                                                                       <http://semanticscience.org/resource/SIO_001216>
+                                                                                       <http://semanticscience.org/resource/SIO_001217>
+                                                                                       <http://semanticscience.org/resource/SIO_001218>
+                                                                                     )
+                                                                       ] ;
+                                                   rdfs:subClassOf <http://semanticscience.org/resource/SIO_001212> .
+
+
+###  http://www.semanticweb.org/agrots/ApicalSuperiorRegion
+<http://www.semanticweb.org/agrots/ApicalSuperiorRegion> rdf:type owl:Class ;
+                                                         owl:equivalentClass [ owl:intersectionOf ( <obo:BSPO_0000022>
+                                                                                                    <obo:BSPO_0000073>
+                                                                                                  ) ;
+                                                                               rdf:type owl:Class
+                                                                             ] ;
+                                                         rdfs:subClassOf <obo:BSPO_0000070> .
+
+
+###  http://www.semanticweb.org/agrots/BasalToCentralRegion
+<http://www.semanticweb.org/agrots/BasalToCentralRegion> rdf:type owl:Class ;
+                                                         owl:equivalentClass [ rdf:type owl:Class ;
+                                                                               owl:unionOf ( <obo:BSPO_0000074>
+                                                                                             <obo:BSPO_0000075>
+                                                                                           )
+                                                                             ] ;
+                                                         rdfs:subClassOf <obo:BSPO_0000070> .
+
+
+###  http://www.semanticweb.org/agrots/BlueColorBrightness
+<http://www.semanticweb.org/agrots/BlueColorBrightness> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <obo:PATO_0000016> .
+
+
+###  http://www.semanticweb.org/agrots/Chalky
+<http://www.semanticweb.org/agrots/Chalky> rdf:type owl:Class ;
+                                           rdfs:subClassOf <obo:PATO_0000150> .
+
+
+###  http://www.semanticweb.org/agrots/CropObservation
+<http://www.semanticweb.org/agrots/CropObservation> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <sosa:Observation> ,
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty <sosa:observedProperty> ;
+                                                                      owl:allValuesFrom <obo:TO_0000387>
+                                                                    ] ,
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty <sosa:observedProperty> ;
+                                                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                      owl:onClass <obo:TO_0000387>
+                                                                    ] ;
+                                                    owl:disjointWith <http://www.semanticweb.org/agrots/EnvironmentalFactorObservation> .
+
+
+###  http://www.semanticweb.org/agrots/CropObservationCollection
+<http://www.semanticweb.org/agrots/CropObservationCollection> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <oboe:ObservationCollection> ,
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <obo:RO_0002351> ;
+                                                                                owl:allValuesFrom <http://www.semanticweb.org/agrots/CropObservation>
+                                                                              ] ,
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <sosa:hasFeatureOfInterest> ;
+                                                                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                owl:onClass <obo:AGRO_00000325>
+                                                                              ] ;
+                                                              owl:disjointWith <http://www.semanticweb.org/agrots/EnvironmentalFactorObservationCollection> .
+
+
+###  http://www.semanticweb.org/agrots/Damp
+<http://www.semanticweb.org/agrots/Damp> rdf:type owl:Class ;
+                                         rdfs:subClassOf <obo:PATO_0000150> .
+
+
+###  http://www.semanticweb.org/agrots/DampAndWrinkled
+<http://www.semanticweb.org/agrots/DampAndWrinkled> rdf:type owl:Class ;
+                                                    owl:equivalentClass [ owl:intersectionOf ( <http://www.semanticweb.org/agrots/Damp>
+                                                                                               <obo:PATO_0001810>
+                                                                                             ) ;
+                                                                          rdf:type owl:Class
+                                                                        ] ;
+                                                    rdfs:subClassOf <obo:PATO_0000150> .
+
+
+###  http://www.semanticweb.org/agrots/DarkRedBrown
+<http://www.semanticweb.org/agrots/DarkRedBrown> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <obo:PATO_0001287> .
+
+
+###  http://www.semanticweb.org/agrots/DegreeOfAssociation
+<http://www.semanticweb.org/agrots/DegreeOfAssociation> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/agrots/DevelopmentCondition
+<http://www.semanticweb.org/agrots/DevelopmentCondition> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/agrots/DiseaseDevelopmentCondition
+<http://www.semanticweb.org/agrots/DiseaseDevelopmentCondition> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://www.semanticweb.org/agrots/DevelopmentCondition> .
+
+
+###  http://www.semanticweb.org/agrots/DryAndRough
+<http://www.semanticweb.org/agrots/DryAndRough> rdf:type owl:Class ;
+                                                owl:equivalentClass [ owl:intersectionOf ( <obo:PATO_0000700>
+                                                                                           <obo:PATO_0001824>
+                                                                                         ) ;
+                                                                      rdf:type owl:Class
+                                                                    ] ;
+                                                rdfs:subClassOf <obo:PATO_0000150> .
+
+
+###  http://www.semanticweb.org/agrots/EarlyBlight
+<http://www.semanticweb.org/agrots/EarlyBlight> rdf:type owl:Class ;
+                                                rdfs:subClassOf <obo:PDO_0000004> ;
+                                                rdfs:label "EarlyBlight" .
+
+
+###  http://www.semanticweb.org/agrots/EarlyGrowthStage
+<http://www.semanticweb.org/agrots/EarlyGrowthStage> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <obo:PO_0009012> .
+
+
+###  http://www.semanticweb.org/agrots/EnvironmentalFactorObservation
+<http://www.semanticweb.org/agrots/EnvironmentalFactorObservation> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <sosa:Observation> ,
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty <sosa:observedProperty> ;
+                                                                                     owl:allValuesFrom <efo:EFO_0000469>
+                                                                                   ] ,
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty <sosa:observedProperty> ;
+                                                                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                     owl:onClass <efo:EFO_0000469>
+                                                                                   ] .
+
+
+###  http://www.semanticweb.org/agrots/EnvironmentalFactorObservationCollection
+<http://www.semanticweb.org/agrots/EnvironmentalFactorObservationCollection> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <oboe:ObservationCollection> ,
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <obo:RO_0002351> ;
+                                                                                               owl:allValuesFrom <http://www.semanticweb.org/agrots/EnvironmentalFactorObservation>
+                                                                                             ] .
+
+
+###  http://www.semanticweb.org/agrots/FlowerAndFruitDevelopmentStage
+<http://www.semanticweb.org/agrots/FlowerAndFruitDevelopmentStage> rdf:type owl:Class ;
+                                                                   owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                         owl:unionOf ( <obo:PO_0001002>
+                                                                                                       <obo:PO_0007615>
+                                                                                                     )
+                                                                                       ] ;
+                                                                   rdfs:subClassOf <obo:PO_0009012> .
+
+
+###  http://www.semanticweb.org/agrots/GrayMold
+<http://www.semanticweb.org/agrots/GrayMold> rdf:type owl:Class ;
+                                             rdfs:subClassOf <obo:PDO_0000004> ;
+                                             rdfs:label "GrayMold" .
+
+
+###  http://www.semanticweb.org/agrots/GreenBrown
+<http://www.semanticweb.org/agrots/GreenBrown> rdf:type owl:Class ;
+                                               rdfs:subClassOf <obo:PATO_0000952> .
+
+
+###  http://www.semanticweb.org/agrots/GreenColorBrightness
+<http://www.semanticweb.org/agrots/GreenColorBrightness> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <obo:PATO_0000016> .
+
+
+###  http://www.semanticweb.org/agrots/GreenGrey
+<http://www.semanticweb.org/agrots/GreenGrey> rdf:type owl:Class ;
+                                              rdfs:subClassOf <obo:PATO_0000950> .
+
+
+###  http://www.semanticweb.org/agrots/LateBlight
+<http://www.semanticweb.org/agrots/LateBlight> rdf:type owl:Class ;
+                                               rdfs:subClassOf <obo:PDO_0000004> ;
+                                               rdfs:label "LateBlight" .
+
+
+###  http://www.semanticweb.org/agrots/LeafMold
+<http://www.semanticweb.org/agrots/LeafMold> rdf:type owl:Class ;
+                                             rdfs:subClassOf <obo:PDO_0000004> ;
+                                             rdfs:label "LeafMold" .
+
+
+###  http://www.semanticweb.org/agrots/OptimalDevelopmentCondition
+<http://www.semanticweb.org/agrots/OptimalDevelopmentCondition> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://www.semanticweb.org/agrots/DevelopmentCondition> .
+
+
+###  http://www.semanticweb.org/agrots/OrangeColorBrightness
+<http://www.semanticweb.org/agrots/OrangeColorBrightness> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <obo:PATO_0000016> .
+
+
+###  http://www.semanticweb.org/agrots/Point
+<http://www.semanticweb.org/agrots/Point> rdf:type owl:Class ;
+                                          rdfs:subClassOf <dbr:Location> ;
+                                          owl:disjointWith <obo:NCIT_C25244> .
+
+
+###  http://www.semanticweb.org/agrots/PolygonalArea
+<http://www.semanticweb.org/agrots/PolygonalArea> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <obo:NCIT_C25244> .
+
+
+###  http://www.semanticweb.org/agrots/PowderyMildew
+<http://www.semanticweb.org/agrots/PowderyMildew> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <obo:PDO_0000004> ;
+                                                  rdfs:label "PowderyMildew" .
+
+
+###  http://www.semanticweb.org/agrots/PurpleBrown
+<http://www.semanticweb.org/agrots/PurpleBrown> rdf:type owl:Class ;
+                                                rdfs:subClassOf <obo:PATO_0000952> .
+
+
+###  http://www.semanticweb.org/agrots/RedColorBrightness
+<http://www.semanticweb.org/agrots/RedColorBrightness> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <obo:PATO_0000016> .
+
+
+###  http://www.semanticweb.org/agrots/SeedGerminationAndEarlyGrowthStage
+<http://www.semanticweb.org/agrots/SeedGerminationAndEarlyGrowthStage> rdf:type owl:Class ;
+                                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                                             owl:unionOf ( <http://www.semanticweb.org/agrots/EarlyGrowthStage>
+                                                                                                           <obo:PO_0007057>
+                                                                                                         )
+                                                                                           ] ;
+                                                                       rdfs:subClassOf <obo:PO_0009012> .
+
+
+###  http://www.semanticweb.org/agrots/SevereToFatal
+<http://www.semanticweb.org/agrots/SevereToFatal> rdf:type owl:Class ;
+                                                  owl:equivalentClass [ rdf:type owl:Class ;
+                                                                        owl:unionOf ( <http://semanticscience.org/resource/SIO_001215>
+                                                                                      <http://semanticscience.org/resource/SIO_001216>
+                                                                                    )
+                                                                      ] ;
+                                                  rdfs:subClassOf <http://semanticscience.org/resource/SIO_001212> .
+
+
+###  http://www.semanticweb.org/agrots/SoilHumidity
+<http://www.semanticweb.org/agrots/SoilHumidity> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <obo:PATO_0015009> .
+
+
+###  http://www.semanticweb.org/agrots/SoilTemperature
+<http://www.semanticweb.org/agrots/SoilTemperature> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <obo:PATO_0000146> .
+
+
+###  http://www.semanticweb.org/agrots/StrongToFatal
+<http://www.semanticweb.org/agrots/StrongToFatal> rdf:type owl:Class ;
+                                                  owl:equivalentClass [ rdf:type owl:Class ;
+                                                                        owl:unionOf ( <http://semanticscience.org/resource/SIO_001215>
+                                                                                      <http://semanticscience.org/resource/SIO_001216>
+                                                                                      <http://semanticscience.org/resource/SIO_001217>
+                                                                                    )
+                                                                      ] ;
+                                                  rdfs:subClassOf <http://semanticscience.org/resource/SIO_001212> .
+
+
+###  http://www.semanticweb.org/agrots/VioletColorBrightness
+<http://www.semanticweb.org/agrots/VioletColorBrightness> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <obo:PATO_0000016> .
+
+
+###  http://www.semanticweb.org/agrots/WeakToModerate
+<http://www.semanticweb.org/agrots/WeakToModerate> rdf:type owl:Class ;
+                                                   owl:equivalentClass [ rdf:type owl:Class ;
+                                                                         owl:unionOf ( <http://semanticscience.org/resource/SIO_001213>
+                                                                                       <http://semanticscience.org/resource/SIO_001214>
+                                                                                       <http://semanticscience.org/resource/SIO_001218>
+                                                                                     )
+                                                                       ] ;
+                                                   rdfs:subClassOf <http://semanticscience.org/resource/SIO_001212> .
+
+
+###  http://www.semanticweb.org/agrots/Wilted
+<http://www.semanticweb.org/agrots/Wilted> rdf:type owl:Class ;
+                                           rdfs:subClassOf <obo:PATO_0000150> .
+
+
+###  http://www.semanticweb.org/agrots/YellowColorBrightness
+<http://www.semanticweb.org/agrots/YellowColorBrightness> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <obo:PATO_0000016> .
+
+
+###  http://www.semanticweb.org/agrots/YellowWhite
+<http://www.semanticweb.org/agrots/YellowWhite> rdf:type owl:Class ;
+                                                rdfs:subClassOf <obo:PATO_0000323> .
+
+
+###  obo:AGRO_00000325
+<obo:AGRO_00000325> rdf:type owl:Class ;
+                    rdfs:subClassOf <sosa:FeatureOfInterest> ;
+                    rdfs:label "Crop" .
+
+
+###  obo:BSPO_0000022
+<obo:BSPO_0000022> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:BSPO_0000070> ;
+                   owl:disjointWith <obo:BSPO_0000025> ;
+                   rdfs:label "SuperiorSide" .
+
+
+###  obo:BSPO_0000025
+<obo:BSPO_0000025> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:BSPO_0000070> ;
+                   rdfs:label "InferiorSide" .
+
+
+###  obo:BSPO_0000070
+<obo:BSPO_0000070> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0001018> ;
+                   rdfs:label "AnatomicalRegion" .
+
+
+###  obo:BSPO_0000073
+<obo:BSPO_0000073> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:BSPO_0000070> ;
+                   rdfs:label "ApicalRegion" .
+
+
+###  obo:BSPO_0000074
+<obo:BSPO_0000074> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:BSPO_0000070> ;
+                   rdfs:label "BasalRegion" .
+
+
+###  obo:BSPO_0000075
+<obo:BSPO_0000075> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:BSPO_0000070> ;
+                   rdfs:label "CentralRegion" .
+
+
+###  obo:INO_0000013
+<obo:INO_0000013> rdf:type owl:Class ;
+                  rdfs:label "Node" .
+
+
+###  obo:NCBITaxon_40559
+<obo:NCBITaxon_40559> rdf:type owl:Class ;
+                      rdfs:subClassOf <obo:PDO_0000069> ;
+                      rdfs:label "BotrytisCinerea" .
+
+
+###  obo:NCBITaxon_4081
+<obo:NCBITaxon_4081> rdf:type owl:Class ;
+                     rdfs:subClassOf <obo:NCIT_C14258> ;
+                     rdfs:label "Tomato" .
+
+
+###  obo:NCBITaxon_4787
+<obo:NCBITaxon_4787> rdf:type owl:Class ;
+                     rdfs:subClassOf <obo:PDO_0000069> ;
+                     rdfs:label "PhytophthoraInfestans" .
+
+
+###  obo:NCBITaxon_5499
+<obo:NCBITaxon_5499> rdf:type owl:Class ;
+                     rdfs:subClassOf <obo:PDO_0000069> ;
+                     rdfs:label "FulviaFulva" .
+
+
+###  obo:NCBITaxon_5599
+<obo:NCBITaxon_5599> rdf:type owl:Class ;
+                     rdfs:subClassOf <obo:PDO_0000069> ;
+                     rdfs:label "AlternariaAlternata" .
+
+
+###  obo:NCBITaxon_62718
+<obo:NCBITaxon_62718> rdf:type owl:Class ;
+                      rdfs:subClassOf <obo:PDO_0000069> ;
+                      rdfs:label "LeveillulaTaurica" .
+
+
+###  obo:NCIT_C14258
+<obo:NCIT_C14258> rdf:type owl:Class ;
+                  rdfs:label "Plant" .
+
+
+###  obo:NCIT_C25244
+<obo:NCIT_C25244> rdf:type owl:Class ;
+                  rdfs:subClassOf <dbr:Location> ;
+                  rdfs:label "Area" .
+
+
+###  obo:NCIT_C79611
+<obo:NCIT_C79611> rdf:type owl:Class ;
+                  rdfs:label "PlantPart" .
+
+
+###  obo:PATO_0000014
+<obo:PATO_0000014> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0001018> ;
+                   rdfs:label "Color" .
+
+
+###  obo:PATO_0000016
+<obo:PATO_0000016> rdf:type owl:Class ;
+                   rdfs:subClassOf <efo:EFO_0000469> ;
+                   rdfs:label "ColorBrightness" .
+
+
+###  obo:PATO_0000019
+<obo:PATO_0000019> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0001018> ;
+                   rdfs:label "ColorPattern" .
+
+
+###  obo:PATO_0000052
+<obo:PATO_0000052> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0001018> ;
+                   rdfs:label "Shape" .
+
+
+###  obo:PATO_0000146
+<obo:PATO_0000146> rdf:type owl:Class ;
+                   rdfs:subClassOf <efo:EFO_0000469> ;
+                   rdfs:label "Temperature" .
+
+
+###  obo:PATO_0000150
+<obo:PATO_0000150> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0001018> ;
+                   rdfs:label "Texture" .
+
+
+###  obo:PATO_0000317
+<obo:PATO_0000317> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0000014> ;
+                   rdfs:label "Black" .
+
+
+###  obo:PATO_0000320
+<obo:PATO_0000320> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0000014> ;
+                   rdfs:label "Green" .
+
+
+###  obo:PATO_0000323
+<obo:PATO_0000323> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0000014> ;
+                   rdfs:label "White" .
+
+
+###  obo:PATO_0000324
+<obo:PATO_0000324> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0000014> ;
+                   rdfs:label "Yellow" .
+
+
+###  obo:PATO_0000329
+<obo:PATO_0000329> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0001533> ;
+                   rdfs:label "Blotchy" .
+
+
+###  obo:PATO_0000331
+<obo:PATO_0000331> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0000019> ;
+                   rdfs:label "Discolored" .
+
+
+###  obo:PATO_0000333
+<obo:PATO_0000333> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0001533> ;
+                   rdfs:label "Spotted" .
+
+
+###  obo:PATO_0000337
+<obo:PATO_0000337> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0000019> ;
+                   rdfs:label "Colorless" .
+
+
+###  obo:PATO_0000411
+<obo:PATO_0000411> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0000947> ;
+                   owl:disjointWith <obo:PATO_0002539> ;
+                   rdfs:label "Circular" .
+
+
+###  obo:PATO_0000700
+<obo:PATO_0000700> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0000150> ;
+                   rdfs:label "Rough" .
+
+
+###  obo:PATO_0000701
+<obo:PATO_0000701> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0000150> ;
+                   rdfs:label "Smooth" .
+
+
+###  obo:PATO_0000947
+<obo:PATO_0000947> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0000052> ;
+                   rdfs:label "Elliptic" .
+
+
+###  obo:PATO_0000950
+<obo:PATO_0000950> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0000014> ;
+                   rdfs:label "Grey" .
+
+
+###  obo:PATO_0000952
+<obo:PATO_0000952> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0000014> ;
+                   rdfs:label "Brown" .
+
+
+###  obo:PATO_0001018
+<obo:PATO_0001018> rdf:type owl:Class ;
+                   rdfs:label "PhysicalQuality" .
+
+
+###  obo:PATO_0001025
+<obo:PATO_0001025> rdf:type owl:Class ;
+                   rdfs:subClassOf <efo:EFO_0000469> ;
+                   rdfs:label "Pressure" .
+
+
+###  obo:PATO_0001245
+<obo:PATO_0001245> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0000952> ;
+                   rdfs:label "DarkBrown" .
+
+
+###  obo:PATO_0001250
+<obo:PATO_0001250> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0000320> ;
+                   rdfs:label "LightGreen" .
+
+
+###  obo:PATO_0001251
+<obo:PATO_0001251> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0000950> ;
+                   rdfs:label "DarkGrey" .
+
+
+###  obo:PATO_0001252
+<obo:PATO_0001252> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0000950> ;
+                   rdfs:label "LightGrey" .
+
+
+###  obo:PATO_0001287
+<obo:PATO_0001287> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0000952> ;
+                   rdfs:label "RedBrown" .
+
+
+###  obo:PATO_0001533
+<obo:PATO_0001533> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0000019> ;
+                   rdfs:label "MultiColored" .
+
+
+###  obo:PATO_0001606
+<obo:PATO_0001606> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0000150> ;
+                   rdfs:label "Greasy" .
+
+
+###  obo:PATO_0001810
+<obo:PATO_0001810> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0000150> ;
+                   rdfs:label "Wrinkled" .
+
+
+###  obo:PATO_0001824
+<obo:PATO_0001824> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0000150> ;
+                   rdfs:label "Dry" .
+
+
+###  obo:PATO_0001928
+<obo:PATO_0001928> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0000150> ;
+                   rdfs:label "Blistered" .
+
+
+###  obo:PATO_0001941
+<obo:PATO_0001941> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0000320> ;
+                   rdfs:label "YellowGreen" .
+
+
+###  obo:PATO_0001942
+<obo:PATO_0001942> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0000320> ;
+                   rdfs:label "BrownGreen" .
+
+
+###  obo:PATO_0001946
+<obo:PATO_0001946> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0001533> ;
+                   rdfs:label "Banded" .
+
+
+###  obo:PATO_0002224
+<obo:PATO_0002224> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0000052> ;
+                   rdfs:label "VShape" .
+
+
+###  obo:PATO_0002274
+<obo:PATO_0002274> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0001533> ;
+                   rdfs:label "Mottled" .
+
+
+###  obo:PATO_0002411
+<obo:PATO_0002411> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0000952> ;
+                   rdfs:label "YellowBrown" .
+
+
+###  obo:PATO_0002539
+<obo:PATO_0002539> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0000947> ;
+                   rdfs:label "RingShape" .
+
+
+###  obo:PATO_0005020
+<obo:PATO_0005020> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0000052> ;
+                   rdfs:label "Irregular" .
+
+
+###  obo:PATO_0015009
+<obo:PATO_0015009> rdf:type owl:Class ;
+                   rdfs:subClassOf <efo:EFO_0000469> ;
+                   rdfs:label "Humidity" .
+
+
+###  obo:PATO_0040014
+<obo:PATO_0040014> rdf:type owl:Class ;
+                   rdfs:subClassOf <obo:PATO_0000052> ;
+                   rdfs:label "Band" .
+
+
+###  obo:PDO_0000001
+<obo:PDO_0000001> rdf:type owl:Class ;
+                  rdfs:label "PlantDisease" .
+
+
+###  obo:PDO_0000004
+<obo:PDO_0000004> rdf:type owl:Class ;
+                  rdfs:subClassOf <obo:PDO_0000001> ;
+                  rdfs:label "PlantFungalDisease" .
+
+
+###  obo:PDO_0000015
+<obo:PDO_0000015> rdf:type owl:Class ;
+                  rdfs:label "CausalAgent" .
+
+
+###  obo:PDO_0000026
+<obo:PDO_0000026> rdf:type owl:Class ;
+                  rdfs:subClassOf <obo:PDO_0000067> ;
+                  rdfs:label "FungalBioticCausalAgent" .
+
+
+###  obo:PDO_0000067
+<obo:PDO_0000067> rdf:type owl:Class ;
+                  rdfs:subClassOf <obo:PDO_0000015> ;
+                  owl:disjointWith <obo:PDO_0000068> ;
+                  rdfs:label "BioticCausalAgent" .
+
+
+###  obo:PDO_0000068
+<obo:PDO_0000068> rdf:type owl:Class ;
+                  rdfs:subClassOf <obo:PDO_0000015> ;
+                  rdfs:label "AbioticCausalAgent" .
+
+
+###  obo:PDO_0000069
+<obo:PDO_0000069> rdf:type owl:Class ;
+                  rdfs:subClassOf <obo:PDO_0000026> ;
+                  rdfs:label "FungalSpecies" .
+
+
+###  obo:PO_0000003
+<obo:PO_0000003> rdf:type owl:Class ;
+                 rdfs:subClassOf <obo:NCIT_C79611> ;
+                 owl:disjointWith <obo:PO_0009008> ;
+                 rdfs:label "WholePlant" .
+
+
+###  obo:PO_0001002
+<obo:PO_0001002> rdf:type owl:Class ;
+                 rdfs:subClassOf <obo:PO_0009012> ;
+                 rdfs:label "FruitDevelopmentStage" .
+
+
+###  obo:PO_0007057
+<obo:PO_0007057> rdf:type owl:Class ;
+                 rdfs:subClassOf <obo:PO_0009012> ;
+                 rdfs:label "SeedGerminationStage" .
+
+
+###  obo:PO_0007134
+<obo:PO_0007134> rdf:type owl:Class ;
+                 rdfs:subClassOf <obo:PO_0009012> ;
+                 rdfs:label "VegetativeStage" .
+
+
+###  obo:PO_0007615
+<obo:PO_0007615> rdf:type owl:Class ;
+                 rdfs:subClassOf <obo:PO_0009012> ;
+                 rdfs:label "FlowerDevelopmentStage" .
+
+
+###  obo:PO_0009001
+<obo:PO_0009001> rdf:type owl:Class ;
+                 rdfs:subClassOf <obo:PO_0009008> ;
+                 rdfs:label "Fruit" .
+
+
+###  obo:PO_0009005
+<obo:PO_0009005> rdf:type owl:Class ;
+                 rdfs:subClassOf <obo:PO_0009008> ;
+                 rdfs:label "Root" .
+
+
+###  obo:PO_0009008
+<obo:PO_0009008> rdf:type owl:Class ;
+                 rdfs:subClassOf <obo:NCIT_C79611> ;
+                 rdfs:label "PlantOrgan" .
+
+
+###  obo:PO_0009012
+<obo:PO_0009012> rdf:type owl:Class ;
+                 rdfs:label "PlantDevelopmentStage" .
+
+
+###  obo:PO_0009046
+<obo:PO_0009046> rdf:type owl:Class ;
+                 rdfs:subClassOf <obo:PO_0009008> ;
+                 rdfs:label "Flower" .
+
+
+###  obo:PO_0009047
+<obo:PO_0009047> rdf:type owl:Class ;
+                 rdfs:subClassOf <obo:PO_0009008> ;
+                 rdfs:label "Stem" .
+
+
+###  obo:PO_0025034
+<obo:PO_0025034> rdf:type owl:Class ;
+                 rdfs:subClassOf <obo:PO_0009008> ;
+                 rdfs:label "Leaf" .
+
+
+###  obo:PO_0025501
+<obo:PO_0025501> rdf:type owl:Class ;
+                 rdfs:subClassOf <obo:PO_0001002> ;
+                 owl:disjointWith <obo:PO_0025502> ;
+                 rdfs:label "FruitFormationStage" .
+
+
+###  obo:PO_0025502
+<obo:PO_0025502> rdf:type owl:Class ;
+                 rdfs:subClassOf <obo:PO_0001002> ;
+                 rdfs:label "FruitRipeningStage" .
+
+
+###  obo:TO_0000387
+<obo:TO_0000387> rdf:type owl:Class ;
+                 rdfs:subClassOf <sosa:ObservableProperty> ;
+                 rdfs:label "PlantTrait" .
+
+
+###  oboe:ObservationCollection
+<oboe:ObservationCollection> rdf:type owl:Class ;
+                             rdfs:label "ObservationCollection" .
+
+
+###  om:Unit
+<om:Unit> rdf:type owl:Class ;
+          rdfs:label "Unit" .
+
+
+###  sosa:FeatureOfInterest
+<sosa:FeatureOfInterest> rdf:type owl:Class ;
+                         rdfs:label "FeatureOfInterest" .
+
+
+###  sosa:ObservableProperty
+<sosa:ObservableProperty> rdf:type owl:Class ;
+                          rdfs:label "ObservableProperty" .
+
+
+###  sosa:Observation
+<sosa:Observation> rdf:type owl:Class ;
+                   rdfs:label "Observation" .
+
+
+###  sosa:Sensor
+<sosa:Sensor> rdf:type owl:Class ;
+              rdfs:subClassOf <dbr:Observer> ;
+              rdfs:label "Sensor" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <dbr:Location>
+                <dbr:Observer>
+                <http://semanticscience.org/resource/SIO_001212>
+                <http://www.semanticweb.org/agrots/DegreeOfAssociation>
+                <http://www.semanticweb.org/agrots/DevelopmentCondition>
+                <obo:INO_0000013>
+                <obo:NCIT_C14258>
+                <obo:NCIT_C79611>
+                <obo:PATO_0001018>
+                <obo:PDO_0000001>
+                <obo:PDO_0000015>
+                <obo:PO_0009012>
+                <oboe:ObservationCollection>
+                <om:Unit>
+                <sosa:FeatureOfInterest>
+                <sosa:ObservableProperty>
+                <sosa:Observation>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://semanticscience.org/resource/SIO_001213>
+                <http://semanticscience.org/resource/SIO_001214>
+                <http://semanticscience.org/resource/SIO_001215>
+                <http://semanticscience.org/resource/SIO_001216>
+                <http://semanticscience.org/resource/SIO_001217>
+                <http://semanticscience.org/resource/SIO_001218>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/agrots/BlueColorBrightness>
+                <http://www.semanticweb.org/agrots/GreenColorBrightness>
+                <http://www.semanticweb.org/agrots/OrangeColorBrightness>
+                <http://www.semanticweb.org/agrots/RedColorBrightness>
+                <http://www.semanticweb.org/agrots/VioletColorBrightness>
+                <http://www.semanticweb.org/agrots/YellowColorBrightness>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/agrots/EarlyBlight>
+                <http://www.semanticweb.org/agrots/GrayMold>
+                <http://www.semanticweb.org/agrots/LateBlight>
+                <http://www.semanticweb.org/agrots/LeafMold>
+                <http://www.semanticweb.org/agrots/PowderyMildew>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/agrots/EarlyGrowthStage>
+                <obo:PO_0001002>
+                <obo:PO_0007057>
+                <obo:PO_0007134>
+                <obo:PO_0007615>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/agrots/GreenBrown>
+                <http://www.semanticweb.org/agrots/PurpleBrown>
+                <obo:PATO_0001245>
+                <obo:PATO_0001287>
+                <obo:PATO_0002411>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/agrots/GreenGrey>
+                <obo:PATO_0001251>
+                <obo:PATO_0001252>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <obo:BSPO_0000073>
+                <obo:BSPO_0000074>
+                <obo:BSPO_0000075>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <obo:NCBITaxon_40559>
+                <obo:NCBITaxon_4787>
+                <obo:NCBITaxon_5499>
+                <obo:NCBITaxon_5599>
+                <obo:NCBITaxon_62718>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <obo:PATO_0000014>
+                <obo:PATO_0000019>
+                <obo:PATO_0000052>
+                <obo:PATO_0000150>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <obo:PATO_0000016>
+                <obo:PATO_0000146>
+                <obo:PATO_0015009>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <obo:PATO_0000317>
+                <obo:PATO_0000320>
+                <obo:PATO_0000323>
+                <obo:PATO_0000324>
+                <obo:PATO_0000950>
+                <obo:PATO_0000952>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <obo:PATO_0000329>
+                <obo:PATO_0000333>
+                <obo:PATO_0001946>
+                <obo:PATO_0002274>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <obo:PATO_0000331>
+                <obo:PATO_0000337>
+                <obo:PATO_0001533>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <obo:PATO_0000947>
+                <obo:PATO_0005020>
+                <obo:PATO_0040014>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <obo:PATO_0001250>
+                <obo:PATO_0001941>
+                <obo:PATO_0001942>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <obo:PO_0009001>
+                <obo:PO_0009005>
+                <obo:PO_0009046>
+                <obo:PO_0009047>
+                <obo:PO_0025034>
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
