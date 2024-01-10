@@ -27,7 +27,8 @@
       "@id" : "om:Unit"
     },
     "hasDevelopmentConditionMinimumOptimalValueDuringDay" : {
-      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumOptimalValueDuringDay"
+      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumOptimalValueDuringDay",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "hasPlantType" : {
       "@id" : "http://www.semanticweb.org/agrots/hasPlantType",
@@ -73,6 +74,9 @@
       "@id" : "http://www.semanticweb.org/agrots/manifestsAt",
       "@type" : "@id"
     },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
     "PO_0007134" : {
       "@id" : "obo:PO_0007134"
     },
@@ -81,7 +85,8 @@
       "@type" : "@id"
     },
     "hasDevelopmentConditionMaximumOptimalValueDuringDay" : {
-      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumOptimalValueDuringDay"
+      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumOptimalValueDuringDay",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "StrongToFatal" : {
       "@id" : "http://www.semanticweb.org/agrots/StrongToFatal"
@@ -100,7 +105,8 @@
       "@id" : "obo:PDO_0000001"
     },
     "OBI_0001621" : {
-      "@id" : "obo:OBI_0001621"
+      "@id" : "obo:OBI_0001621",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
     },
     "PO_0009012" : {
       "@id" : "obo:PO_0009012"
@@ -117,6 +123,9 @@
     },
     "PowderyMildew" : {
       "@id" : "http://www.semanticweb.org/agrots/PowderyMildew"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
     },
     "PDO_0000004" : {
       "@id" : "obo:PDO_0000004"
@@ -178,7 +187,8 @@
       "@id" : "obo:NCIT_C25244"
     },
     "hasDevelopmentConditionMaximumOptimalValue" : {
-      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumOptimalValue"
+      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumOptimalValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "hasSymptom" : {
       "@id" : "http://www.semanticweb.org/agrots/hasSymptom",
@@ -231,7 +241,8 @@
       "@id" : "obo:PO_0001002"
     },
     "hasDevelopmentConditionMaximumExtremeValueDuringNight" : {
-      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumExtremeValueDuringNight"
+      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumExtremeValueDuringNight",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "PATO_0002224" : {
       "@id" : "obo:PATO_0002224"
@@ -258,16 +269,19 @@
       "@type" : "@id"
     },
     "OBI_0001620" : {
-      "@id" : "obo:OBI_0001620"
+      "@id" : "obo:OBI_0001620",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
     },
     "hasDevelopmentConditionMinimumOptimalValue" : {
-      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumOptimalValue"
+      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumOptimalValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "PATO_0001941" : {
       "@id" : "obo:PATO_0001941"
     },
     "hasDevelopmentConditionMinimumExtremeValueDuringNight" : {
-      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumExtremeValueDuringNight"
+      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumExtremeValueDuringNight",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "Observer" : {
       "@id" : "dbr:Observer"
@@ -294,10 +308,6 @@
     },
     "PATO_0001025" : {
       "@id" : "obo:PATO_0001025"
-    },
-    "BFO_0000051" : {
-      "@id" : "obo:BFO_0000051",
-      "@type" : "@id"
     },
     "isDegreeOfAssociationForDisease" : {
       "@id" : "http://www.semanticweb.org/agrots/isDegreeOfAssociationForDisease",
@@ -329,7 +339,12 @@
       "@id" : "obo:PO_0025034"
     },
     "hasDevelopmentConditionMinimumOptimalValueDuringNight" : {
-      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumOptimalValueDuringNight"
+      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumOptimalValueDuringNight",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
     },
     "SevereToFatal" : {
       "@id" : "http://www.semanticweb.org/agrots/SevereToFatal"
@@ -381,7 +396,8 @@
       "@id" : "obo:PATO_0002539"
     },
     "hasNumericalValueType" : {
-      "@id" : "http://www.semanticweb.org/agrots/hasNumericalValueType"
+      "@id" : "http://www.semanticweb.org/agrots/hasNumericalValueType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "BlueColorBrightness" : {
       "@id" : "http://www.semanticweb.org/agrots/BlueColorBrightness"
@@ -397,9 +413,6 @@
     },
     "SeedGerminationAndEarlyGrowthStage" : {
       "@id" : "http://www.semanticweb.org/agrots/SeedGerminationAndEarlyGrowthStage"
-    },
-    "hasNumericalValue" : {
-      "@id" : "om:hasNumericalValue"
     },
     "hasPercentageOfAssociation" : {
       "@id" : "http://www.semanticweb.org/agrots/hasPercentageOfAssociation",
@@ -490,7 +503,8 @@
       "@id" : "http://semanticscience.org/resource/SIO_001212"
     },
     "hasDevelopmentConditionMaximumExtremeValue" : {
-      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumExtremeValue"
+      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumExtremeValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "NCIT_C79611" : {
       "@id" : "obo:NCIT_C79611"
@@ -542,7 +556,8 @@
       "@id" : "obo:PATO_0000323"
     },
     "hasDevelopmentConditionMaximumOptimalValueDuringNight" : {
-      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumOptimalValueDuringNight"
+      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumOptimalValueDuringNight",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "PATO_0001245" : {
       "@id" : "obo:PATO_0001245"
@@ -577,12 +592,9 @@
     "PolygonalArea" : {
       "@id" : "http://www.semanticweb.org/agrots/PolygonalArea"
     },
-    "BFO_0000050" : {
-      "@id" : "obo:BFO_0000050",
-      "@type" : "@id"
-    },
     "hasDevelopmentConditionMinimumExtremeValueDuringDay" : {
-      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumExtremeValueDuringDay"
+      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumExtremeValueDuringDay",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "PO_0009008" : {
       "@id" : "obo:PO_0009008"
@@ -601,7 +613,8 @@
       "@id" : "http://www.semanticweb.org/agrots/AllDevelopmentStages"
     },
     "hasDevelopmentConditionMaximumExtremeValueDuringDay" : {
-      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumExtremeValueDuringDay"
+      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumExtremeValueDuringDay",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "PO_0009001" : {
       "@id" : "obo:PO_0009001"
@@ -661,7 +674,8 @@
       "@id" : "http://www.semanticweb.org/agrots/PurpleBrown"
     },
     "hasDevelopmentConditionMinimumExtremeValue" : {
-      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumExtremeValue"
+      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumExtremeValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
     "SIO_001218" : {
       "@id" : "http://semanticscience.org/resource/SIO_001218"
