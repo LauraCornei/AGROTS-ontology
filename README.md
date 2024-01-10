@@ -8,5 +8,11 @@ The ontology is available in the following formats:
 - [OWL](agrotsV23.owl)
 - [JSON-LD](OnToology/agrotsV23.ttl/context/context.jsonld)
 
+
+![oops_minor_pitfalls](https://github.com/LauraCornei/AGROTS-ontology/assets/54140505/d40dc945-e726-4582-baa8-435f42ab119a)
+
+
+
+
 ## Ontology diagram
 ![Ontology diagram](AGROTS_onto.svg)
