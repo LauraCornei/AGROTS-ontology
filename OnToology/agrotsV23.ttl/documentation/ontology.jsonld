@@ -3,13 +3,55 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
+      "@id" : "obo:AGRO_00000325"
+    }, {
+      "@id" : "obo:INO_0000013"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
       "@id" : "http://www.semanticweb.org/agrots/DevelopmentCondition"
     }, {
       "@id" : "http://www.semanticweb.org/agrots/EnvironmentalFactorObservationCollection"
     } ]
   } ]
 }, {
-  "@id" : "_:genid105",
+  "@id" : "_:genid102",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/agrots/EarlyBlight"
+    }, {
+      "@id" : "http://www.semanticweb.org/agrots/GrayMold"
+    }, {
+      "@id" : "http://www.semanticweb.org/agrots/LateBlight"
+    }, {
+      "@id" : "http://www.semanticweb.org/agrots/LeafMold"
+    }, {
+      "@id" : "http://www.semanticweb.org/agrots/PowderyMildew"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid108",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/agrots/EarlyGrowthStage"
+    }, {
+      "@id" : "obo:PO_0001002"
+    }, {
+      "@id" : "obo:PO_0007057"
+    }, {
+      "@id" : "obo:PO_0007134"
+    }, {
+      "@id" : "obo:PO_0007615"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid114",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -25,7 +67,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid111",
+  "@id" : "_:genid120",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -37,7 +79,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid115",
+  "@id" : "_:genid124",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -49,7 +91,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid119",
+  "@id" : "_:genid128",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -65,7 +107,17 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid125",
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/agrots/DevelopmentCondition"
+    }, {
+      "@id" : "http://www.semanticweb.org/agrots/EnvironmentalFactorObservationCollection"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid134",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -79,21 +131,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid13",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.semanticweb.org/agrots/EarlyGrowthStage"
-    }, {
-      "@id" : "obo:PO_0007057"
-    }, {
-      "@id" : "obo:PO_0007134"
-    }, {
-      "@id" : "obo:PO_0007615"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid130",
+  "@id" : "_:genid139",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -105,7 +143,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid134",
+  "@id" : "_:genid143",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -123,7 +161,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid141",
+  "@id" : "_:genid150",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -137,7 +175,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid146",
+  "@id" : "_:genid155",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -149,7 +187,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid150",
+  "@id" : "_:genid159",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -161,7 +199,23 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid154",
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/agrots/EarlyGrowthStage"
+    }, {
+      "@id" : "obo:PO_0001002"
+    }, {
+      "@id" : "obo:PO_0007057"
+    }, {
+      "@id" : "obo:PO_0007134"
+    }, {
+      "@id" : "obo:PO_0007615"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid163",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -173,7 +227,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid158",
+  "@id" : "_:genid167",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -189,7 +243,21 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid18",
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/agrots/EarlyGrowthStage"
+    }, {
+      "@id" : "obo:PO_0007057"
+    }, {
+      "@id" : "obo:PO_0007134"
+    }, {
+      "@id" : "obo:PO_0007615"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid27",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -207,7 +275,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid25",
+  "@id" : "_:genid34",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
@@ -217,7 +285,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid28",
+  "@id" : "_:genid37",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -227,7 +295,17 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid31",
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "obo:AGRO_00000325"
+    }, {
+      "@id" : "obo:INO_0000013"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid40",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "obo:TO_0000387"
@@ -236,7 +314,7 @@
     "@id" : "sosa:observedProperty"
   } ]
 }, {
-  "@id" : "_:genid32",
+  "@id" : "_:genid41",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "obo:TO_0000387"
@@ -249,7 +327,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid33",
+  "@id" : "_:genid42",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.semanticweb.org/agrots/CropObservation"
@@ -258,7 +336,7 @@
     "@id" : "obo:RO_0002351"
   } ]
 }, {
-  "@id" : "_:genid34",
+  "@id" : "_:genid43",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "obo:AGRO_00000325"
@@ -271,7 +349,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid35",
+  "@id" : "_:genid44",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
@@ -281,7 +359,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid38",
+  "@id" : "_:genid47",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
@@ -291,17 +369,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid4",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.semanticweb.org/agrots/DevelopmentCondition"
-    }, {
-      "@id" : "http://www.semanticweb.org/agrots/EnvironmentalFactorObservationCollection"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid41",
+  "@id" : "_:genid50",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "efo:EFO_0000469"
@@ -310,7 +378,7 @@
     "@id" : "sosa:observedProperty"
   } ]
 }, {
-  "@id" : "_:genid42",
+  "@id" : "_:genid51",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "efo:EFO_0000469"
@@ -323,7 +391,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid43",
+  "@id" : "_:genid52",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.semanticweb.org/agrots/EnvironmentalFactorObservation"
@@ -332,7 +400,7 @@
     "@id" : "obo:RO_0002351"
   } ]
 }, {
-  "@id" : "_:genid44",
+  "@id" : "_:genid53",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -342,7 +410,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid47",
+  "@id" : "_:genid56",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -352,7 +420,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid50",
+  "@id" : "_:genid59",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -362,7 +430,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid53",
+  "@id" : "_:genid62",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -374,7 +442,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid57",
+  "@id" : "_:genid66",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -386,7 +454,17 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid61",
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "obo:AGRO_00000325"
+    }, {
+      "@id" : "obo:INO_0000013"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid70",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -426,23 +504,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid7",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.semanticweb.org/agrots/EarlyGrowthStage"
-    }, {
-      "@id" : "obo:PO_0001002"
-    }, {
-      "@id" : "obo:PO_0007057"
-    }, {
-      "@id" : "obo:PO_0007134"
-    }, {
-      "@id" : "obo:PO_0007615"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid79",
+  "@id" : "_:genid88",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -460,7 +522,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid86",
+  "@id" : "_:genid95",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -475,38 +537,6 @@
       "@id" : "http://www.semanticweb.org/agrots/VioletColorBrightness"
     }, {
       "@id" : "http://www.semanticweb.org/agrots/YellowColorBrightness"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid93",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
-      "@id" : "http://www.semanticweb.org/agrots/EarlyBlight"
-    }, {
-      "@id" : "http://www.semanticweb.org/agrots/GrayMold"
-    }, {
-      "@id" : "http://www.semanticweb.org/agrots/LateBlight"
-    }, {
-      "@id" : "http://www.semanticweb.org/agrots/LeafMold"
-    }, {
-      "@id" : "http://www.semanticweb.org/agrots/PowderyMildew"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid99",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
-      "@id" : "http://www.semanticweb.org/agrots/EarlyGrowthStage"
-    }, {
-      "@id" : "obo:PO_0001002"
-    }, {
-      "@id" : "obo:PO_0007057"
-    }, {
-      "@id" : "obo:PO_0007134"
-    }, {
-      "@id" : "obo:PO_0007615"
     } ]
   } ]
 }, {
@@ -536,6 +566,9 @@
 }, {
   "@id" : "dbo:locatedInArea",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasLocationArea"
   } ],
@@ -590,6 +623,9 @@
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "sosa:Sensor"
   } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://schema.org/author",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -656,6 +692,9 @@
 }, {
   "@id" : "http://www.semanticweb.org/agrots",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/1.0/"
+  } ],
   "http://schema.org/author" : [ {
     "@language" : "en",
     "@value" : "Cornei Doru"
@@ -704,7 +743,7 @@
     "@id" : "obo:PO_0009012"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid7"
+    "@id" : "_:genid16"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/AllDevelopmentStagesExceptFruitDevelopmentStage",
@@ -713,7 +752,7 @@
     "@id" : "obo:PO_0009012"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid13"
+    "@id" : "_:genid22"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/AllIntensities",
@@ -722,7 +761,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_001212"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid18"
+    "@id" : "_:genid27"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/ApicalSuperiorRegion",
@@ -731,7 +770,7 @@
     "@id" : "obo:BSPO_0000070"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid25"
+    "@id" : "_:genid34"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/BasalToCentralRegion",
@@ -740,7 +779,7 @@
     "@id" : "obo:BSPO_0000070"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid28"
+    "@id" : "_:genid37"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/BlueColorBrightness",
@@ -760,9 +799,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "sosa:Observation"
   }, {
-    "@id" : "_:genid31"
+    "@id" : "_:genid40"
   }, {
-    "@id" : "_:genid32"
+    "@id" : "_:genid41"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "http://www.semanticweb.org/agrots/EnvironmentalFactorObservation"
@@ -773,9 +812,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "oboe:ObservationCollection"
   }, {
-    "@id" : "_:genid33"
+    "@id" : "_:genid42"
   }, {
-    "@id" : "_:genid34"
+    "@id" : "_:genid43"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "http://www.semanticweb.org/agrots/EnvironmentalFactorObservationCollection"
@@ -793,7 +832,7 @@
     "@id" : "obo:PATO_0000150"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid35"
+    "@id" : "_:genid44"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/DarkRedBrown",
@@ -820,7 +859,7 @@
     "@id" : "obo:PATO_0000150"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid38"
+    "@id" : "_:genid47"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/EarlyBlight",
@@ -843,9 +882,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "sosa:Observation"
   }, {
-    "@id" : "_:genid41"
+    "@id" : "_:genid50"
   }, {
-    "@id" : "_:genid42"
+    "@id" : "_:genid51"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/EnvironmentalFactorObservationCollection",
@@ -853,7 +892,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "oboe:ObservationCollection"
   }, {
-    "@id" : "_:genid43"
+    "@id" : "_:genid52"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/FlowerAndFruitDevelopmentStage",
@@ -862,7 +901,7 @@
     "@id" : "obo:PO_0009012"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid44"
+    "@id" : "_:genid53"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/GrayMold",
@@ -964,7 +1003,7 @@
     "@id" : "obo:PO_0009012"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid47"
+    "@id" : "_:genid56"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/SevereToFatal",
@@ -973,7 +1012,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_001212"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid50"
+    "@id" : "_:genid59"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/SoilHumidity",
@@ -994,7 +1033,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_001212"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid53"
+    "@id" : "_:genid62"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/VioletColorBrightness",
@@ -1009,7 +1048,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_001212"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid57"
+    "@id" : "_:genid66"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/Wilted",
@@ -1053,6 +1092,12 @@
 }, {
   "@id" : "http://www.semanticweb.org/agrots/environmentalFactorIsObservedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "efo:EFO_0000469"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "sosa:Sensor"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "sosa:isObservedBy"
   } ],
@@ -1069,7 +1114,7 @@
     "@id" : "http://www.semanticweb.org/agrots/Point"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "obo:BFO_0000051"
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/hasCausalAgent",
@@ -1131,72 +1176,144 @@
 }, {
   "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumExtremeValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/agrots/DevelopmentCondition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionValue"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumExtremeValueDuringDay",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/agrots/DevelopmentCondition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumExtremeValue"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumExtremeValueDuringNight",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/agrots/DevelopmentCondition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumExtremeValue"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumOptimalValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/agrots/DevelopmentCondition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionValue"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumOptimalValueDuringDay",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/agrots/DevelopmentCondition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumOptimalValue"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumOptimalValueDuringNight",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/agrots/DevelopmentCondition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumOptimalValue"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumExtremeValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/agrots/DevelopmentCondition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionValue"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumExtremeValueDuringDay",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/agrots/DevelopmentCondition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumExtremeValue"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumExtremeValueDuringNight",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/agrots/DevelopmentCondition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumExtremeValue"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumOptimalValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/agrots/DevelopmentCondition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionValue"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumOptimalValueDuringDay",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/agrots/DevelopmentCondition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumOptimalValue"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumOptimalValueDuringNight",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/agrots/DevelopmentCondition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumOptimalValue"
   } ]
@@ -1210,13 +1327,16 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "om:hasNumericalValue"
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/hasDiseaseDevelopmentCondition",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "obo:PDO_0000001"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/agrots/DiseaseDevelopmentCondition"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "http://www.semanticweb.org/agrots/isDiseaseDevelopmentConditionFor"
@@ -1231,7 +1351,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "om:hasNumericalValue"
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/hasIntensity",
@@ -1245,6 +1365,9 @@
 }, {
   "@id" : "http://www.semanticweb.org/agrots/hasLocationPoint",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid4"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.semanticweb.org/agrots/Point"
   } ],
@@ -1267,10 +1390,13 @@
   "@id" : "http://www.semanticweb.org/agrots/hasNumericalValueType",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid4"
+    "@id" : "_:genid13"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "om:hasNumericalValue"
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/hasPercentageOfAssociation",
@@ -1282,7 +1408,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "om:hasNumericalValue"
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/hasPlantDevelopmentStage",
@@ -1312,7 +1438,7 @@
     "@id" : "sosa:Sensor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "obo:BFO_0000051"
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "http://www.semanticweb.org/agrots/isPartOfNode"
@@ -1343,7 +1469,13 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/isCausalAgentFor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "obo:PDO_0000015"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "obo:PDO_0000001"
+  } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/isCharacterizedByAffectedPartAnatomicalRegion",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
@@ -1383,6 +1515,12 @@
 }, {
   "@id" : "http://www.semanticweb.org/agrots/isCharacterizedByAffectedPartColorPatternBorderColor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "efo:EFO_0003765"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "obo:PATO_0001018"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "obo:RO_0000053"
   } ]
@@ -1412,10 +1550,22 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/isDegreeOfAssociationForDisease",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/agrots/DegreeOfAssociation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "obo:PDO_0000001"
+  } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/isDegreeOfAssociationForSymptom",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/agrots/DegreeOfAssociation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "efo:EFO_0003765"
+  } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/isDevelopmentConditionAssociatedToEnvironmentalFactor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
@@ -1431,6 +1581,9 @@
 }, {
   "@id" : "http://www.semanticweb.org/agrots/isDiseaseDevelopmentConditionFor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/agrots/DiseaseDevelopmentCondition"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "obo:PDO_0000001"
   } ]
@@ -1446,24 +1599,48 @@
 }, {
   "@id" : "http://www.semanticweb.org/agrots/isObservationMadeBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "sosa:Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "dbr:Observer"
+  } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "sosa:madeObservation"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/isPartOfNode",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "sosa:Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "obo:INO_0000013"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "obo:BFO_0000050"
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/isPropertyOfObservation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "sosa:ObservableProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "sosa:Observation"
+  } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "sosa:observedProperty"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/isSymptomAssociatedToDisease",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "efo:EFO_0003765"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "obo:PDO_0000001"
+  } ]
 }, {
   "@id" : "http://www.semanticweb.org/agrots/manifestsAt",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
@@ -1493,21 +1670,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "sosa:FeatureOfInterest"
-  } ]
-}, {
-  "@id" : "obo:BFO_0000050",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "isPartOf"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "obo:BFO_0000051"
-  } ]
-}, {
-  "@id" : "obo:BFO_0000051",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "hasPart"
   } ]
 }, {
   "@id" : "obo:BSPO_0000022",
@@ -1662,8 +1824,14 @@
 }, {
   "@id" : "obo:OBI_0001620",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/agrots/Point"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasLatitudeCoordinate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "obo:GEO_000000787"
@@ -1671,8 +1839,14 @@
 }, {
   "@id" : "obo:OBI_0001621",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/agrots/Point"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasLongitudeCoordinate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "obo:GEO_000000787"
@@ -2247,8 +2421,14 @@
 }, {
   "@id" : "obo:RO_0000052",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "obo:PATO_0001018"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "characteristicOf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "efo:EFO_0003765"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "obo:RO_0000053"
@@ -2268,6 +2448,9 @@
 }, {
   "@id" : "obo:RO_0001025",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid7"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasLocation"
   } ],
@@ -2277,8 +2460,14 @@
 }, {
   "@id" : "obo:RO_0002350",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "sosa:Observation"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "memberOf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "oboe:ObservationCollection"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "obo:RO_0002351"
@@ -2317,16 +2506,10 @@
     "@value" : "Unit"
   } ]
 }, {
-  "@id" : "om:hasNumericalValue",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "hasNumericalValue"
-  } ]
-}, {
   "@id" : "om:hasUnit",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid1"
+    "@id" : "_:genid10"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasUnit"
@@ -2379,14 +2562,26 @@
 }, {
   "@id" : "sosa:isFeatureOfInterestOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "sosa:FeatureOfInterest"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "isFeatureOfInterestOf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "oboe:ObservationCollection"
   } ]
 }, {
   "@id" : "sosa:isObservedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "sosa:ObservableProperty"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "isObservedBy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "dbr:Observer"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "sosa:observes"
