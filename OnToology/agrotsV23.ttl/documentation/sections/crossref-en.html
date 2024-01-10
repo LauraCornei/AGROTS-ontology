@@ -19,7 +19,8 @@ This section provides details for each class and property defined by [Ontology N
          </a>
       </li>
       <li>
-         <a href="#/AirTemperature" title="http://www.semanticweb.org/agrots/AirTemperature">
+         <a href="#/AirTemperature"
+            title="http://www.semanticweb.org/agrots/AirTemperature">
             <span>air temperature</span>
          </a>
       </li>
@@ -36,7 +37,8 @@ This section provides details for each class and property defined by [Ontology N
          </a>
       </li>
       <li>
-         <a href="#/AllIntensities" title="http://www.semanticweb.org/agrots/AllIntensities">
+         <a href="#/AllIntensities"
+            title="http://www.semanticweb.org/agrots/AllIntensities">
             <span>all intensities</span>
          </a>
       </li>
@@ -1140,6 +1142,12 @@ This section provides details for each class and property defined by [Ontology N
             <sup class="type-c" title="class">c</sup>, <a href="#obo:PDO_0000067" title="obo:PDO_0000067">BioticCausalAgent</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#/isCausalAgentFor"
+               title="http://www.semanticweb.org/agrots/isCausalAgentFor">is causal agent for</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#/hasCausalAgent" title="http://www.semanticweb.org/agrots/hasCausalAgent">has causal agent</a>
@@ -1557,6 +1565,18 @@ This section provides details for each class and property defined by [Ontology N
                title="http://www.semanticweb.org/agrots/DevelopmentCondition">development condition</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#/isDiseaseDevelopmentConditionFor"
+               title="http://www.semanticweb.org/agrots/isDiseaseDevelopmentConditionFor">is disease development condition for</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#/hasDiseaseDevelopmentCondition"
+               title="http://www.semanticweb.org/agrots/hasDiseaseDevelopmentCondition">has disease development condition</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="obo:PATO_0001824">
@@ -1741,7 +1761,9 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#/isEnvironmentalFactorAssociatedToDevelopmentCondition"
+            <a href="#/environmentalFactorIsObservedBy"
+               title="http://www.semanticweb.org/agrots/environmentalFactorIsObservedBy">environmental factor is observed by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#/isEnvironmentalFactorAssociatedToDevelopmentCondition"
                title="http://www.semanticweb.org/agrots/isEnvironmentalFactorAssociatedToDevelopmentCondition">is environmental factor associated to development condition</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
@@ -1796,6 +1818,11 @@ This section provides details for each class and property defined by [Ontology N
          <dd>
             <a href="#obo:AGRO_00000325" title="obo:AGRO_00000325">Crop</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#sosa:isFeatureOfInterestOf" title="sosa:isFeatureOfInterestOf">isFeatureOfInterestOf</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
@@ -2294,7 +2321,8 @@ This section provides details for each class and property defined by [Ontology N
             <sup class="type-c" title="class">c</sup>, <a href="#http://semanticscience.org/resource/SIO_001215" title="http://semanticscience.org/resource/SIO_001215">Severe</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://semanticscience.org/resource/SIO_001217" title="http://semanticscience.org/resource/SIO_001217">Strong</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://semanticscience.org/resource/SIO_001218" title="http://semanticscience.org/resource/SIO_001218">Weak</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#/AllIntensities" title="http://www.semanticweb.org/agrots/AllIntensities">all intensities</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#/AllIntensities"
+               title="http://www.semanticweb.org/agrots/AllIntensities">all intensities</a>
             <sup class="type-c" title="class">c</sup>, <a href="#/SevereToFatal" title="http://www.semanticweb.org/agrots/SevereToFatal">severe to fatal</a>
             <sup class="type-c" title="class">c</sup>, <a href="#/StrongToFatal" title="http://www.semanticweb.org/agrots/StrongToFatal">strong to fatal</a>
             <sup class="type-c" title="class">c</sup>, <a href="#/WeakToModerate"
@@ -2646,6 +2674,11 @@ This section provides details for each class and property defined by [Ontology N
             <sup class="type-op" title="object property">op</sup>, <a href="#/hasSensor" title="http://www.semanticweb.org/agrots/hasSensor">has sensor</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#/isPartOfNode" title="http://www.semanticweb.org/agrots/isPartOfNode">is part of node</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
          <dt>is disjoint with</dt>
          <dd>
             <a href="#dbr:Location" title="dbr:Location">Location</a>
@@ -2685,6 +2718,13 @@ This section provides details for each class and property defined by [Ontology N
             <a href="#efo:EFO_0000469" title="efo:EFO_0000469">EnvironmentalFactor</a>
             <sup class="type-c" title="class">c</sup>, <a href="#obo:TO_0000387" title="obo:TO_0000387">PlantTrait</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#/isPropertyOfObservation"
+               title="http://www.semanticweb.org/agrots/isPropertyOfObservation">is property of observation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#sosa:isObservedBy" title="sosa:isObservedBy">isObservedBy</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
@@ -2738,11 +2778,16 @@ This section provides details for each class and property defined by [Ontology N
          <dd>
             <a href="#sosa:observedProperty" title="sosa:observedProperty">hasObservableProperty</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#sosa:resultTime" title="sosa:resultTime">hasSamplingTime</a>
-            <sup class="type-dp" title="data property">dp</sup>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#/isObservationMadeBy"
+               title="http://www.semanticweb.org/agrots/isObservationMadeBy">is observation made by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#obo:RO_0002350" title="obo:RO_0002350">memberOf</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#obo:RO_0002351" title="obo:RO_0002351">hasMember</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#/isPropertyOfObservation"
+               title="http://www.semanticweb.org/agrots/isPropertyOfObservation">is property of observation</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#sosa:madeObservation" title="sosa:madeObservation">makesObservation</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
@@ -2794,6 +2839,12 @@ This section provides details for each class and property defined by [Ontology N
             <sup class="type-op" title="object property">op</sup>, <a href="#obo:RO_0002351" title="obo:RO_0002351">hasMember</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#sosa:isFeatureOfInterestOf" title="sosa:isFeatureOfInterestOf">isFeatureOfInterestOf</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#obo:RO_0002350" title="obo:RO_0002350">memberOf</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
          <dt>is disjoint with</dt>
          <dd>
             <a href="#dbr:Location" title="dbr:Location">Location</a>
@@ -2838,6 +2889,13 @@ This section provides details for each class and property defined by [Ontology N
          <dd>
             <a href="#sosa:madeObservation" title="sosa:madeObservation">makesObservation</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#sosa:observes" title="sosa:observes">observes</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#/isObservationMadeBy"
+               title="http://www.semanticweb.org/agrots/isObservationMadeBy">is observation made by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#sosa:isObservedBy" title="sosa:isObservedBy">isObservedBy</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is disjoint with</dt>
@@ -2949,9 +3007,16 @@ This section provides details for each class and property defined by [Ontology N
             <sup class="type-c" title="class">c</sup>, <a href="#obo:PATO_0000150" title="obo:PATO_0000150">Texture</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#obo:RO_0000052" title="obo:RO_0000052">characteristicOf</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#obo:RO_0000053" title="obo:RO_0000053">isCharacterizedBy</a>
+            <a href="#/isCharacterizedByAffectedPartColorPatternBorderColor"
+               title="http://www.semanticweb.org/agrots/isCharacterizedByAffectedPartColorPatternBorderColor">is characterized by affected part color pattern border color</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#obo:RO_0000053" title="obo:RO_0000053">isCharacterizedBy</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is disjoint with</dt>
@@ -3141,8 +3206,14 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#/isDiseaseDevelopmentConditionFor"
+            <a href="#/isCausalAgentFor"
+               title="http://www.semanticweb.org/agrots/isCausalAgentFor">is causal agent for</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#/isDegreeOfAssociationForDisease"
+               title="http://www.semanticweb.org/agrots/isDegreeOfAssociationForDisease">is degree of association for disease</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#/isDiseaseDevelopmentConditionFor"
                title="http://www.semanticweb.org/agrots/isDiseaseDevelopmentConditionFor">is disease development condition for</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#/isSymptomAssociatedToDisease"
+               title="http://www.semanticweb.org/agrots/isSymptomAssociatedToDisease">is symptom associated to disease</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is disjoint with</dt>
@@ -3315,6 +3386,8 @@ This section provides details for each class and property defined by [Ontology N
          <dt>is in domain of</dt>
          <dd>
             <a href="#obo:GEO_000000787" title="obo:GEO_000000787">hasGeodeticCoordinate</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#obo:OBI_0001620" title="obo:OBI_0001620">hasLatitudeCoordinate</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#obo:OBI_0001621" title="obo:OBI_0001621">hasLongitudeCoordinate</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
@@ -3597,13 +3670,16 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#/observesEnvironmentalFactor"
+            <a href="#/isPartOfNode" title="http://www.semanticweb.org/agrots/isPartOfNode">is part of node</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#/observesEnvironmentalFactor"
                title="http://www.semanticweb.org/agrots/observesEnvironmentalFactor">observes environmental factor</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#/hasSensor" title="http://www.semanticweb.org/agrots/hasSensor">has sensor</a>
+            <a href="#/environmentalFactorIsObservedBy"
+               title="http://www.semanticweb.org/agrots/environmentalFactorIsObservedBy">environmental factor is observed by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#/hasSensor" title="http://www.semanticweb.org/agrots/hasSensor">has sensor</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is disjoint with</dt>
@@ -3746,7 +3822,8 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#/AirTemperature" title="http://www.semanticweb.org/agrots/AirTemperature">air temperature</a>
+            <a href="#/AirTemperature"
+               title="http://www.semanticweb.org/agrots/AirTemperature">air temperature</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3890,18 +3967,25 @@ This section provides details for each class and property defined by [Ontology N
                title="http://www.semanticweb.org/agrots/isCharacterizedByAffectedPartColor">is characterized by affected part color</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#/isCharacterizedByAffectedPartColorPattern"
                title="http://www.semanticweb.org/agrots/isCharacterizedByAffectedPartColorPattern">is characterized by affected part color pattern</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#/isCharacterizedByAffectedPartColorPatternBorderColor"
+               title="http://www.semanticweb.org/agrots/isCharacterizedByAffectedPartColorPatternBorderColor">is characterized by affected part color pattern border color</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#/isCharacterizedByAffectedPartShape"
                title="http://www.semanticweb.org/agrots/isCharacterizedByAffectedPartShape">is characterized by affected part shape</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#/isCharacterizedByAffectedPartTexture"
                title="http://www.semanticweb.org/agrots/isCharacterizedByAffectedPartTexture">is characterized by affected part texture</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#/isSymptomAssociatedToDisease"
+               title="http://www.semanticweb.org/agrots/isSymptomAssociatedToDisease">is symptom associated to disease</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#obo:RO_0000053" title="obo:RO_0000053">isCharacterizedBy</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#/manifestsAt" title="http://www.semanticweb.org/agrots/manifestsAt">manifests at</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#/hasSymptom" title="http://www.semanticweb.org/agrots/hasSymptom">has symptom</a>
+            <a href="#obo:RO_0000052" title="obo:RO_0000052">characteristicOf</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#/hasSymptom" title="http://www.semanticweb.org/agrots/hasSymptom">has symptom</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#/isAffectedBy" title="http://www.semanticweb.org/agrots/isAffectedBy">is affected by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#/isDegreeOfAssociationForSymptom"
+               title="http://www.semanticweb.org/agrots/isDegreeOfAssociationForSymptom">is degree of association for symptom</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -3921,7 +4005,8 @@ This section provides details for each class and property defined by [Ontology N
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#/AirTemperature" title="http://www.semanticweb.org/agrots/AirTemperature">air temperature</a>
+            <a href="#/AirTemperature"
+               title="http://www.semanticweb.org/agrots/AirTemperature">air temperature</a>
             <sup class="type-c" title="class">c</sup>, <a href="#/SoilTemperature"
                title="http://www.semanticweb.org/agrots/SoilTemperature">soil temperature</a>
             <sup class="type-c" title="class">c</sup>
@@ -4460,14 +4545,17 @@ This section provides details for each class and property defined by [Ontology N
          <a href="#sosa:observedProperty" title="sosa:observedProperty">hasObservableProperty</a>
       </li>
       <li>
-         <a href="#obo:BFO_0000051" title="obo:BFO_0000051">hasPart</a>
-      </li>
-      <li>
          <a href="#om:hasUnit" title="om:hasUnit">hasUnit</a>
       </li>
       <li>
          <a href="#/isAffectedBy" title="http://www.semanticweb.org/agrots/isAffectedBy">
             <span>is affected by</span>
+         </a>
+      </li>
+      <li>
+         <a href="#/isCausalAgentFor"
+            title="http://www.semanticweb.org/agrots/isCausalAgentFor">
+            <span>is causal agent for</span>
          </a>
       </li>
       <li>
@@ -4507,6 +4595,18 @@ This section provides details for each class and property defined by [Ontology N
          </a>
       </li>
       <li>
+         <a href="#/isDegreeOfAssociationForDisease"
+            title="http://www.semanticweb.org/agrots/isDegreeOfAssociationForDisease">
+            <span>is degree of association for disease</span>
+         </a>
+      </li>
+      <li>
+         <a href="#/isDegreeOfAssociationForSymptom"
+            title="http://www.semanticweb.org/agrots/isDegreeOfAssociationForSymptom">
+            <span>is degree of association for symptom</span>
+         </a>
+      </li>
+      <li>
          <a href="#/isDevelopmentConditionAssociatedToEnvironmentalFactor"
             title="http://www.semanticweb.org/agrots/isDevelopmentConditionAssociatedToEnvironmentalFactor">
             <span>is development condition associated to environmental factor</span>
@@ -4542,6 +4642,12 @@ This section provides details for each class and property defined by [Ontology N
          </a>
       </li>
       <li>
+         <a href="#/isSymptomAssociatedToDisease"
+            title="http://www.semanticweb.org/agrots/isSymptomAssociatedToDisease">
+            <span>is symptom associated to disease</span>
+         </a>
+      </li>
+      <li>
          <a href="#obo:RO_0000053" title="obo:RO_0000053">isCharacterizedBy</a>
       </li>
       <li>
@@ -4549,9 +4655,6 @@ This section provides details for each class and property defined by [Ontology N
       </li>
       <li>
          <a href="#sosa:isObservedBy" title="sosa:isObservedBy">isObservedBy</a>
-      </li>
-      <li>
-         <a href="#obo:BFO_0000050" title="obo:BFO_0000050">isPartOf</a>
       </li>
       <li>
          <a href="#sosa:madeObservation" title="sosa:madeObservation">makesObservation</a>
@@ -4637,6 +4740,16 @@ This section provides details for each class and property defined by [Ontology N
          <strong>IRI:</strong> obo:RO_0000052</p>
       <div class="description">
          <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#obo:PATO_0001018" title="obo:PATO_0001018">PhysicalQuality</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#efo:EFO_0003765" title="efo:EFO_0003765">Symptom</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#obo:RO_0000053" title="obo:RO_0000053">isCharacterizedBy</a>
@@ -4659,6 +4772,16 @@ This section provides details for each class and property defined by [Ontology N
                <a href="#sosa:isObservedBy" title="sosa:isObservedBy">isObservedBy</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#efo:EFO_0000469" title="efo:EFO_0000469">EnvironmentalFactor</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#sosa:Sensor" title="sosa:Sensor">Sensor</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#/observesEnvironmentalFactor"
@@ -4679,8 +4802,9 @@ This section provides details for each class and property defined by [Ontology N
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#obo:BFO_0000051" title="obo:BFO_0000051">hasPart</a>
-               <sup class="type-op" title="object property">op</sup>
+               <a href="http://www.w3.org/2002/07/owl#topObjectProperty"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</a>
             </dd>
             <dt>has domain</dt>
             <dd>
@@ -4716,8 +4840,7 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="http://www.semanticweb.org/agrots/isCausalAgentFor"
-                  target="_blank"
+               <a href="#/isCausalAgentFor"
                   title="http://www.semanticweb.org/agrots/isCausalAgentFor">is causal agent for</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
@@ -4774,8 +4897,7 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="http://www.semanticweb.org/agrots/isDegreeOfAssociationForSymptom"
-                  target="_blank"
+               <a href="#/isDegreeOfAssociationForSymptom"
                   title="http://www.semanticweb.org/agrots/isDegreeOfAssociationForSymptom">is degree of association for symptom</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
@@ -4805,8 +4927,7 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="http://www.semanticweb.org/agrots/isDegreeOfAssociationForDisease"
-                  target="_blank"
+               <a href="#/isDegreeOfAssociationForDisease"
                   title="http://www.semanticweb.org/agrots/isDegreeOfAssociationForDisease">is degree of association for disease</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
@@ -4854,6 +4975,12 @@ This section provides details for each class and property defined by [Ontology N
             <dt>has domain</dt>
             <dd>
                <a href="#obo:PDO_0000001" title="obo:PDO_0000001">PlantDisease</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#/DiseaseDevelopmentCondition"
+                  title="http://www.semanticweb.org/agrots/DiseaseDevelopmentCondition">disease development condition</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -4906,6 +5033,14 @@ This section provides details for each class and property defined by [Ontology N
                <a href="#/hasNodeLocationPoint"
                   title="http://www.semanticweb.org/agrots/hasNodeLocationPoint">has node location point</a>
                <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#obo:AGRO_00000325" title="obo:AGRO_00000325">Crop</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#obo:INO_0000013" title="obo:INO_0000013">Node</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -4998,8 +5133,9 @@ This section provides details for each class and property defined by [Ontology N
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#obo:BFO_0000051" title="obo:BFO_0000051">hasPart</a>
-               <sup class="type-op" title="object property">op</sup>
+               <a href="http://www.w3.org/2002/07/owl#topObjectProperty"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</a>
             </dd>
             <dt>has domain</dt>
             <dd>
@@ -5040,8 +5176,7 @@ This section provides details for each class and property defined by [Ontology N
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="http://www.semanticweb.org/agrots/isSymptomAssociatedToDisease"
-                  target="_blank"
+               <a href="#/isSymptomAssociatedToDisease"
                   title="http://www.semanticweb.org/agrots/isSymptomAssociatedToDisease">is symptom associated to disease</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
@@ -5091,6 +5226,14 @@ This section provides details for each class and property defined by [Ontology N
                <sup class="type-op" title="object property">op</sup>, <a href="#dbo:locatedInArea" title="dbo:locatedInArea">hasLocationArea</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#obo:AGRO_00000325" title="obo:AGRO_00000325">Crop</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#obo:INO_0000013" title="obo:INO_0000013">Node</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <a href="#dbr:Location" title="dbr:Location">Location</a>
@@ -5118,6 +5261,14 @@ This section provides details for each class and property defined by [Ontology N
                <a href="#/hasCropLocationArea"
                   title="http://www.semanticweb.org/agrots/hasCropLocationArea">has crop location area</a>
                <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#obo:AGRO_00000325" title="obo:AGRO_00000325">Crop</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#obo:INO_0000013" title="obo:INO_0000013">Node</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -5182,29 +5333,6 @@ This section provides details for each class and property defined by [Ontology N
          </dl>
       </div>
    </div>
-   <div class="entity" id="obo:BFO_0000051">
-      <h3>hasPart<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> obo:BFO_0000051</p>
-      <div class="description">
-         <dl>
-            <dt>has sub-properties</dt>
-            <dd>
-               <a href="#/hasBorderPoint" title="http://www.semanticweb.org/agrots/hasBorderPoint">has border point</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#/hasSensor" title="http://www.semanticweb.org/agrots/hasSensor">has sensor</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#obo:BFO_0000050" title="obo:BFO_0000050">isPartOf</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="om:hasUnit">
       <h3>hasUnit<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -5255,6 +5383,33 @@ This section provides details for each class and property defined by [Ontology N
             <dt>is inverse of</dt>
             <dd>
                <a href="#/manifestsAt" title="http://www.semanticweb.org/agrots/manifestsAt">manifests at</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/isCausalAgentFor">
+      <h3>is causal agent for<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/agrots/isCausalAgentFor</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#obo:PDO_0000015" title="obo:PDO_0000015">CausalAgent</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#obo:PDO_0000001" title="obo:PDO_0000001">PlantDisease</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#/hasCausalAgent" title="http://www.semanticweb.org/agrots/hasCausalAgent">has causal agent</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -5355,6 +5510,16 @@ This section provides details for each class and property defined by [Ontology N
                <a href="#obo:RO_0000053" title="obo:RO_0000053">isCharacterizedBy</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#efo:EFO_0003765" title="efo:EFO_0003765">Symptom</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#obo:PATO_0001018" title="obo:PATO_0001018">PhysicalQuality</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
          </dl>
       </div>
    </div>
@@ -5412,6 +5577,66 @@ This section provides details for each class and property defined by [Ontology N
          </dl>
       </div>
    </div>
+   <div class="entity" id="/isDegreeOfAssociationForDisease">
+      <h3>is degree of association for disease<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/agrots/isDegreeOfAssociationForDisease</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.semanticweb.org/agrots/DegreeOfAssociation"
+                  target="_blank"
+                  title="http://www.semanticweb.org/agrots/DegreeOfAssociation">degree of association</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#obo:PDO_0000001" title="obo:PDO_0000001">PlantDisease</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#/hasDegreeOfAssociationToSymptom"
+                  title="http://www.semanticweb.org/agrots/hasDegreeOfAssociationToSymptom">has degree of association to symptom</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/isDegreeOfAssociationForSymptom">
+      <h3>is degree of association for symptom<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/agrots/isDegreeOfAssociationForSymptom</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.semanticweb.org/agrots/DegreeOfAssociation"
+                  target="_blank"
+                  title="http://www.semanticweb.org/agrots/DegreeOfAssociation">degree of association</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#efo:EFO_0003765" title="efo:EFO_0003765">Symptom</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#/hasDegreeOfAssociationToDisease"
+                  title="http://www.semanticweb.org/agrots/hasDegreeOfAssociationToDisease">has degree of association to disease</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="/isDevelopmentConditionAssociatedToEnvironmentalFactor">
       <h3>is development condition associated to environmental factor<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -5451,6 +5676,12 @@ This section provides details for each class and property defined by [Ontology N
          <strong>IRI:</strong> http://www.semanticweb.org/agrots/isDiseaseDevelopmentConditionFor</p>
       <div class="description">
          <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/DiseaseDevelopmentCondition"
+                  title="http://www.semanticweb.org/agrots/DiseaseDevelopmentCondition">disease development condition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <a href="#obo:PDO_0000001" title="obo:PDO_0000001">PlantDisease</a>
@@ -5504,6 +5735,16 @@ This section provides details for each class and property defined by [Ontology N
          <strong>IRI:</strong> http://www.semanticweb.org/agrots/isObservationMadeBy</p>
       <div class="description">
          <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#sosa:Observation" title="sosa:Observation">Observation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#dbr:Observer" title="dbr:Observer">Observer</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#sosa:madeObservation" title="sosa:madeObservation">makesObservation</a>
@@ -5523,8 +5764,19 @@ This section provides details for each class and property defined by [Ontology N
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#obo:BFO_0000050" title="obo:BFO_0000050">isPartOf</a>
-               <sup class="type-op" title="object property">op</sup>
+               <a href="http://www.w3.org/2002/07/owl#topObjectProperty"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</a>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#sosa:Sensor" title="sosa:Sensor">Sensor</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#obo:INO_0000013" title="obo:INO_0000013">Node</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
@@ -5543,9 +5795,46 @@ This section provides details for each class and property defined by [Ontology N
          <strong>IRI:</strong> http://www.semanticweb.org/agrots/isPropertyOfObservation</p>
       <div class="description">
          <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#sosa:ObservableProperty" title="sosa:ObservableProperty">ObservableProperty</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#sosa:Observation" title="sosa:Observation">Observation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#sosa:observedProperty" title="sosa:observedProperty">hasObservableProperty</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="/isSymptomAssociatedToDisease">
+      <h3>is symptom associated to disease<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/agrots/isSymptomAssociatedToDisease</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#efo:EFO_0003765" title="efo:EFO_0003765">Symptom</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#obo:PDO_0000001" title="obo:PDO_0000001">PlantDisease</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#/hasSymptom" title="http://www.semanticweb.org/agrots/hasSymptom">has symptom</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -5603,6 +5892,16 @@ This section provides details for each class and property defined by [Ontology N
          <strong>IRI:</strong> sosa:isFeatureOfInterestOf</p>
       <div class="description">
          <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#sosa:FeatureOfInterest" title="sosa:FeatureOfInterest">FeatureOfInterest</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#oboe:ObservationCollection" title="oboe:ObservationCollection">ObservationCollection</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#sosa:hasFeatureOfInterest" title="sosa:hasFeatureOfInterest">hasFeatureOfInterest</a>
@@ -5626,31 +5925,19 @@ This section provides details for each class and property defined by [Ontology N
                   title="http://www.semanticweb.org/agrots/environmentalFactorIsObservedBy">environmental factor is observed by</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#sosa:ObservableProperty" title="sosa:ObservableProperty">ObservableProperty</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#dbr:Observer" title="dbr:Observer">Observer</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#sosa:observes" title="sosa:observes">observes</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="obo:BFO_0000050">
-      <h3>isPartOf<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> obo:BFO_0000050</p>
-      <div class="description">
-         <dl>
-            <dt>has sub-properties</dt>
-            <dd>
-               <a href="#/isPartOfNode" title="http://www.semanticweb.org/agrots/isPartOfNode">is part of node</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>is inverse of</dt>
-            <dd>
-               <a href="#obo:BFO_0000051" title="obo:BFO_0000051">hasPart</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -5720,6 +6007,16 @@ This section provides details for each class and property defined by [Ontology N
          <strong>IRI:</strong> obo:RO_0002350</p>
       <div class="description">
          <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#sosa:Observation" title="sosa:Observation">Observation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#oboe:ObservationCollection" title="oboe:ObservationCollection">ObservationCollection</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#obo:RO_0002351" title="obo:RO_0002351">hasMember</a>
@@ -5905,9 +6202,6 @@ This section provides details for each class and property defined by [Ontology N
          <a href="#obo:OBI_0001621" title="obo:OBI_0001621">hasLongitudeCoordinate</a>
       </li>
       <li>
-         <a href="#om:hasNumericalValue" title="om:hasNumericalValue">hasNumericalValue</a>
-      </li>
-      <li>
          <a href="#sosa:resultTime" title="sosa:resultTime">hasSamplingTime</a>
       </li>
       <li>
@@ -5940,6 +6234,19 @@ This section provides details for each class and property defined by [Ontology N
                   title="http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumExtremeValueDuringNight">has development condition maximum extreme value during night</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.semanticweb.org/agrots/DevelopmentCondition"
+                  target="_blank"
+                  title="http://www.semanticweb.org/agrots/DevelopmentCondition">development condition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
          </dl>
       </div>
    </div>
@@ -5958,6 +6265,19 @@ This section provides details for each class and property defined by [Ontology N
                   title="http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumExtremeValue">has development condition maximum extreme value</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.semanticweb.org/agrots/DevelopmentCondition"
+                  target="_blank"
+                  title="http://www.semanticweb.org/agrots/DevelopmentCondition">development condition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
          </dl>
       </div>
    </div>
@@ -5975,6 +6295,19 @@ This section provides details for each class and property defined by [Ontology N
                <a href="#/hasDevelopmentConditionMaximumExtremeValue"
                   title="http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumExtremeValue">has development condition maximum extreme value</a>
                <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.semanticweb.org/agrots/DevelopmentCondition"
+                  target="_blank"
+                  title="http://www.semanticweb.org/agrots/DevelopmentCondition">development condition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
             </dd>
          </dl>
       </div>
@@ -6002,6 +6335,19 @@ This section provides details for each class and property defined by [Ontology N
                   title="http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumOptimalValueDuringNight">has development condition maximum optimal value during night</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.semanticweb.org/agrots/DevelopmentCondition"
+                  target="_blank"
+                  title="http://www.semanticweb.org/agrots/DevelopmentCondition">development condition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
          </dl>
       </div>
    </div>
@@ -6020,6 +6366,19 @@ This section provides details for each class and property defined by [Ontology N
                   title="http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumOptimalValue">has development condition maximum optimal value</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.semanticweb.org/agrots/DevelopmentCondition"
+                  target="_blank"
+                  title="http://www.semanticweb.org/agrots/DevelopmentCondition">development condition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
          </dl>
       </div>
    </div>
@@ -6037,6 +6396,19 @@ This section provides details for each class and property defined by [Ontology N
                <a href="#/hasDevelopmentConditionMaximumOptimalValue"
                   title="http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumOptimalValue">has development condition maximum optimal value</a>
                <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.semanticweb.org/agrots/DevelopmentCondition"
+                  target="_blank"
+                  title="http://www.semanticweb.org/agrots/DevelopmentCondition">development condition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
             </dd>
          </dl>
       </div>
@@ -6064,6 +6436,19 @@ This section provides details for each class and property defined by [Ontology N
                   title="http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumExtremeValueDuringNight">has development condition minimum extreme value during night</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.semanticweb.org/agrots/DevelopmentCondition"
+                  target="_blank"
+                  title="http://www.semanticweb.org/agrots/DevelopmentCondition">development condition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
          </dl>
       </div>
    </div>
@@ -6082,6 +6467,19 @@ This section provides details for each class and property defined by [Ontology N
                   title="http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumExtremeValue">has development condition minimum extreme value</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.semanticweb.org/agrots/DevelopmentCondition"
+                  target="_blank"
+                  title="http://www.semanticweb.org/agrots/DevelopmentCondition">development condition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
          </dl>
       </div>
    </div>
@@ -6099,6 +6497,19 @@ This section provides details for each class and property defined by [Ontology N
                <a href="#/hasDevelopmentConditionMinimumExtremeValue"
                   title="http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumExtremeValue">has development condition minimum extreme value</a>
                <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.semanticweb.org/agrots/DevelopmentCondition"
+                  target="_blank"
+                  title="http://www.semanticweb.org/agrots/DevelopmentCondition">development condition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
             </dd>
          </dl>
       </div>
@@ -6126,6 +6537,19 @@ This section provides details for each class and property defined by [Ontology N
                   title="http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumOptimalValueDuringNight">has development condition minimum optimal value during night</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.semanticweb.org/agrots/DevelopmentCondition"
+                  target="_blank"
+                  title="http://www.semanticweb.org/agrots/DevelopmentCondition">development condition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
          </dl>
       </div>
    </div>
@@ -6143,6 +6567,19 @@ This section provides details for each class and property defined by [Ontology N
                <a href="#/hasDevelopmentConditionMinimumOptimalValue"
                   title="http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumOptimalValue">has development condition minimum optimal value</a>
                <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.semanticweb.org/agrots/DevelopmentCondition"
+                  target="_blank"
+                  title="http://www.semanticweb.org/agrots/DevelopmentCondition">development condition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
             </dd>
          </dl>
       </div>
@@ -6162,6 +6599,19 @@ This section provides details for each class and property defined by [Ontology N
                   title="http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumOptimalValue">has development condition minimum optimal value</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.semanticweb.org/agrots/DevelopmentCondition"
+                  target="_blank"
+                  title="http://www.semanticweb.org/agrots/DevelopmentCondition">development condition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#integer"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+            </dd>
          </dl>
       </div>
    </div>
@@ -6176,8 +6626,9 @@ This section provides details for each class and property defined by [Ontology N
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#om:hasNumericalValue" title="om:hasNumericalValue">hasNumericalValue</a>
-               <sup class="type-dp" title="data property">dp</sup>
+               <a href="http://www.w3.org/2002/07/owl#topDataProperty"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</a>
             </dd>
             <dt>has sub-properties</dt>
             <dd>
@@ -6218,8 +6669,9 @@ This section provides details for each class and property defined by [Ontology N
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#om:hasNumericalValue" title="om:hasNumericalValue">hasNumericalValue</a>
-               <sup class="type-dp" title="data property">dp</sup>
+               <a href="http://www.w3.org/2002/07/owl#topDataProperty"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</a>
             </dd>
             <dt>has domain</dt>
             <dd>
@@ -6247,8 +6699,9 @@ This section provides details for each class and property defined by [Ontology N
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#om:hasNumericalValue" title="om:hasNumericalValue">hasNumericalValue</a>
-               <sup class="type-dp" title="data property">dp</sup>
+               <a href="http://www.w3.org/2002/07/owl#topDataProperty"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</a>
             </dd>
             <dt>has domain</dt>
             <dd>
@@ -6260,6 +6713,12 @@ This section provides details for each class and property defined by [Ontology N
                <a href="#/EnvironmentalFactorObservationCollection"
                   title="http://www.semanticweb.org/agrots/EnvironmentalFactorObservationCollection">environmental factor observation collection</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>
@@ -6275,8 +6734,9 @@ This section provides details for each class and property defined by [Ontology N
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#om:hasNumericalValue" title="om:hasNumericalValue">hasNumericalValue</a>
-               <sup class="type-dp" title="data property">dp</sup>
+               <a href="http://www.w3.org/2002/07/owl#topDataProperty"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</a>
             </dd>
             <dt>has domain</dt>
             <dd>
@@ -6337,6 +6797,17 @@ This section provides details for each class and property defined by [Ontology N
                <a href="#obo:GEO_000000787" title="obo:GEO_000000787">hasGeodeticCoordinate</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#/Point" title="http://www.semanticweb.org/agrots/Point">point</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#double"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#double">double</a>
+            </dd>
          </dl>
       </div>
    </div>
@@ -6354,29 +6825,16 @@ This section provides details for each class and property defined by [Ontology N
                <a href="#obo:GEO_000000787" title="obo:GEO_000000787">hasGeodeticCoordinate</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="om:hasNumericalValue">
-      <h3>hasNumericalValue<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> om:hasNumericalValue</p>
-      <div class="description">
-         <dl>
-            <dt>has sub-properties</dt>
+            <dt>has domain</dt>
             <dd>
-               <a href="#/hasDevelopmentConditionValue"
-                  title="http://www.semanticweb.org/agrots/hasDevelopmentConditionValue">has development condition value</a>
-               <sup class="type-dp" title="data property">dp</sup>, <a href="#/hasEnvironmentalFactorObservationValue"
-                  title="http://www.semanticweb.org/agrots/hasEnvironmentalFactorObservationValue">has environmental factor observation value</a>
-               <sup class="type-dp" title="data property">dp</sup>, <a href="#/hasNumericalValueType"
-                  title="http://www.semanticweb.org/agrots/hasNumericalValueType">has numerical value type</a>
-               <sup class="type-dp" title="data property">dp</sup>, <a href="#/hasPercentageOfAssociation"
-                  title="http://www.semanticweb.org/agrots/hasPercentageOfAssociation">has percentage of association</a>
-               <sup class="type-dp" title="data property">dp</sup>
+               <a href="#/Point" title="http://www.semanticweb.org/agrots/Point">point</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#double"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#double">double</a>
             </dd>
          </dl>
       </div>
