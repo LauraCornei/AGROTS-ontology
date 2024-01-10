@@ -6,3 +6,6 @@ The ontology is available in the following formats:
 - [Turtle](agrotsV23.ttl)
 - [OWL](agrotsV23.owl)
 - [JSON-LD](OnToology/agrotsV23.ttl/context/context.jsonld)
+
+## Ontology diagram
+![Ontology diagram](AGROTS_onto.svg)
