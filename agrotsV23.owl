@@ -24,6 +24,10 @@
     <Prefix name="time" IRI="https://www.w3.org/TR/owl-time/"/>
     <Prefix name="agrontology" IRI="http://aims.fao.org/aos/agrontology#"/>
     <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+        <IRI>https://creativecommons.org/licenses/by/1.0/</IRI>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty IRI="http://schema.org/author"/>
         <Literal xml:lang="en">Cornei Doru</Literal>
     </Annotation>
@@ -589,12 +593,6 @@
         <ObjectProperty IRI="/observesEnvironmentalFactor"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="obo:BFO_0000050"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="obo:BFO_0000051"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="obo:RO_0000052"/>
     </Declaration>
     <Declaration>
@@ -694,10 +692,10 @@
         <DataProperty IRI="obo:OBI_0001621"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="om:hasNumericalValue"/>
+        <DataProperty IRI="sosa:resultTime"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="sosa:resultTime"/>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://schema.org/author"/>
@@ -1540,7 +1538,7 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="/hasBorderPoint"/>
-        <ObjectProperty IRI="obo:BFO_0000051"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="/hasCropLocationArea"/>
@@ -1556,7 +1554,7 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="/hasSensor"/>
-        <ObjectProperty IRI="obo:BFO_0000051"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="/isCharacterizedByAffectedPartAnatomicalRegion"/>
@@ -1584,7 +1582,7 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="/isPartOfNode"/>
-        <ObjectProperty IRI="obo:BFO_0000050"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="/observesEnvironmentalFactor"/>
@@ -1639,10 +1637,6 @@
         <ObjectProperty IRI="sosa:observedProperty"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="obo:BFO_0000050"/>
-        <ObjectProperty IRI="obo:BFO_0000051"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
         <ObjectProperty IRI="obo:RO_0000052"/>
         <ObjectProperty IRI="obo:RO_0000053"/>
     </InverseObjectProperties>
@@ -1659,12 +1653,23 @@
         <ObjectProperty IRI="sosa:observes"/>
     </InverseObjectProperties>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="dbo:locatedInArea"/>
+        <ObjectUnionOf>
+            <Class IRI="obo:AGRO_00000325"/>
+            <Class IRI="obo:INO_0000013"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="/affectsPlant"/>
         <Class IRI="/DevelopmentCondition"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/appearsDuringDevelopmentStage"/>
         <Class IRI="/DevelopmentCondition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/environmentalFactorIsObservedBy"/>
+        <Class IRI="efo:EFO_0000469"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/hasBorderPoint"/>
@@ -1699,6 +1704,13 @@
         <Class IRI="efo:EFO_0003765"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasLocationPoint"/>
+        <ObjectUnionOf>
+            <Class IRI="obo:AGRO_00000325"/>
+            <Class IRI="obo:INO_0000013"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="/hasNodeLocationPoint"/>
         <Class IRI="obo:INO_0000013"/>
     </ObjectPropertyDomain>
@@ -1723,6 +1735,10 @@
         <Class IRI="obo:NCIT_C79611"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isCausalAgentFor"/>
+        <Class IRI="obo:PDO_0000015"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="/isCharacterizedByAffectedPartAnatomicalRegion"/>
         <Class IRI="efo:EFO_0003765"/>
     </ObjectPropertyDomain>
@@ -1735,6 +1751,10 @@
         <Class IRI="efo:EFO_0003765"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isCharacterizedByAffectedPartColorPatternBorderColor"/>
+        <Class IRI="efo:EFO_0003765"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="/isCharacterizedByAffectedPartShape"/>
         <Class IRI="efo:EFO_0003765"/>
     </ObjectPropertyDomain>
@@ -1743,12 +1763,40 @@
         <Class IRI="efo:EFO_0003765"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isDegreeOfAssociationForDisease"/>
+        <Class IRI="/DegreeOfAssociation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isDegreeOfAssociationForSymptom"/>
+        <Class IRI="/DegreeOfAssociation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="/isDevelopmentConditionAssociatedToEnvironmentalFactor"/>
         <Class IRI="/DevelopmentCondition"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isDiseaseDevelopmentConditionFor"/>
+        <Class IRI="/DiseaseDevelopmentCondition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="/isEnvironmentalFactorAssociatedToDevelopmentCondition"/>
         <Class IRI="efo:EFO_0000469"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isObservationMadeBy"/>
+        <Class IRI="sosa:Observation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isPartOfNode"/>
+        <Class IRI="sosa:Sensor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isPropertyOfObservation"/>
+        <Class IRI="sosa:ObservableProperty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isSymptomAssociatedToDisease"/>
+        <Class IRI="efo:EFO_0003765"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/manifestsAt"/>
@@ -1759,8 +1807,23 @@
         <Class IRI="sosa:Sensor"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="obo:RO_0000052"/>
+        <Class IRI="obo:PATO_0001018"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="obo:RO_0000053"/>
         <Class IRI="efo:EFO_0003765"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="obo:RO_0001025"/>
+        <ObjectUnionOf>
+            <Class IRI="obo:AGRO_00000325"/>
+            <Class IRI="obo:INO_0000013"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="obo:RO_0002350"/>
+        <Class IRI="sosa:Observation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="obo:RO_0002351"/>
@@ -1776,6 +1839,14 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="sosa:hasFeatureOfInterest"/>
         <Class IRI="oboe:ObservationCollection"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="sosa:isFeatureOfInterestOf"/>
+        <Class IRI="sosa:FeatureOfInterest"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="sosa:isObservedBy"/>
+        <Class IRI="sosa:ObservableProperty"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="sosa:madeObservation"/>
@@ -1802,6 +1873,10 @@
         <Class IRI="obo:PO_0009012"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="/environmentalFactorIsObservedBy"/>
+        <Class IRI="sosa:Sensor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="/hasBorderPoint"/>
         <Class IRI="/Point"/>
     </ObjectPropertyRange>
@@ -1824,6 +1899,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="/hasDevelopmentCondition"/>
         <Class IRI="/DevelopmentCondition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasDiseaseDevelopmentCondition"/>
+        <Class IRI="/DiseaseDevelopmentCondition"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/hasIntensity"/>
@@ -1858,6 +1937,10 @@
         <Class IRI="efo:EFO_0003765"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="/isCausalAgentFor"/>
+        <Class IRI="obo:PDO_0000001"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="/isCharacterizedByAffectedPartAnatomicalRegion"/>
         <Class IRI="obo:BSPO_0000070"/>
     </ObjectPropertyRange>
@@ -1870,12 +1953,24 @@
         <Class IRI="obo:PATO_0000019"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="/isCharacterizedByAffectedPartColorPatternBorderColor"/>
+        <Class IRI="obo:PATO_0001018"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="/isCharacterizedByAffectedPartShape"/>
         <Class IRI="obo:PATO_0000052"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/isCharacterizedByAffectedPartTexture"/>
         <Class IRI="obo:PATO_0000150"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/isDegreeOfAssociationForDisease"/>
+        <Class IRI="obo:PDO_0000001"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/isDegreeOfAssociationForSymptom"/>
+        <Class IRI="efo:EFO_0003765"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/isDevelopmentConditionAssociatedToEnvironmentalFactor"/>
@@ -1890,6 +1985,22 @@
         <Class IRI="/DevelopmentCondition"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="/isObservationMadeBy"/>
+        <Class IRI="dbr:Observer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/isPartOfNode"/>
+        <Class IRI="obo:INO_0000013"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/isPropertyOfObservation"/>
+        <Class IRI="sosa:Observation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/isSymptomAssociatedToDisease"/>
+        <Class IRI="obo:PDO_0000001"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="/manifestsAt"/>
         <Class IRI="obo:NCIT_C79611"/>
     </ObjectPropertyRange>
@@ -1898,12 +2009,20 @@
         <Class IRI="efo:EFO_0000469"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="obo:RO_0000052"/>
+        <Class IRI="efo:EFO_0003765"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="obo:RO_0000053"/>
         <Class IRI="obo:PATO_0001018"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="obo:RO_0001025"/>
         <Class IRI="dbr:Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="obo:RO_0002350"/>
+        <Class IRI="oboe:ObservationCollection"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="obo:RO_0002351"/>
@@ -1916,6 +2035,14 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="sosa:hasFeatureOfInterest"/>
         <Class IRI="sosa:FeatureOfInterest"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="sosa:isFeatureOfInterestOf"/>
+        <Class IRI="oboe:ObservationCollection"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="sosa:isObservedBy"/>
+        <Class IRI="dbr:Observer"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="sosa:madeObservation"/>
@@ -1979,19 +2106,19 @@
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="/hasDevelopmentConditionValue"/>
-        <DataProperty IRI="om:hasNumericalValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="/hasEnvironmentalFactorObservationValue"/>
-        <DataProperty IRI="om:hasNumericalValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="/hasNumericalValueType"/>
-        <DataProperty IRI="om:hasNumericalValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="/hasPercentageOfAssociation"/>
-        <DataProperty IRI="om:hasNumericalValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="obo:OBI_0001620"/>
@@ -2008,6 +2135,54 @@
     <DataPropertyDomain>
         <DataProperty IRI="agrontology:hasSynonym"/>
         <Class IRI="obo:NCIT_C14258"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/hasDevelopmentConditionMaximumExtremeValue"/>
+        <Class IRI="/DevelopmentCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/hasDevelopmentConditionMaximumExtremeValueDuringDay"/>
+        <Class IRI="/DevelopmentCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/hasDevelopmentConditionMaximumExtremeValueDuringNight"/>
+        <Class IRI="/DevelopmentCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/hasDevelopmentConditionMaximumOptimalValue"/>
+        <Class IRI="/DevelopmentCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/hasDevelopmentConditionMaximumOptimalValueDuringDay"/>
+        <Class IRI="/DevelopmentCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/hasDevelopmentConditionMaximumOptimalValueDuringNight"/>
+        <Class IRI="/DevelopmentCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/hasDevelopmentConditionMinimumExtremeValue"/>
+        <Class IRI="/DevelopmentCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/hasDevelopmentConditionMinimumExtremeValueDuringDay"/>
+        <Class IRI="/DevelopmentCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/hasDevelopmentConditionMinimumExtremeValueDuringNight"/>
+        <Class IRI="/DevelopmentCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/hasDevelopmentConditionMinimumOptimalValue"/>
+        <Class IRI="/DevelopmentCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/hasDevelopmentConditionMinimumOptimalValueDuringDay"/>
+        <Class IRI="/DevelopmentCondition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/hasDevelopmentConditionMinimumOptimalValueDuringNight"/>
+        <Class IRI="/DevelopmentCondition"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="/hasDevelopmentConditionValue"/>
@@ -2033,6 +2208,14 @@
         <Class IRI="/Point"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="obo:OBI_0001620"/>
+        <Class IRI="/Point"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="obo:OBI_0001621"/>
+        <Class IRI="/Point"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="sosa:resultTime"/>
         <Class IRI="sosa:Observation"/>
     </DataPropertyDomain>
@@ -2045,6 +2228,54 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="/hasDevelopmentConditionMaximumExtremeValue"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/hasDevelopmentConditionMaximumExtremeValueDuringDay"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/hasDevelopmentConditionMaximumExtremeValueDuringNight"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/hasDevelopmentConditionMaximumOptimalValue"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/hasDevelopmentConditionMaximumOptimalValueDuringDay"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/hasDevelopmentConditionMaximumOptimalValueDuringNight"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/hasDevelopmentConditionMinimumExtremeValue"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/hasDevelopmentConditionMinimumExtremeValueDuringDay"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/hasDevelopmentConditionMinimumExtremeValueDuringNight"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/hasDevelopmentConditionMinimumOptimalValue"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/hasDevelopmentConditionMinimumOptimalValueDuringDay"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/hasDevelopmentConditionMinimumOptimalValueDuringNight"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="/hasDevelopmentConditionValue"/>
         <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
@@ -2053,11 +2284,23 @@
         <Datatype abbreviatedIRI="xsd:double"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="/hasNumericalValueType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="/hasPercentageOfAssociation"/>
         <Datatype abbreviatedIRI="xsd:double"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="obo:GEO_000000787"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="obo:OBI_0001620"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="obo:OBI_0001621"/>
         <Datatype abbreviatedIRI="xsd:double"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -2168,16 +2411,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>obo:AGRO_00000325</IRI>
         <Literal>Crop</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>obo:BFO_0000050</IRI>
-        <Literal>isPartOf</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>obo:BFO_0000051</IRI>
-        <Literal>hasPart</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2628,11 +2861,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>om:Unit</IRI>
         <Literal>Unit</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>om:hasNumericalValue</IRI>
-        <Literal>hasNumericalValue</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
