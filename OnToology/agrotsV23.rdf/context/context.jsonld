@@ -1,0 +1,745 @@
+{
+  "@context" : {
+    "AirPressure" : {
+      "@id" : "http://www.semanticweb.org/agrots/AirPressure"
+    },
+    "SoilTemperature" : {
+      "@id" : "http://www.semanticweb.org/agrots/SoilTemperature"
+    },
+    "LateBlight" : {
+      "@id" : "http://www.semanticweb.org/agrots/LateBlight"
+    },
+    "AllIntensities" : {
+      "@id" : "http://www.semanticweb.org/agrots/AllIntensities"
+    },
+    "isCharacterizedByAffectedPartColorPatternBorderColor" : {
+      "@id" : "http://www.semanticweb.org/agrots/isCharacterizedByAffectedPartColorPatternBorderColor",
+      "@type" : "@id"
+    },
+    "hasSynonym" : {
+      "@id" : "agrontology:hasSynonym",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "CropObservation" : {
+      "@id" : "http://www.semanticweb.org/agrots/CropObservation"
+    },
+    "Unit" : {
+      "@id" : "om:Unit"
+    },
+    "hasDevelopmentConditionMinimumOptimalValueDuringDay" : {
+      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumOptimalValueDuringDay",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasPlantType" : {
+      "@id" : "http://www.semanticweb.org/agrots/hasPlantType",
+      "@type" : "@id"
+    },
+    "isCausalAgentFor" : {
+      "@id" : "http://www.semanticweb.org/agrots/isCausalAgentFor",
+      "@type" : "@id"
+    },
+    "isPropertyOfObservation" : {
+      "@id" : "http://www.semanticweb.org/agrots/isPropertyOfObservation",
+      "@type" : "@id"
+    },
+    "isDiseaseDevelopmentConditionFor" : {
+      "@id" : "http://www.semanticweb.org/agrots/isDiseaseDevelopmentConditionFor",
+      "@type" : "@id"
+    },
+    "isCharacterizedByAffectedPartShape" : {
+      "@id" : "http://www.semanticweb.org/agrots/isCharacterizedByAffectedPartShape",
+      "@type" : "@id"
+    },
+    "PATO_0000411" : {
+      "@id" : "obo:PATO_0000411"
+    },
+    "PATO_0000950" : {
+      "@id" : "obo:PATO_0000950"
+    },
+    "RO_0000053" : {
+      "@id" : "obo:RO_0000053",
+      "@type" : "@id"
+    },
+    "INO_0000013" : {
+      "@id" : "obo:INO_0000013"
+    },
+    "VioletColorBrightness" : {
+      "@id" : "http://www.semanticweb.org/agrots/VioletColorBrightness"
+    },
+    "isDegreeOfAssociationForSymptom" : {
+      "@id" : "http://www.semanticweb.org/agrots/isDegreeOfAssociationForSymptom",
+      "@type" : "@id"
+    },
+    "manifestsAt" : {
+      "@id" : "http://www.semanticweb.org/agrots/manifestsAt",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "PO_0007134" : {
+      "@id" : "obo:PO_0007134"
+    },
+    "isSymptomAssociatedToDisease" : {
+      "@id" : "http://www.semanticweb.org/agrots/isSymptomAssociatedToDisease",
+      "@type" : "@id"
+    },
+    "hasDevelopmentConditionMaximumOptimalValueDuringDay" : {
+      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumOptimalValueDuringDay",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "StrongToFatal" : {
+      "@id" : "http://www.semanticweb.org/agrots/StrongToFatal"
+    },
+    "isDevelopmentConditionAssociatedToEnvironmentalFactor" : {
+      "@id" : "http://www.semanticweb.org/agrots/isDevelopmentConditionAssociatedToEnvironmentalFactor",
+      "@type" : "@id"
+    },
+    "EnvironmentalFactorObservation" : {
+      "@id" : "http://www.semanticweb.org/agrots/EnvironmentalFactorObservation"
+    },
+    "PDO_0000026" : {
+      "@id" : "obo:PDO_0000026"
+    },
+    "PDO_0000001" : {
+      "@id" : "obo:PDO_0000001"
+    },
+    "OBI_0001621" : {
+      "@id" : "obo:OBI_0001621",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "PO_0009012" : {
+      "@id" : "obo:PO_0009012"
+    },
+    "hasDiseaseDevelopmentCondition" : {
+      "@id" : "http://www.semanticweb.org/agrots/hasDiseaseDevelopmentCondition",
+      "@type" : "@id"
+    },
+    "AllDevelopmentStagesExceptFruitDevelopmentStage" : {
+      "@id" : "http://www.semanticweb.org/agrots/AllDevelopmentStagesExceptFruitDevelopmentStage"
+    },
+    "PDO_0000068" : {
+      "@id" : "obo:PDO_0000068"
+    },
+    "PowderyMildew" : {
+      "@id" : "http://www.semanticweb.org/agrots/PowderyMildew"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "PDO_0000004" : {
+      "@id" : "obo:PDO_0000004"
+    },
+    "isPartOfNode" : {
+      "@id" : "http://www.semanticweb.org/agrots/isPartOfNode",
+      "@type" : "@id"
+    },
+    "isCharacterizedByAffectedPartAnatomicalRegion" : {
+      "@id" : "http://www.semanticweb.org/agrots/isCharacterizedByAffectedPartAnatomicalRegion",
+      "@type" : "@id"
+    },
+    "hasDegreeOfAssociationToSymptom" : {
+      "@id" : "http://www.semanticweb.org/agrots/hasDegreeOfAssociationToSymptom",
+      "@type" : "@id"
+    },
+    "PATO_0001287" : {
+      "@id" : "obo:PATO_0001287"
+    },
+    "AirTemperature" : {
+      "@id" : "http://www.semanticweb.org/agrots/AirTemperature"
+    },
+    "hasLocationPoint" : {
+      "@id" : "http://www.semanticweb.org/agrots/hasLocationPoint",
+      "@type" : "@id"
+    },
+    "FeatureOfInterest" : {
+      "@id" : "sosa:FeatureOfInterest"
+    },
+    "PATO_0001250" : {
+      "@id" : "obo:PATO_0001250"
+    },
+    "BSPO_0000073" : {
+      "@id" : "obo:BSPO_0000073"
+    },
+    "ObservationCollection" : {
+      "@id" : "oboe:ObservationCollection"
+    },
+    "RedColorBrightness" : {
+      "@id" : "http://www.semanticweb.org/agrots/RedColorBrightness"
+    },
+    "RO_0001025" : {
+      "@id" : "obo:RO_0001025",
+      "@type" : "@id"
+    },
+    "SIO_001217" : {
+      "@id" : "http://semanticscience.org/resource/SIO_001217"
+    },
+    "NCBITaxon_5499" : {
+      "@id" : "obo:NCBITaxon_5499"
+    },
+    "PATO_0000052" : {
+      "@id" : "obo:PATO_0000052"
+    },
+    "YellowWhite" : {
+      "@id" : "http://www.semanticweb.org/agrots/YellowWhite"
+    },
+    "NCIT_C25244" : {
+      "@id" : "obo:NCIT_C25244"
+    },
+    "hasDevelopmentConditionMaximumOptimalValue" : {
+      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumOptimalValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasSymptom" : {
+      "@id" : "http://www.semanticweb.org/agrots/hasSymptom",
+      "@type" : "@id"
+    },
+    "PATO_0015009" : {
+      "@id" : "obo:PATO_0015009"
+    },
+    "hasEnvironmentalFactorObservationValue" : {
+      "@id" : "http://www.semanticweb.org/agrots/hasEnvironmentalFactorObservationValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "CropObservationCollection" : {
+      "@id" : "http://www.semanticweb.org/agrots/CropObservationCollection"
+    },
+    "WeakToModerate" : {
+      "@id" : "http://www.semanticweb.org/agrots/WeakToModerate"
+    },
+    "AirHumidity" : {
+      "@id" : "http://www.semanticweb.org/agrots/AirHumidity"
+    },
+    "author" : {
+      "@id" : "http://schema.org/author"
+    },
+    "PATO_0002411" : {
+      "@id" : "obo:PATO_0002411"
+    },
+    "PATO_0001018" : {
+      "@id" : "obo:PATO_0001018"
+    },
+    "PATO_0000146" : {
+      "@id" : "obo:PATO_0000146"
+    },
+    "PATO_0000331" : {
+      "@id" : "obo:PATO_0000331"
+    },
+    "EarlyBlight" : {
+      "@id" : "http://www.semanticweb.org/agrots/EarlyBlight"
+    },
+    "Location" : {
+      "@id" : "dbr:Location"
+    },
+    "BasalToCentralRegion" : {
+      "@id" : "http://www.semanticweb.org/agrots/BasalToCentralRegion"
+    },
+    "PO_0001002" : {
+      "@id" : "obo:PO_0001002"
+    },
+    "hasDevelopmentConditionMaximumExtremeValueDuringNight" : {
+      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumExtremeValueDuringNight",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "PATO_0002224" : {
+      "@id" : "obo:PATO_0002224"
+    },
+    "appearsDuringDevelopmentStage" : {
+      "@id" : "http://www.semanticweb.org/agrots/appearsDuringDevelopmentStage",
+      "@type" : "@id"
+    },
+    "BSPO_0000070" : {
+      "@id" : "obo:BSPO_0000070"
+    },
+    "PATO_0002274" : {
+      "@id" : "obo:PATO_0002274"
+    },
+    "PATO_0001810" : {
+      "@id" : "obo:PATO_0001810"
+    },
+    "hasDevelopmentConditionValue" : {
+      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "affectsPlant" : {
+      "@id" : "http://www.semanticweb.org/agrots/affectsPlant",
+      "@type" : "@id"
+    },
+    "OBI_0001620" : {
+      "@id" : "obo:OBI_0001620",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasDevelopmentConditionMinimumOptimalValue" : {
+      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumOptimalValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "PATO_0001941" : {
+      "@id" : "obo:PATO_0001941"
+    },
+    "hasDevelopmentConditionMinimumExtremeValueDuringNight" : {
+      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumExtremeValueDuringNight",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Observer" : {
+      "@id" : "dbr:Observer"
+    },
+    "Person" : {
+      "@id" : "foaf:Person"
+    },
+    "PATO_0001928" : {
+      "@id" : "obo:PATO_0001928"
+    },
+    "PDO_0000069" : {
+      "@id" : "obo:PDO_0000069"
+    },
+    "LeafMold" : {
+      "@id" : "http://www.semanticweb.org/agrots/LeafMold"
+    },
+    "resultTime" : {
+      "@id" : "sosa:resultTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "environmentalFactorIsObservedBy" : {
+      "@id" : "http://www.semanticweb.org/agrots/environmentalFactorIsObservedBy",
+      "@type" : "@id"
+    },
+    "PATO_0001025" : {
+      "@id" : "obo:PATO_0001025"
+    },
+    "isDegreeOfAssociationForDisease" : {
+      "@id" : "http://www.semanticweb.org/agrots/isDegreeOfAssociationForDisease",
+      "@type" : "@id"
+    },
+    "RO_0000052" : {
+      "@id" : "obo:RO_0000052",
+      "@type" : "@id"
+    },
+    "AGRO_00000325" : {
+      "@id" : "obo:AGRO_00000325"
+    },
+    "isCharacterizedByAffectedPartColor" : {
+      "@id" : "http://www.semanticweb.org/agrots/isCharacterizedByAffectedPartColor",
+      "@type" : "@id"
+    },
+    "GreenColorBrightness" : {
+      "@id" : "http://www.semanticweb.org/agrots/GreenColorBrightness"
+    },
+    "hasDevelopmentCondition" : {
+      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentCondition",
+      "@type" : "@id"
+    },
+    "locatedInArea" : {
+      "@id" : "dbo:locatedInArea",
+      "@type" : "@id"
+    },
+    "PO_0025034" : {
+      "@id" : "obo:PO_0025034"
+    },
+    "hasDevelopmentConditionMinimumOptimalValueDuringNight" : {
+      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumOptimalValueDuringNight",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "SevereToFatal" : {
+      "@id" : "http://www.semanticweb.org/agrots/SevereToFatal"
+    },
+    "isAffectedBy" : {
+      "@id" : "http://www.semanticweb.org/agrots/isAffectedBy",
+      "@type" : "@id"
+    },
+    "BSPO_0000075" : {
+      "@id" : "obo:BSPO_0000075"
+    },
+    "hasCausalAgent" : {
+      "@id" : "http://www.semanticweb.org/agrots/hasCausalAgent",
+      "@type" : "@id"
+    },
+    "FlowerAndFruitDevelopmentStage" : {
+      "@id" : "http://www.semanticweb.org/agrots/FlowerAndFruitDevelopmentStage"
+    },
+    "TO_0000387" : {
+      "@id" : "obo:TO_0000387"
+    },
+    "DevelopmentCondition" : {
+      "@id" : "http://www.semanticweb.org/agrots/DevelopmentCondition"
+    },
+    "PATO_0040014" : {
+      "@id" : "obo:PATO_0040014"
+    },
+    "NCBITaxon_4081" : {
+      "@id" : "obo:NCBITaxon_4081"
+    },
+    "PATO_0000016" : {
+      "@id" : "obo:PATO_0000016"
+    },
+    "hasBorderPoint" : {
+      "@id" : "http://www.semanticweb.org/agrots/hasBorderPoint",
+      "@type" : "@id"
+    },
+    "PATO_0001533" : {
+      "@id" : "obo:PATO_0001533"
+    },
+    "SIO_001216" : {
+      "@id" : "http://semanticscience.org/resource/SIO_001216"
+    },
+    "hasCropLocationArea" : {
+      "@id" : "http://www.semanticweb.org/agrots/hasCropLocationArea",
+      "@type" : "@id"
+    },
+    "PATO_0002539" : {
+      "@id" : "obo:PATO_0002539"
+    },
+    "hasNumericalValueType" : {
+      "@id" : "http://www.semanticweb.org/agrots/hasNumericalValueType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "BlueColorBrightness" : {
+      "@id" : "http://www.semanticweb.org/agrots/BlueColorBrightness"
+    },
+    "BSPO_0000074" : {
+      "@id" : "obo:BSPO_0000074"
+    },
+    "PATO_0000947" : {
+      "@id" : "obo:PATO_0000947"
+    },
+    "ApicalSuperiorRegion" : {
+      "@id" : "http://www.semanticweb.org/agrots/ApicalSuperiorRegion"
+    },
+    "SeedGerminationAndEarlyGrowthStage" : {
+      "@id" : "http://www.semanticweb.org/agrots/SeedGerminationAndEarlyGrowthStage"
+    },
+    "hasPercentageOfAssociation" : {
+      "@id" : "http://www.semanticweb.org/agrots/hasPercentageOfAssociation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "PATO_0001942" : {
+      "@id" : "obo:PATO_0001942"
+    },
+    "PATO_0000320" : {
+      "@id" : "obo:PATO_0000320"
+    },
+    "OptimalDevelopmentCondition" : {
+      "@id" : "http://www.semanticweb.org/agrots/OptimalDevelopmentCondition"
+    },
+    "EnvironmentalFactorObservationCollection" : {
+      "@id" : "http://www.semanticweb.org/agrots/EnvironmentalFactorObservationCollection"
+    },
+    "PDO_0000015" : {
+      "@id" : "obo:PDO_0000015"
+    },
+    "PATO_0000329" : {
+      "@id" : "obo:PATO_0000329"
+    },
+    "PATO_0000014" : {
+      "@id" : "obo:PATO_0000014"
+    },
+    "BSPO_0000025" : {
+      "@id" : "obo:BSPO_0000025"
+    },
+    "NCBITaxon_62718" : {
+      "@id" : "obo:NCBITaxon_62718"
+    },
+    "isObservationMadeBy" : {
+      "@id" : "http://www.semanticweb.org/agrots/isObservationMadeBy",
+      "@type" : "@id"
+    },
+    "isEnvironmentalFactorAssociatedToDevelopmentCondition" : {
+      "@id" : "http://www.semanticweb.org/agrots/isEnvironmentalFactorAssociatedToDevelopmentCondition",
+      "@type" : "@id"
+    },
+    "PATO_0000337" : {
+      "@id" : "obo:PATO_0000337"
+    },
+    "observesEnvironmentalFactor" : {
+      "@id" : "http://www.semanticweb.org/agrots/observesEnvironmentalFactor",
+      "@type" : "@id"
+    },
+    "hasSensor" : {
+      "@id" : "http://www.semanticweb.org/agrots/hasSensor",
+      "@type" : "@id"
+    },
+    "DryAndRough" : {
+      "@id" : "http://www.semanticweb.org/agrots/DryAndRough"
+    },
+    "isCharacterizedByAffectedPartTexture" : {
+      "@id" : "http://www.semanticweb.org/agrots/isCharacterizedByAffectedPartTexture",
+      "@type" : "@id"
+    },
+    "Point" : {
+      "@id" : "http://www.semanticweb.org/agrots/Point"
+    },
+    "Wilted" : {
+      "@id" : "http://www.semanticweb.org/agrots/Wilted"
+    },
+    "SoilHumidity" : {
+      "@id" : "http://www.semanticweb.org/agrots/SoilHumidity"
+    },
+    "observes" : {
+      "@id" : "sosa:observes",
+      "@type" : "@id"
+    },
+    "PO_0009047" : {
+      "@id" : "obo:PO_0009047"
+    },
+    "PO_0007615" : {
+      "@id" : "obo:PO_0007615"
+    },
+    "PDO_0000067" : {
+      "@id" : "obo:PDO_0000067"
+    },
+    "SIO_001214" : {
+      "@id" : "http://semanticscience.org/resource/SIO_001214"
+    },
+    "PATO_0001606" : {
+      "@id" : "obo:PATO_0001606"
+    },
+    "SIO_001212" : {
+      "@id" : "http://semanticscience.org/resource/SIO_001212"
+    },
+    "hasDevelopmentConditionMaximumExtremeValue" : {
+      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumExtremeValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "NCIT_C79611" : {
+      "@id" : "obo:NCIT_C79611"
+    },
+    "PATO_0001824" : {
+      "@id" : "obo:PATO_0001824"
+    },
+    "Chalky" : {
+      "@id" : "http://www.semanticweb.org/agrots/Chalky"
+    },
+    "PO_0009005" : {
+      "@id" : "obo:PO_0009005"
+    },
+    "EarlyGrowthStage" : {
+      "@id" : "http://www.semanticweb.org/agrots/EarlyGrowthStage"
+    },
+    "GEO_000000787" : {
+      "@id" : "obo:GEO_000000787",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasScientificName" : {
+      "@id" : "agrontology:hasScientificName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "PATO_0000150" : {
+      "@id" : "obo:PATO_0000150"
+    },
+    "PATO_0001251" : {
+      "@id" : "obo:PATO_0001251"
+    },
+    "isObservedBy" : {
+      "@id" : "sosa:isObservedBy",
+      "@type" : "@id"
+    },
+    "PATO_0000333" : {
+      "@id" : "obo:PATO_0000333"
+    },
+    "EFO_0003765" : {
+      "@id" : "efo:EFO_0003765"
+    },
+    "PO_0007057" : {
+      "@id" : "obo:PO_0007057"
+    },
+    "hasFeatureOfInterest" : {
+      "@id" : "sosa:hasFeatureOfInterest",
+      "@type" : "@id"
+    },
+    "PATO_0000323" : {
+      "@id" : "obo:PATO_0000323"
+    },
+    "hasDevelopmentConditionMaximumOptimalValueDuringNight" : {
+      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumOptimalValueDuringNight",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "PATO_0001245" : {
+      "@id" : "obo:PATO_0001245"
+    },
+    "PO_0025502" : {
+      "@id" : "obo:PO_0025502"
+    },
+    "NCIT_C14258" : {
+      "@id" : "obo:NCIT_C14258"
+    },
+    "observedProperty" : {
+      "@id" : "sosa:observedProperty",
+      "@type" : "@id"
+    },
+    "DampAndWrinkled" : {
+      "@id" : "http://www.semanticweb.org/agrots/DampAndWrinkled"
+    },
+    "hasUnit" : {
+      "@id" : "om:hasUnit",
+      "@type" : "@id"
+    },
+    "madeObservation" : {
+      "@id" : "sosa:madeObservation",
+      "@type" : "@id"
+    },
+    "PATO_0000317" : {
+      "@id" : "obo:PATO_0000317"
+    },
+    "OrangeColorBrightness" : {
+      "@id" : "http://www.semanticweb.org/agrots/OrangeColorBrightness"
+    },
+    "PolygonalArea" : {
+      "@id" : "http://www.semanticweb.org/agrots/PolygonalArea"
+    },
+    "hasDevelopmentConditionMinimumExtremeValueDuringDay" : {
+      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumExtremeValueDuringDay",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "PO_0009008" : {
+      "@id" : "obo:PO_0009008"
+    },
+    "DarkRedBrown" : {
+      "@id" : "http://www.semanticweb.org/agrots/DarkRedBrown"
+    },
+    "NCBITaxon_5599" : {
+      "@id" : "obo:NCBITaxon_5599"
+    },
+    "hasIntensity" : {
+      "@id" : "http://www.semanticweb.org/agrots/hasIntensity",
+      "@type" : "@id"
+    },
+    "AllDevelopmentStages" : {
+      "@id" : "http://www.semanticweb.org/agrots/AllDevelopmentStages"
+    },
+    "hasDevelopmentConditionMaximumExtremeValueDuringDay" : {
+      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMaximumExtremeValueDuringDay",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "PO_0009001" : {
+      "@id" : "obo:PO_0009001"
+    },
+    "DegreeOfAssociation" : {
+      "@id" : "http://www.semanticweb.org/agrots/DegreeOfAssociation"
+    },
+    "Damp" : {
+      "@id" : "http://www.semanticweb.org/agrots/Damp"
+    },
+    "RO_0002350" : {
+      "@id" : "obo:RO_0002350",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "PATO_0000019" : {
+      "@id" : "obo:PATO_0000019"
+    },
+    "SIO_001215" : {
+      "@id" : "http://semanticscience.org/resource/SIO_001215"
+    },
+    "ObservableProperty" : {
+      "@id" : "sosa:ObservableProperty"
+    },
+    "PATO_0000701" : {
+      "@id" : "obo:PATO_0000701"
+    },
+    "PO_0025501" : {
+      "@id" : "obo:PO_0025501"
+    },
+    "YellowColorBrightness" : {
+      "@id" : "http://www.semanticweb.org/agrots/YellowColorBrightness"
+    },
+    "PO_0009046" : {
+      "@id" : "obo:PO_0009046"
+    },
+    "RO_0002351" : {
+      "@id" : "obo:RO_0002351",
+      "@type" : "@id"
+    },
+    "PATO_0000324" : {
+      "@id" : "obo:PATO_0000324"
+    },
+    "PATO_0000952" : {
+      "@id" : "obo:PATO_0000952"
+    },
+    "hasNodeLocationPoint" : {
+      "@id" : "http://www.semanticweb.org/agrots/hasNodeLocationPoint",
+      "@type" : "@id"
+    },
+    "BSPO_0000022" : {
+      "@id" : "obo:BSPO_0000022"
+    },
+    "PurpleBrown" : {
+      "@id" : "http://www.semanticweb.org/agrots/PurpleBrown"
+    },
+    "hasDevelopmentConditionMinimumExtremeValue" : {
+      "@id" : "http://www.semanticweb.org/agrots/hasDevelopmentConditionMinimumExtremeValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "SIO_001218" : {
+      "@id" : "http://semanticscience.org/resource/SIO_001218"
+    },
+    "GreenBrown" : {
+      "@id" : "http://www.semanticweb.org/agrots/GreenBrown"
+    },
+    "PATO_0000700" : {
+      "@id" : "obo:PATO_0000700"
+    },
+    "PATO_0005020" : {
+      "@id" : "obo:PATO_0005020"
+    },
+    "isCharacterizedByAffectedPartColorPattern" : {
+      "@id" : "http://www.semanticweb.org/agrots/isCharacterizedByAffectedPartColorPattern",
+      "@type" : "@id"
+    },
+    "DiseaseDevelopmentCondition" : {
+      "@id" : "http://www.semanticweb.org/agrots/DiseaseDevelopmentCondition"
+    },
+    "hasDegreeOfAssociationToDisease" : {
+      "@id" : "http://www.semanticweb.org/agrots/hasDegreeOfAssociationToDisease",
+      "@type" : "@id"
+    },
+    "GreenGrey" : {
+      "@id" : "http://www.semanticweb.org/agrots/GreenGrey"
+    },
+    "GrayMold" : {
+      "@id" : "http://www.semanticweb.org/agrots/GrayMold"
+    },
+    "EFO_0000469" : {
+      "@id" : "efo:EFO_0000469"
+    },
+    "NCBITaxon_4787" : {
+      "@id" : "obo:NCBITaxon_4787"
+    },
+    "NCBITaxon_40559" : {
+      "@id" : "obo:NCBITaxon_40559"
+    },
+    "hasPlantDevelopmentStage" : {
+      "@id" : "http://www.semanticweb.org/agrots/hasPlantDevelopmentStage",
+      "@type" : "@id"
+    },
+    "Observation" : {
+      "@id" : "sosa:Observation"
+    },
+    "PO_0000003" : {
+      "@id" : "obo:PO_0000003"
+    },
+    "SIO_001213" : {
+      "@id" : "http://semanticscience.org/resource/SIO_001213"
+    },
+    "PATO_0001946" : {
+      "@id" : "obo:PATO_0001946"
+    },
+    "Sensor" : {
+      "@id" : "sosa:Sensor"
+    },
+    "PATO_0001252" : {
+      "@id" : "obo:PATO_0001252"
+    },
+    "isFeatureOfInterestOf" : {
+      "@id" : "sosa:isFeatureOfInterestOf",
+      "@type" : "@id"
+    }
+  }
+}
