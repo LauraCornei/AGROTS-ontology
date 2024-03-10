@@ -1597,7 +1597,7 @@
     <!-- obo:NCIT_C14258 -->
 
     <owl:Class rdf:about="obo:NCIT_C14258">
-        <rdfs:label>Plant</rdfs:label>
+        <rdfs:label>PlantSpecies</rdfs:label>
     </owl:Class>
     
 

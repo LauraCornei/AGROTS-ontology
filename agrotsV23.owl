@@ -2485,7 +2485,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>obo:NCIT_C14258</IRI>
-        <Literal>Plant</Literal>
+        <Literal>PlantSpecies</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

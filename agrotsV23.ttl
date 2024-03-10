@@ -1064,7 +1064,7 @@
 
 ###  obo:NCIT_C14258
 <obo:NCIT_C14258> rdf:type owl:Class ;
-                  rdfs:label "Plant" .
+                  rdfs:label "PlantSpecies" .
 
 
 ###  obo:NCIT_C25244
